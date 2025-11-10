@@ -6,4 +6,4 @@ Mason Cho,
 Thulasie Baskaran,
 Tyler Gu,
 Emery Hua,
-Dylan Kwon
+Hyunwoo (Dylan) Kwon
