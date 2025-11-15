@@ -36,7 +36,7 @@ public class AddItemFragment extends Fragment {
         spinnerCategory = view.findViewById(R.id.spinnerCategory);
         buttonAdd = view.findViewById(R.id.buttonAdd);
 
-        db = FirebaseDatabase.getInstance("https://b07-demo-summer-2024-default-rtdb.firebaseio.com/");
+        db = FirebaseDatabase.getInstance("https://b07projectlogin-default-rtdb.firebaseio.com");
 
         // Set up the spinner with categories
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(),
@@ -55,17 +55,20 @@ public class AddItemFragment extends Fragment {
     }
 
     private void addItem() {
+        //gets the string info from user's input
         String title = editTextTitle.getText().toString().trim();
         String author = editTextAuthor.getText().toString().trim();
         String genre = editTextGenre.getText().toString().trim();
         String description = editTextDescription.getText().toString().trim();
         String category = spinnerCategory.getSelectedItem().toString().toLowerCase();
 
+        //checks if any section is missing
         if (title.isEmpty() || author.isEmpty() || genre.isEmpty() || description.isEmpty()) {
             Toast.makeText(getContext(), "Please fill out all fields", Toast.LENGTH_SHORT).show();
             return;
         }
 
+        //identifies the path
         itemsRef = db.getReference("categories/" + category);
         String id = itemsRef.push().getKey();
         Item item = new Item(id, title, author, genre, description);
