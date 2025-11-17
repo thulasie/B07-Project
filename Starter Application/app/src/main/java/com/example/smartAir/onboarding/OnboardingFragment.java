@@ -1,4 +1,4 @@
-package com.example.smartAir;
+package com.example.smartAir.onboarding;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.example.smartAir.R;
 
 import java.util.Objects;
 

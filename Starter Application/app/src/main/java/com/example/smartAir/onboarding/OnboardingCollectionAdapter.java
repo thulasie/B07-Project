@@ -1,10 +1,12 @@
-package com.example.smartAir;
+package com.example.smartAir.onboarding;
 
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
+
+import com.example.smartAir.R;
 
 public class OnboardingCollectionAdapter extends FragmentStateAdapter {
     OnboardingContent onboardingContent;
