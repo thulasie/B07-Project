@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signInFragment">
+
+    <!-- Sign In -->
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.b07demosummer2024.ui.auth.SignInFragment"
+        android:label="Sign In"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_signIn_to_roleRouter"
+            app:destination="@id/roleRouterFragment" />
+    </fragment>
+
+    <!-- Role Router -->
+    <fragment
+        android:id="@+id/roleRouterFragment"
+        android:name="com.example.b07demosummer2024.ui.router.RoleRouterFragment"
+        android:label="Role Router"
+        tools:layout="@layout/fragment_role_router">
+        <action
+            android:id="@+id/action_roleRouter_to_signIn"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_roleRouter_to_childHome"
+            app:destination="@id/childHomeFragment" />
+        <action
+            android:id="@+id/action_roleRouter_to_parentHome"
+            app:destination="@id/parentHomeFragment" />
+        <action
+            android:id="@+id/action_roleRouter_to_providerHome"
+            app:destination="@id/providerHomeFragment" />
+    </fragment>
+
+    <!-- Home fragments -->
+    <fragment
+        android:id="@+id/childHomeFragment"
+        android:name="com.example.b07demosummer2024.ui.child.ChildHomeFragment"
+        android:label="Child Home"
+        tools:layout="@layout/fragment_child_home" />
+
+    <fragment
+        android:id="@+id/parentHomeFragment"
+        android:name="com.example.b07demosummer2024.ui.parent.ParentHomeFragment"
+        android:label="Parent Home"
+        tools:layout="@layout/fragment_parent_home" />
+
+    <fragment
+        android:id="@+id/providerHomeFragment"
+        android:name="com.example.b07demosummer2024.ui.provider.ProviderHomeFragment"
+        android:label="Provider Home"
+        tools:layout="@layout/fragment_provider_home" />
+
+    
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.b07demosummer2024.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_recycler"
+            app:destination="@id/recyclerViewFragment" />
+        <action
+            android:id="@+id/action_home_to_scroller"
+            app:destination="@id/scrollerFragment" />
+        <action
+            android:id="@+id/action_home_to_manage"
+            app:destination="@id/manageItemsFragment" />
+        <action
+            android:id="@+id/action_home_to_spinner"
+            app:destination="@id/spinnerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/recyclerViewFragment"
+        android:name="com.example.b07demosummer2024.RecyclerViewFragment"
+        android:label="RecyclerView"
+        tools:layout="@layout/fragment_recycler_view" />
+    <fragment
+        android:id="@+id/scrollerFragment"
+        android:name="com.example.b07demosummer2024.ScrollerFragment"
+        android:label="Scroller"
+        tools:layout="@layout/fragment_scroller" />
+    <fragment
+        android:id="@+id/manageItemsFragment"
+        android:name="com.example.b07demosummer2024.ManageItemsFragment"
+        android:label="Manage Items"
+        tools:layout="@layout/fragment_manage_items" />
+    <fragment
+        android:id="@+id/spinnerFragment"
+        android:name="com.example.b07demosummer2024.SpinnerFragment"
+        android:label="Spinner"
+        tools:layout="@layout/fragment_spinner" />
+</navigation>
