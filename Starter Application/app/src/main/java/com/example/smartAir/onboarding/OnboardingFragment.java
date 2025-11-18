@@ -47,7 +47,7 @@ public class OnboardingFragment extends Fragment {
 
             exitButton.setOnClickListener(v -> {
 
-                Objects.requireNonNull(this.getActivity()).finish();
+                this.requireActivity().finish();
                 // Add a side effect
             });
         }
