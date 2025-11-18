@@ -1,4 +1,4 @@
-package com.example.b07demosummer2024;
+package com.example.smartAir;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.b07demosummer2024.R;
+import com.example.smartAir.R;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class SignUpFragment extends Fragment implements SignUpPresenter.View {

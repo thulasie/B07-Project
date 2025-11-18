@@ -1,4 +1,4 @@
-package com.example.smartAir.ui.router;
+package com.example.smartAir;
 
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentReference;

@@ -5,12 +5,12 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/signInFragment">
 
-    <!-- Sign In -->
+    <!-- Sign In (Login) -->
     <fragment
         android:id="@+id/signInFragment"
-        android:name="com.example.b07demosummer2024.ui.auth.SignInFragment"
+        android:name="com.example.smartAir.LoginFragment"
         android:label="Sign In"
-        tools:layout="@layout/fragment_sign_in">
+        tools:layout="@layout/log_in_fragment">
         <action
             android:id="@+id/action_signIn_to_roleRouter"
             app:destination="@id/roleRouterFragment" />
@@ -19,7 +19,7 @@
     <!-- Role Router -->
     <fragment
         android:id="@+id/roleRouterFragment"
-        android:name="com.example.b07demosummer2024.ui.router.RoleRouterFragment"
+        android:name="com.example.smartAir.ui.router.RoleRouterFragment"
         android:label="Role Router"
         tools:layout="@layout/fragment_role_router">
         <action
@@ -36,31 +36,31 @@
             app:destination="@id/providerHomeFragment" />
     </fragment>
 
-    <!-- Home fragments -->
+    <!-- Home fragments for three roles -->
     <fragment
         android:id="@+id/childHomeFragment"
-        android:name="com.example.b07demosummer2024.ui.child.ChildHomeFragment"
+        android:name="com.example.smartAir.ui.child.ChildHomeFragment"
         android:label="Child Home"
         tools:layout="@layout/fragment_child_home" />
 
     <fragment
         android:id="@+id/parentHomeFragment"
-        android:name="com.example.b07demosummer2024.ui.parent.ParentHomeFragment"
+        android:name="com.example.smartAir.ui.parent.ParentHomeFragment"
         android:label="Parent Home"
         tools:layout="@layout/fragment_parent_home" />
 
     <fragment
         android:id="@+id/providerHomeFragment"
-        android:name="com.example.b07demosummer2024.ui.provider.ProviderHomeFragment"
+        android:name="com.example.smartAir.ui.provider.ProviderHomeFragment"
         android:label="Provider Home"
         tools:layout="@layout/fragment_provider_home" />
 
-    
+    <!-- 原 demo 里的 Home 和其它页面 -->
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.b07demosummer2024.HomeFragment"
+        android:name="com.example.smartAir.HomeFragment"
         android:label="Home"
-        tools:layout="@layout/fragment_home">
+        tools:layout="@layout/activity_home_fragment">
         <action
             android:id="@+id/action_home_to_recycler"
             app:destination="@id/recyclerViewFragment" />
@@ -77,22 +77,26 @@
 
     <fragment
         android:id="@+id/recyclerViewFragment"
-        android:name="com.example.b07demosummer2024.RecyclerViewFragment"
+        android:name="com.example.smartAir.RecyclerViewFragment"
         android:label="RecyclerView"
         tools:layout="@layout/fragment_recycler_view" />
+
     <fragment
         android:id="@+id/scrollerFragment"
-        android:name="com.example.b07demosummer2024.ScrollerFragment"
+        android:name="com.example.smartAir.ScrollerFragment"
         android:label="Scroller"
         tools:layout="@layout/fragment_scroller" />
+
     <fragment
         android:id="@+id/manageItemsFragment"
-        android:name="com.example.b07demosummer2024.ManageItemsFragment"
+        android:name="com.example.smartAir.ManageItemsFragment"
         android:label="Manage Items"
         tools:layout="@layout/fragment_manage_items" />
+
     <fragment
         android:id="@+id/spinnerFragment"
-        android:name="com.example.b07demosummer2024.SpinnerFragment"
+        android:name="com.example.smartAir.SpinnerFragment"
         android:label="Spinner"
         tools:layout="@layout/fragment_spinner" />
+
 </navigation>

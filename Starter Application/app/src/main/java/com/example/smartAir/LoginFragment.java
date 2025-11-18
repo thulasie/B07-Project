@@ -1,4 +1,4 @@
-package com.example.b07demosummer2024;
+package com.example.smartAir;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.b07demosummer2024.R;
+import com.example.smartAir.R;
 
 public class LoginFragment extends Fragment implements LoginPresenter.View {
 
