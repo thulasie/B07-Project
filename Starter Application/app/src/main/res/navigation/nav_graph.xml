@@ -34,6 +34,27 @@
         <action
             android:id="@+id/action_roleRouter_to_providerHome"
             app:destination="@id/providerHomeFragment" />
+
+        <action
+            android:id="@+id/action_roleRouter_to_onboardingContainerFragment"
+            app:destination="@id/onboardingContainerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboardingContainerFragment"
+        android:name="com.example.smartAir.onboarding.OnboardingContainerFragment"
+        android:label="Onboarding screen">
+        <action
+            android:id="@+id/action_onboarding_to_childHome"
+            app:destination="@id/childHomeFragment" />
+        <action
+            android:id="@+id/action_onboarding_to_parentHome"
+            app:destination="@id/parentHomeFragment" />
+        <action
+            android:id="@+id/action_onboarding_to_providerHome"
+            app:destination="@id/providerHomeFragment" />
+
+
     </fragment>
 
     <!-- Home fragments for three roles -->

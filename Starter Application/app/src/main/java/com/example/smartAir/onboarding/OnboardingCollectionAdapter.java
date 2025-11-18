@@ -15,11 +15,11 @@ public class OnboardingCollectionAdapter extends FragmentStateAdapter {
         super(fragment);
     }
 
-    public OnboardingCollectionAdapter(OnboardingActivity fragment) {
+    public OnboardingCollectionAdapter(OnboardingContainerFragment fragment) {
         super(fragment);
     }
 
-    public OnboardingCollectionAdapter(OnboardingActivity fragment, OnboardingContent onboardingContent) {
+    public OnboardingCollectionAdapter(OnboardingContainerFragment fragment, OnboardingContent onboardingContent) {
         super(fragment);
         this.onboardingContent = onboardingContent;
     }
@@ -27,7 +27,7 @@ public class OnboardingCollectionAdapter extends FragmentStateAdapter {
     @NonNull
     @Override
     public Fragment createFragment(int position) {
-        Fragment fragment = new OnboardingFragment();
+        Fragment fragment = new OnboardingPanelFragment();
         Bundle args = new Bundle();
 
         if (onboardingContent == null) {

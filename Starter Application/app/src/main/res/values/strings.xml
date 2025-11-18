@@ -13,6 +13,7 @@
     <string name="parent_home_title">Parent Home Screen</string>
     <string name="provider_home_title">Provider Home Screen</string>
     <string name="sign_out">Sign Out</string>
+    <string name="shared_preferences_key">com.example.smartAir.sharedPreferences</string>
 
     <string-array name="categories_array">
         <item>Books</item>

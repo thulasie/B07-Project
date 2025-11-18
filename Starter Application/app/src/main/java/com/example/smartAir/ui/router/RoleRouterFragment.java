@@ -1,5 +1,7 @@
 package com.example.smartAir.ui.router;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +18,8 @@ import com.example.smartAir.R;
 import com.example.smartAir.data.AuthProfileRepo;
 import com.example.smartAir.data.UserProfile;
 import com.example.smartAir.domain.UserRole;
+
+import java.util.Objects;
 
 public class RoleRouterFragment extends Fragment {
 
@@ -51,14 +55,40 @@ public class RoleRouterFragment extends Fragment {
                 nav.navigate(R.id.signInFragment, null, clearStack);
                 return;
             }
-            switch (role) {
-                case CHILD:
-                    nav.navigate(R.id.childHomeFragment, null, clearStack); break;
-                case PARENT:
-                    nav.navigate(R.id.parentHomeFragment, null, clearStack); break;
-                case PROVIDER:
-                    nav.navigate(R.id.providerHomeFragment, null, clearStack); break;
+
+            SharedPreferences a = requireActivity().getSharedPreferences(getString(R.string.shared_preferences_key),
+                    Context.MODE_PRIVATE);
+            if (a.getBoolean("not_first_launch", false)) {
+                switch (role) {
+                    case CHILD:
+                        nav.navigate(R.id.childHomeFragment, null, clearStack);
+                        break;
+                    case PARENT:
+                        nav.navigate(R.id.parentHomeFragment, null, clearStack);
+                        break;
+                    case PROVIDER:
+                        nav.navigate(R.id.providerHomeFragment, null, clearStack);
+                        break;
+                }
+            } else {
+                a.edit().putBoolean("not_first_launch", true);
+                Bundle args = new Bundle();
+                args.putSerializable("role", role);
+                int fragmentId;
+
+                switch (role) {
+                    case CHILD:
+                        nav.navigate(R.id.childHomeFragment, null, clearStack);
+                        break;
+                    case PARENT:
+                        nav.navigate(R.id.parentHomeFragment, null, clearStack);
+                        break;
+                    case PROVIDER:
+                        nav.navigate(R.id.providerHomeFragment, null, clearStack);
+                        break;
+                }
+
             }
-        }, err -> nav.navigate(R.id.signInFragment, null, clearStack));
+        }, err -> nav.navigate(R.id.signInFragment));
     }
 }

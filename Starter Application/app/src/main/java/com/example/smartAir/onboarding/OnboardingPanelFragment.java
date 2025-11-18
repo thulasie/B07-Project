@@ -11,12 +11,19 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.Navigation;
 
 import com.example.smartAir.R;
+import com.example.smartAir.domain.UserRole;
+import com.example.smartAir.ui.child.ChildHomeFragment;
+import com.example.smartAir.ui.parent.ParentHomeFragment;
+import com.example.smartAir.ui.provider.ProviderHomeFragment;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class OnboardingFragment extends Fragment {
+public class OnboardingPanelFragment extends Fragment {
 
     @Nullable
     @Override
@@ -45,10 +52,32 @@ public class OnboardingFragment extends Fragment {
             exitButton.setVisibility(View.VISIBLE);
             exitButton.setText("Exit onboarding");
 
-            exitButton.setOnClickListener(v -> {
+            Serializable obj = args.getSerializable("user_role");
 
-                this.requireActivity().finish();
-                // Add a side effect
+            exitButton.setOnClickListener(v -> {
+                FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
+                Fragment nextFragment;
+                UserRole role;
+                if (obj instanceof UserRole) {
+                    role = (UserRole) obj;
+                    switch (role) {
+                        case CHILD:
+                            nextFragment = new ChildHomeFragment();
+                            break;
+                        case PARENT:
+                            nextFragment = new ParentHomeFragment();
+                            break;
+                        default:
+                            nextFragment = new ProviderHomeFragment();
+                            break;
+                    }
+                } else {
+                    nextFragment = new ChildHomeFragment();
+                }
+
+                transaction.replace(R.id.fragment_container, nextFragment);
+                transaction.addToBackStack(null);
+                transaction.commit();
             });
         }
     }

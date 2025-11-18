@@ -1,12 +1,13 @@
 package com.example.smartAir;
 
 import android.os.Bundle;
-import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.smartAir.onboarding.OnboardingContainerFragment;
+import com.example.smartAir.onboarding.OnboardingPanelFragment;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         myRef.setValue("Begin");
 
         if (savedInstanceState == null) {
-            loadFragment(new HomeFragment());
+            loadFragment(new OnboardingContainerFragment());
         }
     }
 
