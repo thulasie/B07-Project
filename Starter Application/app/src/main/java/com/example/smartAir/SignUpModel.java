@@ -1,4 +1,4 @@
-package com.example.b07demosummer2024;
+package com.example.smartAir.ui.router;
 
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentReference;
@@ -7,6 +7,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.Map;
 
 public class SignUpModel {
+
     private final FirebaseFirestore firestore = FirebaseFirestore.getInstance();
 
     // Create a user document under "users/{uid}"
