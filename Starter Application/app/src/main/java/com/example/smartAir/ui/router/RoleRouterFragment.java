@@ -1,4 +1,4 @@
-package com.example.b07demosummer2024.ui.router;
+package com.example.smartAir.ui.router;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,10 +12,10 @@ import androidx.navigation.NavController;
 import androidx.navigation.NavOptions;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.b07demosummer2024.R;
-import com.example.b07demosummer2024.data.AuthProfileRepo;
-import com.example.b07demosummer2024.data.UserProfile;
-import com.example.b07demosummer2024.domain.UserRole;
+import com.example.smartAir.R;
+import com.example.smartAir.data.AuthProfileRepo;
+import com.example.smartAir.data.UserProfile;
+import com.example.smartAir.domain.UserRole;
 
 public class RoleRouterFragment extends Fragment {
 

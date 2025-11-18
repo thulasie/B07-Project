@@ -1,4 +1,4 @@
-package com.example.b07demosummer2024;
+package com.example.smartAir;
 
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentReference;

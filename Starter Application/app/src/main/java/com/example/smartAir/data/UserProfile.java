@@ -1,9 +1,9 @@
-package com.example.b07demosummer2024.data;
+package com.example.smartAir.data;
 
 import androidx.annotation.Keep;
 import androidx.annotation.Nullable;
 
-import com.example.b07demosummer2024.domain.UserRole;
+import com.example.smartAir.domain.UserRole;
 
 @Keep
 public class UserProfile {

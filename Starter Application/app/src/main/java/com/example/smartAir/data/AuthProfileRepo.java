@@ -1,4 +1,4 @@
-package com.example.b07demosummer2024.data;
+package com.example.smartAir.data;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

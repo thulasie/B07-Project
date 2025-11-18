@@ -1,4 +1,4 @@
-package com.example.b07demosummer2024.ui.parent;
+package com.example.smartAir.ui.parent;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.NavOptions;
 import androidx.navigation.fragment.NavHostFragment;
-import com.example.b07demosummer2024.R;
+import com.example.smartAir.R;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class ParentHomeFragment extends Fragment {
