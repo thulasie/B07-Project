@@ -10,20 +10,24 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
-import androidx.navigation.NavOptions;
-import androidx.navigation.fragment.NavHostFragment;
+import androidx.fragment.app.FragmentTransaction;
 
+import com.example.smartAir.LoginFragment;
 import com.example.smartAir.R;
 import com.example.smartAir.data.AuthProfileRepo;
-import com.example.smartAir.data.UserProfile;
 import com.example.smartAir.domain.UserRole;
-
-import java.util.Objects;
+import com.example.smartAir.onboarding.OnboardingContainerFragment;
+import com.example.smartAir.ui.child.ChildHomeFragment;
+import com.example.smartAir.ui.parent.ParentHomeFragment;
+import com.example.smartAir.ui.provider.ProviderHomeFragment;
 
 public class RoleRouterFragment extends Fragment {
 
-    private final AuthProfileRepo repo = new AuthProfileRepo();
+    private final AuthProfileRepo repo;
+
+    public RoleRouterFragment() {
+        this.repo = new AuthProfileRepo();
+    }
 
     @Nullable
     @Override
@@ -37,22 +41,15 @@ public class RoleRouterFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        NavController nav = NavHostFragment.findNavController(this);
-        NavOptions clearStack = new NavOptions.Builder()
-                .setPopUpTo(R.id.nav_graph, true)
-                .build();
-
-    
         if (repo.getCurrentUser() == null) {
-            nav.navigate(R.id.signInFragment, null, clearStack);
+            navigateTo(new LoginFragment());
             return;
         }
 
-       
         repo.getCurrentUserProfile(profile -> {
             UserRole role = profile.roleEnum();
             if (role == null) {
-                nav.navigate(R.id.signInFragment, null, clearStack);
+                navigateTo(new LoginFragment());
                 return;
             }
 
@@ -61,34 +58,34 @@ public class RoleRouterFragment extends Fragment {
             if (a.getBoolean("not_first_launch", false)) {
                 switch (role) {
                     case CHILD:
-                        nav.navigate(R.id.childHomeFragment, null, clearStack);
+                        navigateTo(new ChildHomeFragment());
                         break;
                     case PARENT:
-                        nav.navigate(R.id.parentHomeFragment, null, clearStack);
+                        navigateTo(new ParentHomeFragment());
                         break;
                     case PROVIDER:
-                        nav.navigate(R.id.providerHomeFragment, null, clearStack);
+                        navigateTo(new ProviderHomeFragment());
                         break;
                 }
             } else {
                 a.edit().putBoolean("not_first_launch", true);
+
                 Bundle args = new Bundle();
                 args.putSerializable("role", role);
-                int fragmentId;
 
-                switch (role) {
-                    case CHILD:
-                        nav.navigate(R.id.childHomeFragment, null, clearStack);
-                        break;
-                    case PARENT:
-                        nav.navigate(R.id.parentHomeFragment, null, clearStack);
-                        break;
-                    case PROVIDER:
-                        nav.navigate(R.id.providerHomeFragment, null, clearStack);
-                        break;
-                }
+                OnboardingContainerFragment onboarding = new OnboardingContainerFragment();
+                onboarding.setArguments(args);
 
+                navigateTo(onboarding);
             }
-        }, err -> nav.navigate(R.id.signInFragment));
+        }, err -> navigateTo(new LoginFragment()));
+    }
+
+    public void navigateTo(Fragment f) {
+        FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_container, f);
+
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 }

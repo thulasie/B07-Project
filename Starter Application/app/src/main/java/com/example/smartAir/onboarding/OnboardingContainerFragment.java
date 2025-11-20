@@ -52,8 +52,7 @@ public class OnboardingContainerFragment extends Fragment {
             }
         }
         // Some code to switch onboarding style based on instance...
-        OnboardingCollectionAdapter adapter = new OnboardingCollectionAdapter(this, c);
-        return adapter;
+        return new OnboardingCollectionAdapter(this, c);
     }
 }
 
