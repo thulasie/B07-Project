@@ -16,7 +16,7 @@ import com.example.smartAir.LoginFragment;
 import com.example.smartAir.R;
 import com.example.smartAir.data.AuthProfileRepo;
 import com.example.smartAir.domain.UserRole;
-import com.example.smartAir.onboarding.OnboardingContainerFragment;
+import com.example.smartAir.ui.onboarding.OnboardingContainerFragment;
 import com.example.smartAir.ui.child.ChildHomeFragment;
 import com.example.smartAir.ui.parent.ParentHomeFragment;
 import com.example.smartAir.ui.provider.ProviderHomeFragment;

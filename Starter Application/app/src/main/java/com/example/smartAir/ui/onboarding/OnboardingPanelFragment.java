@@ -1,4 +1,4 @@
-package com.example.smartAir.onboarding;
+package com.example.smartAir.ui.onboarding;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
