@@ -52,13 +52,14 @@ public class OnboardingPanelFragment extends Fragment {
             exitButton.setVisibility(View.VISIBLE);
             exitButton.setText("Exit onboarding");
 
-            Serializable obj = args.getSerializable("user_role");
+            Serializable obj = args.getSerializable("userRole");
 
             exitButton.setOnClickListener(v -> {
                 FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
                 Fragment nextFragment;
                 UserRole role;
                 if (obj instanceof UserRole) {
+                    System.out.println("success yay");
                     role = (UserRole) obj;
                     switch (role) {
                         case CHILD:
@@ -72,6 +73,7 @@ public class OnboardingPanelFragment extends Fragment {
                             break;
                     }
                 } else {
+                    System.out.println("defaulted :(");
                     nextFragment = new ChildHomeFragment();
                 }
 

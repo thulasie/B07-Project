@@ -39,6 +39,8 @@ public abstract class UserProfile {
     public UserRole getRole() {
         return userRole;
     }
+
+    public abstract void signOut();
 }
 
 class ChildProfile extends UserProfile {
@@ -48,6 +50,11 @@ class ChildProfile extends UserProfile {
 
     public String getUserSlug () {
         return "user:" + username;
+    }
+
+    @Override
+    public void signOut() {
+
     }
 
 }
@@ -78,6 +85,11 @@ class EmailProfile extends UserProfile {
     @Override
     public String getUserSlug() {
         return auth.getUid();
+    }
+
+    @Override
+    public void signOut() {
+        auth.signOut();
     }
 }
 

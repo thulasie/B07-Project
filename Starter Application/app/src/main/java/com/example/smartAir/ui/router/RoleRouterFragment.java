@@ -50,6 +50,7 @@ public class RoleRouterFragment extends Fragment {
 
         SharedPreferences a = requireActivity().getSharedPreferences(getString(R.string.shared_preferences_key),
                 Context.MODE_PRIVATE);
+
         if (a.getBoolean("not_first_launch", false)) {
             switch (role) {
                 case CHILD:
@@ -66,7 +67,7 @@ public class RoleRouterFragment extends Fragment {
             a.edit().putBoolean("not_first_launch", true);
 
             Bundle args = new Bundle();
-            args.putSerializable("role", role);
+            args.putSerializable("userRole", role);
 
             OnboardingContainerFragment onboarding = new OnboardingContainerFragment();
             onboarding.setArguments(args);

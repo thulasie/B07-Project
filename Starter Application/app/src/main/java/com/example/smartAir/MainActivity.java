@@ -27,13 +27,15 @@ public class MainActivity extends AppCompatActivity {
 
         db = FirebaseDatabase.getInstance("https://b07projectlogin-default-rtdb.firebaseio.com");
 
-        FirebaseAuth.getInstance().signInWithEmailAndPassword("elderflowerings@gmail.com", "thereisnogoodandbad")
+        /*FirebaseAuth.getInstance().signInWithEmailAndPassword("elderflowerings@gmail.com", "thereisnogoodandbad")
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 UserProfile.initializeEmailProfile(() -> loadFragment(new RoleRouterFragment()));
             }
-        });
+        });*/
+
+        loadFragment(new RoleRouterFragment());
     }
 
     private void loadFragment(Fragment fragment) {

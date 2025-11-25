@@ -42,6 +42,7 @@ public class OnboardingCollectionAdapter extends FragmentStateAdapter {
             } else {
                 args.putString("onboarding_caption", "Finish onboarding");
                 args.putBoolean("onboarding_exit_page", true);
+                args.putSerializable("userRole", onboardingContent.getRole());
             }
         }
 

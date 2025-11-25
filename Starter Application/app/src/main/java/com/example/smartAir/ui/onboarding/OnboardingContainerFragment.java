@@ -21,11 +21,12 @@ public class OnboardingContainerFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         ViewPager2 onboarding = (ViewPager2) view.findViewById(R.id.onboarding_pager);
         Object a = null;
-        if (savedInstanceState != null) {
-            a = savedInstanceState.get("userRole"); // Replace with however the roles are
+        if (getArguments() != null) {
+            a = getArguments().get("userRole"); // Replace with however the roles are
         }
         OnboardingCollectionAdapter adapter = getOnboardingCollectionAdapter(a);
         onboarding.setAdapter(adapter);
+        System.out.println("OnboardingContainerFragment: " + a);
 
         // Connect to pagination dots
         TabLayout pager_dots = view.findViewById(R.id.onboarding_pager_dots);
