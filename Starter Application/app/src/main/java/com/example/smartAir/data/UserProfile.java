@@ -1,27 +1,49 @@
 package com.example.smartAir.data;
 
 import androidx.annotation.Keep;
-import androidx.annotation.Nullable;
 
 import com.example.smartAir.domain.UserRole;
 
 @Keep
-public class UserProfile {
-    public String uid;
-    public String displayName;
-    public String role;
-
-    public UserProfile() {} 
-
-    public UserProfile(String uid, String displayName, UserRole roleEnum) {
-        this.uid = uid;
-        this.displayName = displayName;
-        this.role = roleEnum.name();
+public abstract class UserProfile {
+    private static UserProfile profile;
+    public static UserProfile getProfileSingleton () {
+        return profile;
     }
 
-    @Nullable
-    public UserRole roleEnum() {
-        try { return UserRole.valueOf(role); }
-        catch (Exception e) { return null; }
+    public static void initializeEmailProfile (EmailProfileCallback a) {
+        profile = new EmailProfile(a);
+    }
+
+    public static void initializeUsernameProfile (String username) { // Is instant
+        profile = new ChildProfile(username);
+    }
+
+    public abstract UserRole getRole();
+
+    public abstract String getUserSlug();
+
+    public abstract String getUsername();
+}
+
+class ChildProfile extends UserProfile {
+    private String username;
+
+    public ChildProfile(String username) {
+        this.username = username;
+    }
+
+    public UserRole getRole() {
+        return UserRole.CHILD;
+    }
+
+    public String getUserSlug () {
+        return "user:" + username;
+    }
+
+    @Override
+    public String getUsername() {
+        return username;
     }
 }
+
