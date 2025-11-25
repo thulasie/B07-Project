@@ -12,6 +12,9 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Objects;
 
+
+///  It's okay if this gets deleted just refactor it with
+/// a class equivalent in functionality
 @Keep
 public abstract class UserProfile {
     protected static UserProfile profile;
