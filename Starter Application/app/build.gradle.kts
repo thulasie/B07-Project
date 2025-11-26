@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("com.google.gms.google-services")
+
 }
 
 android {
@@ -41,9 +42,12 @@ dependencies {
     implementation(libs.firebase.auth)
     implementation("androidx.navigation:navigation-fragment:2.9.6")
     implementation("androidx.navigation:navigation-ui:2.9.6")
+    implementation("com.google.firebase:firebase-messaging:25.0.1")
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation("com.google.firebase:firebase-auth")
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+
 
 }

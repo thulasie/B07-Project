@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Today's Zone -->
+        <TextView
+            android:id="@+id/todayZoneText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today's Zone: —"
+            android:textSize="20sp"
+            android:padding="12dp"/>
+
+        <!-- Last Rescue -->
+        <TextView
+            android:id="@+id/lastRescueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Rescue Time: —"
+            android:textSize="20sp"
+            android:padding="12dp"/>
+
+        <!-- Weekly Count -->
+        <TextView
+            android:id="@+id/weeklyCountText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weekly Rescue Count: —"
+            android:textSize="20sp"
+            android:padding="12dp"/>
+
+        <!-- Trend Summary (no chart) -->
+        <TextView
+            android:id="@+id/trendSummaryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trend Summary: —"
+            android:textSize="18sp"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/generateReportButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Generate Provider Report (PDF)"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>
