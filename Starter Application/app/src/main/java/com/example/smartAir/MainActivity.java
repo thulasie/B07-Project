@@ -9,6 +9,8 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.smartAir.data.EmailProfileCallback;
 import com.example.smartAir.data.UserProfile;
+import com.example.smartAir.triage.TriageController;
+import com.example.smartAir.triage.TriageFragment;
 import com.example.smartAir.ui.router.RoleRouterFragment;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -35,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });*/
 
-        loadFragment(new RoleRouterFragment());
+        loadFragment(new TriageFragment());
     }
 
     private void loadFragment(Fragment fragment) {
