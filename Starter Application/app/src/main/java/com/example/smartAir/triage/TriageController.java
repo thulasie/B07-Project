@@ -5,6 +5,8 @@ import androidx.annotation.Nullable;
 import com.example.smartAir.domain.Symptom;
 
 public class TriageController {
+
+
     enum TriageState {
         ENTRY_SCREEN, SYMPTOM_SCREEN, RECENT_HISTORY, DECISION_CARD, PARENT_ALERTED, DOWNTIME
     }

@@ -78,7 +78,6 @@ public class RecentHistoryEntry extends Fragment {
             }
         });
 
-
         submit.setOnClickListener((ignored) -> triageController.submitRecentHistory());
     }
 }

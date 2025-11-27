@@ -12,15 +12,15 @@ import com.example.smartAir.domain.Symptom;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
 
-public class SymptomScreen extends Fragment {
+public class SymptomEntry extends Fragment {
 
     private TriageController triageController;
 
-    public SymptomScreen () {
+    public SymptomEntry() {
         super(R.layout.triage_fragment_symptoms);
     }
 
-    public SymptomScreen (TriageController t) {
+    public SymptomEntry(TriageController t) {
         this();
         this.triageController = t;
     }

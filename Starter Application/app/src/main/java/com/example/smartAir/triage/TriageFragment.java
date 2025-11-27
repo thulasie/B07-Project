@@ -19,7 +19,7 @@ public class TriageFragment extends Fragment implements TriageController.TriageF
 
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-        loadFragment(new SymptomScreen(controller));
+        loadFragment(new SymptomEntry(controller));
     }
 
     public void loadFragment(Fragment fragment) {
