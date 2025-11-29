@@ -1,4 +1,4 @@
-package com.example.smartAir.triage;
+package com.example.smartAir.triaging;
 
 import android.os.Bundle;
 import android.view.View;
@@ -8,7 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.example.smartAir.R;
-import com.example.smartAir.domain.Symptom;
+import com.example.smartAir.domain.SevereSymptoms;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
 
@@ -28,16 +28,17 @@ public class SymptomEntry extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         ChipGroup symptom_box = view.findViewById(R.id.triage_symptoms);
+        Button b = (Button) view.findViewById(R.id.triage_symptoms_button);
 
-        for (Symptom symptom : Symptom.values()) {
+        for (SevereSymptoms severeSymptoms : SevereSymptoms.values()) {
             Chip a = (Chip) getLayoutInflater().inflate(R.layout.triage_symptom_chip, null, false);
 
-            a.setText(symptom.toSimpleString());
+            a.setText(severeSymptoms.toSimpleString());
 
             a.setOnCheckedChangeListener((button, newState) -> {
 
                 if (triageController != null) {
-                    triageController.toggleSymptom(newState, symptom);
+                    triageController.toggleSymptom(newState, severeSymptoms);
                 }
 
                 a.setChecked(newState);
@@ -45,8 +46,6 @@ public class SymptomEntry extends Fragment {
 
             symptom_box.addView(a);
         }
-
-        Button b = (Button) view.findViewById(R.id.triage_symptoms_button);
 
         b.setOnClickListener((ignored) -> {
             triageController.submitSymptoms();

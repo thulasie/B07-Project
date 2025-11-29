@@ -1,6 +1,6 @@
 package com.example.smartAir.domain;
 
-public enum Symptom {
+public enum SevereSymptoms {
     SPEECH_IMPEDED, RETRACTIONS, CYANOSIS;
 
     public String toSimpleString() {

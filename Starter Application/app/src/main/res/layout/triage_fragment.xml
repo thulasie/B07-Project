@@ -8,8 +8,21 @@
     android:padding="16dp">
 
     <androidx.fragment.app.FragmentContainerView
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        android:id="@+id/triage_fragment_container"/>
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/triage_fragment_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/triage_fragment_warning"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="This is guidance, not a diagnosis. If in doubt, call emergency."
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

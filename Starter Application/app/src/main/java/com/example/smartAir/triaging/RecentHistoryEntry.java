@@ -1,4 +1,4 @@
-package com.example.smartAir.triage;
+package com.example.smartAir.triaging;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -6,15 +6,11 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.NumberPicker;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.example.smartAir.R;
-import com.example.smartAir.domain.Symptom;
-import com.google.android.material.chip.Chip;
-import com.google.android.material.chip.ChipGroup;
 
 public class RecentHistoryEntry extends Fragment {
     private TriageController triageController;

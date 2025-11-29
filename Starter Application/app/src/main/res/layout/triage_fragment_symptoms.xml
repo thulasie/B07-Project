@@ -30,11 +30,6 @@
 
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="79dp">
-
-        <com.google.android.material.chip.Chip
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="symptom" />
     </com.google.android.material.chip.ChipGroup>
 
     <Button

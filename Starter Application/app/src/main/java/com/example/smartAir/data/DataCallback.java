@@ -10,13 +10,13 @@ public class DataCallback {
         void onFailure();
     }
 
-    interface ManyCallback<T> {
+    public interface ManyCallback<T> {
         void onArraySuccess(T[] receivedData);
 
         void onFailure();
     }
 
-    interface InsertionCallback<T> {
+    public interface InsertionCallback<T> {
         void onInsertion(T inserted);
 
         void onFailure();
@@ -25,11 +25,12 @@ public class DataCallback {
 
 //// How you should incorporate this data
 //class ExampleModelClass {
-//
+//      // In your model class add an interface like this below:
 //    public interface ExampleModelClassDatabaseInterface {
-//          // Add methods as needed
+//          // Add methods as needed, which will be used whenever this wants to update data
+//          // or get data by some means
 //          // a "slug" basically just refers to something that can identify an object or a resource
-//          // Please use a string or integer
+//          // Please use a string or integer for the slug
 //        void updateDataModel1(anyType insertion, SlugType slug, DataCallback.SingularCallback<anyType> callback); // the type in the callback doesn't matter fo rhtis one
 //
 //        void fetchDataModel1(SlugType slug, DataCallback.singularCallback<anyType> callback); //
@@ -45,13 +46,13 @@ public class DataCallback {
 //        // So on and so forth...
 //    }
 //
-//    // Make sure to include a way of setting the instance
+//    // Make sure to include a way of getting an instance
+//    // You can
 //
 //    ExampleModelClassDatabaseInterface db = new ExampleModelClassDatabaseInterface(); // be sure to use a concrete class
 //
 //
-//
-//    // Other methods of this class, when needed, will take the instance of the interface above
+//    // Other methods of this class will then take the instance of the interface above
 //    // and then call its methods when needed
 //
 //    void onDataChanged (Object o) {
@@ -111,3 +112,4 @@ public class DataCallback {
  //    //s o on and so forth
  //
 // }
+// Or you could just make a class with a blank implementation and have it do nothing

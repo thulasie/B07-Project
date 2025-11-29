@@ -1,4 +1,4 @@
-package com.example.smartAir.triage;
+package com.example.smartAir.triaging;
 
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +19,7 @@ public class TriageFragment extends Fragment implements TriageController.TriageF
 
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-        loadFragment(new SymptomEntry(controller));
+        loadFragment(new TriageStartScreen(controller));
     }
 
     public void loadFragment(Fragment fragment) {
@@ -30,8 +30,29 @@ public class TriageFragment extends Fragment implements TriageController.TriageF
     }
 
     @Override
-    public void startRecentHistory() {
+    public void startSymptomEntry() {
+        loadFragment(new SymptomEntry(controller));
+    }
+
+    @Override
+    public void startRecentHistoryEntry() {
         loadFragment(new RecentHistoryEntry(controller));
+    }
+
+    @Override
+    public void startDecisionCard() {
+        loadFragment(new DecisionCard(controller));
+    }
+
+    @Override
+    public void startCheckBack() {
+        loadFragment(new CheckBackScreen(controller));
+    }
+
+    @Override
+    public void showResolutionScreen() {
+        loadFragment(new TriageResolutionScreen(controller));
+        // Make sure to include a return home controller...
     }
 }
 

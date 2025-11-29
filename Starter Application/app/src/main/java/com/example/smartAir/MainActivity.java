@@ -2,20 +2,11 @@ package com.example.smartAir;
 
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.smartAir.data.EmailProfileCallback;
-import com.example.smartAir.data.UserProfile;
-import com.example.smartAir.triage.TriageController;
-import com.example.smartAir.triage.TriageFragment;
-import com.example.smartAir.ui.router.RoleRouterFragment;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
+import com.example.smartAir.triaging.TriageFragment;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
@@ -37,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });*/
 
-        loadFragment(new TriageFragment());
+        loadFragment(new DebugTestDriver());
     }
 
     private void loadFragment(Fragment fragment) {
