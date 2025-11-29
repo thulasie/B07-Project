@@ -3,7 +3,6 @@ package com.example.smartAir.triaging;
 import androidx.annotation.Nullable;
 
 import com.example.smartAir.data.DatabaseLogEntryData;
-import com.example.smartAir.data.DatabaseLoggable;
 import com.example.smartAir.domain.SevereSymptoms;
 import com.example.smartAir.domain.Zone;
 
@@ -11,12 +10,7 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
-public class TriageModel implements DatabaseLoggable {
-
-    @Override
-    public DatabaseLogEntryData formatAsLogEntry() {
-        return this.getTriageLogEntry();
-    }
+public class TriageModel {
 
     public interface BreathInformationProvider {
         double getPB();

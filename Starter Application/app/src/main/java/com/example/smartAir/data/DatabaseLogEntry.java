@@ -11,17 +11,6 @@ public class DatabaseLogEntry {
 
     public DatabaseLogEntry() {} // This is for firebase
 
-    public DatabaseLogEntry(Date date, String type, DatabaseLoggable data) {
-        this.type = DatabaseLogType.valueOf(type);
-        this.data = data.formatAsLogEntry();
-        this.date = date;
-    }
-
-    public DatabaseLogEntry(Date date, DatabaseLogType type, DatabaseLoggable data) {
-        this.type = type;
-        this.data = data.formatAsLogEntry();
-        this.date = date;
-    }
 
     public DatabaseLogEntry(Date date, String type, DatabaseLogEntryData data) {
         this.type = DatabaseLogType.valueOf(type);
