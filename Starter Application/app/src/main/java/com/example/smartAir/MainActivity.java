@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         myRef.setValue("Begin");
 
         if (savedInstanceState == null) {
-            loadFragment(new ForgotPasswordFragment());
+            loadFragment(new HomeFragment());
         }
     }
 
