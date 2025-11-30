@@ -48,12 +48,12 @@ public class TriageController {
         this.triageFragmentSwitcher = s;
         TriageModel.setProvider(new TriageModel.BreathInformationProvider() {
             @Override
-            public double getPB() {
+            public float getPB() {
                 return 10;
             }
 
             @Override
-            public double getPEF() {
+            public float getPEF() {
                 return 5;
             }
         });
@@ -133,7 +133,7 @@ public class TriageController {
 
     // Recent history
 
-    void setPEF(@Nullable Double f) {
+    void setPEF(@Nullable Float f) {
         model.setPEF(f);
     }
 

@@ -3,12 +3,12 @@ package com.example.smartAir.triaging;
 import com.example.smartAir.data.DatabaseLogEntryData;
 
 public class TriageLogEntryData extends DatabaseLogEntryData {
-    public Double pef;
+    public Float pef;
     public Integer rescueCount;
     public String triageDecision;
     public String guidanceProvided;
 
-    public TriageLogEntryData(Double pef, Integer rescueCount, String triageDecision, String guidanceProvided) {
+    public TriageLogEntryData(Float pef, Integer rescueCount, String triageDecision, String guidanceProvided) {
         this.pef = pef;
         this.rescueCount = rescueCount;
         this.triageDecision = triageDecision;
@@ -18,7 +18,7 @@ public class TriageLogEntryData extends DatabaseLogEntryData {
     public TriageLogEntryData() {} // Used by DatabaseEntryData
 
 
-    public Double getPef() {
+    public Float getPef() {
         return pef;
     }
 

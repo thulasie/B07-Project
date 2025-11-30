@@ -6,7 +6,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.smartAir.pefAndRecovery.ZoneChangeMonitor;
+import com.example.smartAir.pefAndRecovery.ZoneEntryFacade;
 import com.example.smartAir.triaging.TriageFragment;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,15 +26,15 @@ public class MainActivity extends AppCompatActivity {
 
         db = FirebaseDatabase.getInstance("https://b07projectlogin-default-rtdb.firebaseio.com");
 
-        /*FirebaseAuth.getInstance().signInWithEmailAndPassword("elderflowerings@gmail.com", "thereisnogoodandbad")
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                UserProfile.initializeEmailProfile(() -> loadFragment(new RoleRouterFragment()));
-            }
-        });*/
+        FirebaseAuth.getInstance().signInWithEmailAndPassword("elderflowerings@gmail.com", "thereisnogoodandbad")
+                .addOnCompleteListener(task -> {
+                    System.out.println("Logged in !");
+                    FirebaseAuth auth = FirebaseAuth.getInstance();
 
-        loadFragment(new DebugTestDriver());
+                    ZoneEntryFacade.changeUser(auth.getUid(), () -> {
+                        loadFragment(ZoneEntryFacade.createPersonalBestEntry());
+                    });
+                });
     }
 
     private void loadFragment(Fragment fragment) {

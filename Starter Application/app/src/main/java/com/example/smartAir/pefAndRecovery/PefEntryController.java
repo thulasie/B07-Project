@@ -1,6 +1,6 @@
 package com.example.smartAir.pefAndRecovery;
 
-public interface PEFEntryController {
+interface PefEntryController {
     boolean hasPrePostMedicinePEF();
     void setPEFValue(Float f);
     void setPEFPostMedicineValue(Float f);

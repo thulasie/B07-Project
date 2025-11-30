@@ -18,11 +18,7 @@ import com.example.smartAir.R;
 
 public class PefEntry extends Fragment {
 
-    public interface ScreenAfter {
-        void goBack();
-    }
-
-    PEFEntryController controller = new PEFEntryController() { // Mockup
+    PefEntryController controller = new PefEntryController() { // Mockup
         Float PEF;
         Float PEFPost;
         boolean hasPEFPost = false;
@@ -45,7 +41,7 @@ public class PefEntry extends Fragment {
         public void submitChanges() {System.out.println("Sent!");
         }
     };
-    ScreenAfter screenAfter = () -> System.out.println("Hi!");
+    ExitScreenAction exitScreen = () -> System.out.println("Hi!");
 
     private void togglePEF (boolean b) {
         controller.togglePEFPostMedicineValue(b);
@@ -66,8 +62,11 @@ public class PefEntry extends Fragment {
         super(R.layout.fragment_pef_entry);
     }
 
-    public void setPEFController(PEFEntryController c) {
+    public void setPEFController(PefEntryController c) {
         controller = c;
+    }
+    public void setScreenAfter(ExitScreenAction a) {
+        exitScreen = a;
     }
 
     @Override
@@ -82,7 +81,7 @@ public class PefEntry extends Fragment {
 
         submit.setOnClickListener((view1) -> {
             controller.submitChanges();
-            screenAfter.goBack();
+            exitScreen.run();
         });
 
         defaultPefEntry.addTextChangedListener(new TextWatcher() {

@@ -7,7 +7,6 @@
     tools:context=".pefAndRecovery.PefEntry"
     android:layout_margin="20dp">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -54,12 +53,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/pef_show_post_med"
         app:layout_constraintTop_toBottomOf="@id/pef_entry_container"
+        app:layout_constraintStart_toStartOf="parent"
         android:text="Enter values for pre/post medicine?"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/pef_show_post_med"
+        app:layout_constraintStart_toStartOf="parent"
         android:text="Submit"
         android:id="@+id/pef_submit_value"/>
 

@@ -44,7 +44,7 @@ public class RecentHistoryEntry extends Fragment {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
 
                 if (!s.isEmpty()) {
-                    triageController.setPEF(Double.parseDouble(s.toString()));
+                    triageController.setPEF(Float.parseFloat(s.toString()));
                 } else {
                     triageController.setPEF(null);
                 }

@@ -4,20 +4,23 @@ import com.example.smartAir.data.DatabaseLogEntry;
 import com.example.smartAir.data.DatabaseLogType;
 import com.example.smartAir.data.DatabaseLogger;
 
-import java.time.Instant;
-import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class PefLog implements PefController.ZoneChangeLogger {
+public class PefLog implements PefController.PefLogger {
     private final HashMap<Date, Pef> log = new HashMap<>();
     private final static PefLog singletonInstance = new PefLog();
     private DatabaseLogger logger;
+    private String userID;
 
-    public static void initializePefLog(String userID) {
+    private PefLog() {} // Forces singleton to be accessed
+
+    public static void initializeTodaysPefLog(String userID, CompletionNotifier notifier) {
         singletonInstance.logger = new DatabaseLogger(userID);
+        singletonInstance.userID = userID;
+
         HashSet<DatabaseLogType> typesWanted =  new HashSet<>();
         typesWanted.add(DatabaseLogType.PEF);
         Long now = new Date().getTime();
@@ -29,6 +32,11 @@ public class PefLog implements PefController.ZoneChangeLogger {
                 singletonInstance.log.put(entry.accessDate(), (Pef) entry.getData());
                 System.out.println(entry.getData().getLogEntry());
             }
+
+            ZoneChangeMonitor.getSingletonInstance()
+                    .initializeHighestPEF(singletonInstance.getHighestPEF());
+
+            notifier.notifyMonitor();
         }, midnightToday);
     }
 
@@ -36,7 +44,7 @@ public class PefLog implements PefController.ZoneChangeLogger {
         return singletonInstance;
     }
 
-    public void setLogger(DatabaseLogger logger) {
+    void setLogger(DatabaseLogger logger) {
         this.logger = logger;
     }
 
@@ -49,6 +57,8 @@ public class PefLog implements PefController.ZoneChangeLogger {
         if (logger != null) {
             logger.addLog(new DatabaseLogEntry(now, "PEF", entryData));
         }
+
+        ZoneChangeMonitor.getSingletonInstance().setHighestPEF(pEF);
     }
 
     @Override
@@ -60,9 +70,12 @@ public class PefLog implements PefController.ZoneChangeLogger {
         if (logger != null) {
             logger.addLog(new DatabaseLogEntry(now, "PEF", entryData));
         }
+
+        ZoneChangeMonitor.getSingletonInstance().setHighestPEF(preMedPEF);
+        ZoneChangeMonitor.getSingletonInstance().setHighestPEF(postMedPEF);
     }
 
-    public float getHighestPEF() {
+    float getHighestPEF() {
         float highest = -1f;
 
         for (Pef p : log.values()) {

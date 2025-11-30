@@ -61,7 +61,7 @@ class SingularPEF extends Pef {
 
     @Override @Exclude
     public String getLogEntry() {
-        return "PEF: " + pEF;
+        return "PEF set to " + pEF;
     }
 
     public boolean getHasPreAndPost() {
@@ -92,7 +92,7 @@ class PrePostMedPEF extends Pef {
 
     @Override @Exclude
     public String getLogEntry() {
-        return "Pre-medicine: " + preMedPEF + ", Post-medicine: " + postMedPEF;
+        return "Pre-medicine PEF set to " + preMedPEF + ", Post-medicine set to " + postMedPEF;
     }
 
     public boolean getHasPreAndPost() {

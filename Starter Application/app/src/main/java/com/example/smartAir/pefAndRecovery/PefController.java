@@ -1,16 +1,16 @@
 package com.example.smartAir.pefAndRecovery;
 
-public class PefController implements PEFEntryController {
+class PefController implements PefEntryController {
     private Float pEF;
     private Float pEFPost;
     private boolean hasPEFPost = false;
-    private static ZoneChangeLogger logger;
+    private PefLogger logger;
 
-    public static void setLogger(ZoneChangeLogger l) {
+    void setLogger(PefLogger l) {
         logger = l;
     }
 
-    public interface ZoneChangeLogger {
+    public interface PefLogger {
         void logPEF(Float pEF);
         void logPEF(Float preMedPEF, Float postMedPEF);
     }

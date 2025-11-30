@@ -2,7 +2,6 @@ package com.example.smartAir.triaging;
 
 import androidx.annotation.Nullable;
 
-import com.example.smartAir.data.DatabaseLogEntryData;
 import com.example.smartAir.domain.SevereSymptoms;
 import com.example.smartAir.domain.Zone;
 
@@ -13,8 +12,8 @@ import java.util.Set;
 public class TriageModel {
 
     public interface BreathInformationProvider {
-        double getPB();
-        double getPEF();
+        float getPB();
+        float getPEF();
     }
 
     private static BreathInformationProvider provider;
@@ -48,7 +47,7 @@ public class TriageModel {
     private Set<SevereSymptoms> severeSymptomsSet;
     private int rescueCount = 0;
     @Nullable
-    private Double currentPEF; // because it is optional we use the class instead
+    private Float currentPEF; // because it is optional we use the class instead
     private Date started;
     private TriageDecision decision = TriageDecision.UNDECIDED;
 
@@ -70,7 +69,7 @@ public class TriageModel {
 
     // Rescue Count, Peak flow, & Zone
 
-    public void setPEF(@Nullable Double f) {
+    public void setPEF(@Nullable Float f) {
         currentPEF = f;
     }
 
@@ -79,7 +78,7 @@ public class TriageModel {
             // Get the PEF some other way...
             return Zone.calculateZone(provider.getPEF(), provider.getPB());
         } else {
-            return Zone.calculateZone(Double.valueOf(this.currentPEF), provider.getPB());
+            return Zone.calculateZone(this.currentPEF, provider.getPB());
         }
     }
 

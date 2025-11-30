@@ -3,10 +3,10 @@ package com.example.smartAir.domain;
 import androidx.annotation.Nullable;
 
 public enum Zone {
-    RED, GREEN, YELLOW;
+    NOT_APPLICABLE, RED, GREEN, YELLOW;
 
-    public static Zone calculateZone(@Nullable Double pEF, double personalBest) {
-        if (pEF == null) return null;
+    public static Zone calculateZone(@Nullable Float pEF, Float personalBest) {
+        if (pEF == null || personalBest == null) return NOT_APPLICABLE;
 
         double percent = pEF / personalBest;
 
