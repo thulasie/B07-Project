@@ -8,14 +8,14 @@ import java.util.HashMap;
 public abstract class DatabaseLogEntryFactory {
     protected abstract DatabaseLogEntryData create();
 
-    public static DatabaseLogEntryFactory make (DatabaseLogType type) {
+    public static DatabaseLogEntryFactory make(DatabaseLogType type) {
         switch (type) {
             case TRIAGE:
                 return new TriageLogEntryFactory();
             case PEF:
                 return new PefFactory();
             default:
-                return new TriageLogEntryFactory();
+                return new DefaultFactory();
         }
     }
 
@@ -39,9 +39,15 @@ class PefFactory extends DatabaseLogEntryFactory {
 }
 
 class TriageLogEntryFactory extends DatabaseLogEntryFactory {
-
     @Override
     protected DatabaseLogEntryData create() {
         return new TriageLogEntryData();
+    }
+}
+
+class DefaultFactory extends DatabaseLogEntryFactory {
+    @Override
+    protected DatabaseLogEntryData create() {
+        return new DefaultEntry();
     }
 }

@@ -38,3 +38,9 @@ public abstract class DatabaseLogEntryData {
         }
     }
 }
+
+class DefaultEntry extends DatabaseLogEntryData {
+    public String getLogEntry() {
+        return "This is blank";
+    }
+}
