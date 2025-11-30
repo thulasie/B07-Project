@@ -1,6 +1,7 @@
 package com.example.smartAir.data;
 
 import com.example.smartAir.pefAndRecovery.Pef;
+import com.example.smartAir.pefAndRecovery.ZoneChangeData;
 import com.example.smartAir.triaging.TriageLogEntryData;
 
 import java.util.HashMap;
@@ -14,6 +15,8 @@ public abstract class DatabaseLogEntryFactory {
                 return new TriageLogEntryFactory();
             case PEF:
                 return new PefFactory();
+            case ZONE_CHANGE:
+                return new ZoneChangeFactory();
             default:
                 return new DefaultFactory();
         }
@@ -50,4 +53,9 @@ class DefaultFactory extends DatabaseLogEntryFactory {
     protected DatabaseLogEntryData create() {
         return new DefaultEntry();
     }
+}
+
+class ZoneChangeFactory extends DatabaseLogEntryFactory {
+    @Override
+    protected DatabaseLogEntryData create() {return new ZoneChangeData();}
 }

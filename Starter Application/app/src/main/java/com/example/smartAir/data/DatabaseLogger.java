@@ -86,19 +86,20 @@ public class DatabaseLogger {
                 .get().addOnCompleteListener((task) -> {
                     if (task.isSuccessful()) {
                         for (DataSnapshot s: task.getResult().getChildren()) {
-                            try {
-                                HashMap<String, Object> a = (HashMap) s.getValue();
-                                String type = (String) a.get("type");
-                                DatabaseLogEntryFactory creator = DatabaseLogEntryFactory.make(DatabaseLogType.valueOf(type));
+                            HashMap<String, Object> a = (HashMap) s.getValue();
+                            String type = (String) a.get("type");
+                            if (typesWanted.contains(DatabaseLogType.valueOf(type))) {
+                                try {
+                                    DatabaseLogEntryFactory creator = DatabaseLogEntryFactory.make(DatabaseLogType.valueOf(type));
 
-                                final DatabaseLogEntryData data = creator.createFromDB((HashMap<String, Object>) a.get("data"));
-                                final Date date = new Date(Long.parseLong(s.getKey()));
+                                    final DatabaseLogEntryData data = creator.createFromDB((HashMap<String, Object>) a.get("data"));
+                                    final Date date = new Date(Long.parseLong(s.getKey()));
 
-                                DatabaseLogEntry entry = new DatabaseLogEntry(date, (String) a.get("type"), data);
-
-                                list.add(entry);
-                            } catch (Exception e) {
-                                e.printStackTrace();
+                                    DatabaseLogEntry entry = new DatabaseLogEntry(date, (String) a.get("type"), data);
+                                    list.add(entry);
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
                             }
                         }
 

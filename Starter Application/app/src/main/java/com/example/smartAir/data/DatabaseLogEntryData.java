@@ -1,11 +1,15 @@
 package com.example.smartAir.data;
 
+import com.google.firebase.database.Exclude;
+
 import java.lang.reflect.Field;
-import java.util.Date;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
 public abstract class DatabaseLogEntryData {
+    @Exclude
     public abstract String getLogEntry();
 
     // This method is just a generic, override if needed
@@ -23,10 +27,19 @@ public abstract class DatabaseLogEntryData {
                     } else if (field.getType() == Double.class || field.getType() == double.class) {
                         field.set(this, l.doubleValue());
                     } else {
-                        field.set(this, l.floatValue());
+                        field.set(this, l);
                     }
                 } else {
-                    field.set(this, entry.getValue());
+                    Class<?> fieldClass = field.getType();
+                    System.out.println(fieldClass);
+                    if (fieldClass.isEnum()) {
+                        Method toEnum = fieldClass.getMethod("valueOf", String.class);
+
+                        field.set(this, toEnum.invoke(null, (String) entry.getValue()));
+                    } else {
+                        field.set(this, entry.getValue());
+
+                    }
                 }
             } catch (NoSuchFieldException e) {
                 // Handle cases where a map key doesn't match an object field
@@ -34,6 +47,10 @@ public abstract class DatabaseLogEntryData {
             } catch (IllegalAccessException e) {
                 System.err.println("No access to field: " + entry.getKey());
                 System.err.println("Try making this field private or provide your own implementation if needed...");
+            } catch (NoSuchMethodException e) {
+                throw new RuntimeException(e);
+            } catch (InvocationTargetException e) {
+                throw new RuntimeException(e);
             }
         }
     }

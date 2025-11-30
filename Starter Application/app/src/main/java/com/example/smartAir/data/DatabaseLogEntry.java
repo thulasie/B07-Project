@@ -2,6 +2,8 @@ package com.example.smartAir.data;
 
 import androidx.annotation.NonNull;
 
+import com.google.firebase.database.Exclude;
+
 import java.util.Date;
 
 public class DatabaseLogEntry {
@@ -26,6 +28,7 @@ public class DatabaseLogEntry {
         return data;
     }
 
+    @Exclude
     public Date accessDate() {
         return date;
     }
