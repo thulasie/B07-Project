@@ -20,12 +20,9 @@ public class TriageController {
     }
 
     interface DecisionCardView {
-        void callEmergency();
-
         void startAtHomeSteps();
 
         void setRemainingTriageTime(long timeRemaining);
-        void timerEndCallback();
 
     }
 
@@ -136,7 +133,7 @@ public class TriageController {
 
     // Recent history
 
-    void setPEF(@Nullable Float f) {
+    void setPEF(@Nullable Double f) {
         model.setPEF(f);
     }
 

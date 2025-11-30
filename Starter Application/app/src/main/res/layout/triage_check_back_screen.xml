@@ -18,43 +18,27 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <LinearLayout
-        android:id="@+id/triage_check_back_switch_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/triage_check_back_feeling_worse_label">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:text="No"/>
-        <Switch
+
+        <CheckBox
             android:id="@+id/triage_check_back_feeling_worse_switch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:text="Yes"/>
-    </LinearLayout>
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/triage_check_back_feeling_worse_label"/>
+
 
     <TextView
         android:id="@+id/triage_check_back_symptoms_label"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:text="Are you experiencing any of these?"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/triage_check_back_switch_container" />
+        app:layout_constraintTop_toBottomOf="@id/triage_check_back_feeling_worse_switch" />
 
     <com.google.android.material.chip.ChipGroup
         android:id="@+id/triage_check_back_symptoms_entry"

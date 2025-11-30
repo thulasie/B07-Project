@@ -1,18 +1,30 @@
 package com.example.smartAir.data;
 
 import java.lang.reflect.Field;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
 public abstract class DatabaseLogEntryData {
-    public abstract String getLogEntry(); // Nothing for now...
+    public abstract String getLogEntry();
 
+    // This method is just a generic, override if needed
     public void setEntriesWithDB(HashMap<String, Object> map) {
         for (Map.Entry<String, Object> entry : map.entrySet()) {
             try {
                 Field field = this.getClass().getDeclaredField(entry.getKey());
                 if (entry.getValue() instanceof Long) {
-                    field.set(this, ((Long) entry.getValue()).intValue());
+                    Long l = (Long) entry.getValue();
+
+                    if (field.getType() == Integer.class || field.getType() == int.class) {
+                        field.set(this, l.intValue());
+                    } else if (field.getType() == Float.class || field.getType() == float.class) {
+                        field.set(this, l.floatValue());
+                    } else if (field.getType() == Double.class || field.getType() == double.class) {
+                        field.set(this, l.doubleValue());
+                    } else {
+                        field.set(this, l.floatValue());
+                    }
                 } else {
                     field.set(this, entry.getValue());
                 }
@@ -24,21 +36,5 @@ public abstract class DatabaseLogEntryData {
                 System.err.println("Try making this field private or provide your own implementation if needed...");
             }
         }
-    }
-
-    static DatabaseLogEntryData createEntryData (DatabaseLogType type, HashMap<String, Object> map) {
-        Class entryClass = type.getAssociatedClass();
-        DatabaseLogEntryData a;
-
-        try {
-            a = (DatabaseLogEntryData) type.getAssociatedClass().newInstance();
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
-        }
-
-        a.setEntriesWithDB(map);
-
-        return a;
     }
 }

@@ -43,7 +43,6 @@ public class DecisionCard extends Fragment implements TriageController.DecisionC
         triageController.setDecisionCardView(this);
     }
 
-    @Override
     public void callEmergency() {
         ((TextView) requireView().findViewById(R.id.triage_decision_description)).setText("(Emergency called. Don't want to implement this functionality FR though)");
         Button proceed = (Button) getLayoutInflater().inflate(R.layout.triage_decision_button, null);
@@ -74,11 +73,6 @@ public class DecisionCard extends Fragment implements TriageController.DecisionC
     @Override
     public void setRemainingTriageTime(long timeRemaining) {
         ((TextView)requireView().findViewById(R.id.triage_decision_timer)).setText(formatTime(timeRemaining));
-    }
-
-    @Override
-    public void timerEndCallback() {
-        System.out.println("TriageController: Autoescalating");
     }
 
     // Helpers

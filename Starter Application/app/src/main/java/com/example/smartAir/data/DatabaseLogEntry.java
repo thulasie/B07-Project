@@ -22,7 +22,7 @@ public class DatabaseLogEntry {
         return type.toString();
     }
 
-    public Object getData() {
+    public DatabaseLogEntryData getData() {
         return data;
     }
 
@@ -37,6 +37,6 @@ public class DatabaseLogEntry {
 
     @NonNull @Override
     public String toString() {
-        return type.toString() + "<"+ data.getClass() + ">: " + data.toString();
+        return type.toString() + "<"+ date + ">: " + data.getLogEntry();
     }
 }

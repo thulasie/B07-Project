@@ -12,6 +12,8 @@ import androidx.fragment.app.Fragment;
 import com.example.smartAir.data.DatabaseLogger;
 import com.example.smartAir.data.DatabaseLogEntry;
 import com.example.smartAir.data.DatabaseLogType;
+import com.example.smartAir.pefAndRecovery.Pef;
+import com.example.smartAir.pefAndRecovery.PefLog;
 import com.example.smartAir.triaging.TriageModel;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -35,29 +37,8 @@ public class DebugTestDriver extends Fragment {
         FirebaseAuth auth = FirebaseAuth.getInstance();
         auth.signInWithEmailAndPassword("t.gu@mail.utoronto.ca", "xrpentxkrt");
 
-        TriageModel m = new TriageModel();
-        m.startTriageSession();
-        m.setRescueCount(3);
-        m.setDecision(TriageModel.TriageDecision.UNDECIDED);
-
-        //log.startTriage(m, "ignored");
-
-
-        HashSet<DatabaseLogType> types = new HashSet<>();
-        types.add(DatabaseLogType.MEDICINE);
-        types.add(DatabaseLogType.TRIAGE);
-
-
-        DatabaseLogger databaseLogger = new DatabaseLogger(auth.getUid());
-
-        ArrayList<DatabaseLogEntry> output = new ArrayList<>();
-        databaseLogger.getLogs(types, output, () -> {
-            printMessage("FINISHED ALL");
-            output.sort(Comparator.comparing(DatabaseLogEntry::accessDate));
-            for (DatabaseLogEntry e: output) {
-                printMessage(e.toString());
-            }
-        });
+        PefLog.initializePefLog("testUserID");
+        PefLog.getSingletonInstance().logPEF(10F, 15F);
     }
 
     void printMessage(CharSequence msg) {

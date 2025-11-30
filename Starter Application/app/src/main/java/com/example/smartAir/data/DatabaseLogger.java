@@ -22,6 +22,9 @@ public class DatabaseLogger {
     }
 
     private static FirebaseDatabase instance = FirebaseDatabase.getInstance();
+    private static DatabaseLogger singleton;
+
+
 
     public void addLog(DatabaseLogEntry entry) {
         HashMap<String, Object> values = new HashMap<>();
@@ -42,14 +45,20 @@ public class DatabaseLogger {
                 if (task.isSuccessful()) {
                     System.out.println("hey");
                     for (DataSnapshot s : task.getResult().getChildren()) {
-                        HashMap<String, Object> a = (HashMap) s.getValue();
+                        try {
+                            HashMap<String, Object> a = (HashMap) s.getValue();
+                            String type = (String) a.get("type");
+                            DatabaseLogEntryFactory creator = DatabaseLogEntryFactory.make(DatabaseLogType.valueOf(type));
 
-                        final DatabaseLogEntryData data = DatabaseLogEntryData.createEntryData(DatabaseLogType.valueOf((String)a.get("type")), (HashMap) a.get("data"));
-                        final Date date = new Date(Long.parseLong(s.getKey()));
+                            final DatabaseLogEntryData data = creator.createFromDB((HashMap<String, Object>) a.get("data"));
+                            final Date date = new Date(Long.parseLong(s.getKey()));
 
-                        DatabaseLogEntry entry = new DatabaseLogEntry(date, (String) a.get("type"), data);
+                            DatabaseLogEntry entry = new DatabaseLogEntry(date, (String) a.get("type"), data);
 
-                        list.add(entry);
+                            list.add(entry);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
                     }
                 }
 
@@ -77,14 +86,20 @@ public class DatabaseLogger {
                 .get().addOnCompleteListener((task) -> {
                     if (task.isSuccessful()) {
                         for (DataSnapshot s: task.getResult().getChildren()) {
-                            HashMap<String, Object> a = (HashMap) s.getValue();
+                            try {
+                                HashMap<String, Object> a = (HashMap) s.getValue();
+                                String type = (String) a.get("type");
+                                DatabaseLogEntryFactory creator = DatabaseLogEntryFactory.make(DatabaseLogType.valueOf(type));
 
-                            final DatabaseLogEntryData data = DatabaseLogEntryData.createEntryData(DatabaseLogType.valueOf((String)a.get("type")), (HashMap) a.get("data"));
-                            final Date date = new Date(Long.parseLong(s.getKey()));
+                                final DatabaseLogEntryData data = creator.createFromDB((HashMap<String, Object>) a.get("data"));
+                                final Date date = new Date(Long.parseLong(s.getKey()));
 
-                            DatabaseLogEntry entry = new DatabaseLogEntry(date, (String) a.get("type"), data);
+                                DatabaseLogEntry entry = new DatabaseLogEntry(date, (String) a.get("type"), data);
 
-                            list.add(entry);
+                                list.add(entry);
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
                         }
 
                         callback.finalCallback();

@@ -48,7 +48,7 @@ public class TriageModel {
     private Set<SevereSymptoms> severeSymptomsSet;
     private int rescueCount = 0;
     @Nullable
-    private Float currentPEF; // because it is optional we use the class instead
+    private Double currentPEF; // because it is optional we use the class instead
     private Date started;
     private TriageDecision decision = TriageDecision.UNDECIDED;
 
@@ -70,7 +70,7 @@ public class TriageModel {
 
     // Rescue Count, Peak flow, & Zone
 
-    public void setPEF(@Nullable Float f) {
+    public void setPEF(@Nullable Double f) {
         currentPEF = f;
     }
 
@@ -79,7 +79,7 @@ public class TriageModel {
             // Get the PEF some other way...
             return Zone.calculateZone(provider.getPEF(), provider.getPB());
         } else {
-            return Zone.calculateZone(this.currentPEF, provider.getPB());
+            return Zone.calculateZone(Double.valueOf(this.currentPEF), provider.getPB());
         }
     }
 
