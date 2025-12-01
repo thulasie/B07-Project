@@ -16,12 +16,28 @@ import com.example.smartAir.R;
 import com.example.smartAir.adapter.InventoryAdapter;
 import com.example.smartAir.firebase.Sync;
 import com.example.smartAir.model.InventoryItem;
+import com.example.smartAir.model.MedicineLog;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class InventoryFragment extends Fragment {
+
+    public interface InventoryLoader { // TODO create implementation of this
+        long getID();
+        void getLogs(List<InventoryItem> buf, Callback c);
+    }
+
+    interface Callback {
+        void run();
+    }
+
     private InventoryAdapter adapter;
+    private InventoryLoader loader;
+
+    public void setLoader(InventoryLoader loader) {
+        this.loader = loader;
+    }
 
     @Nullable
     @Override
@@ -50,7 +66,7 @@ public class InventoryFragment extends Fragment {
             it.expiryDate = "2026-03-01";
             it.parentMarked = true;
 
-            long id = 0; //AppDatabase.getInstance(getContext()).inventoryDao().insert(it); TODO replace
+            long id = loader.getID(); //AppDatabase.getInstance(getContext()).inventoryDao().insert(it); TODO replace
             it.id = id;
 
             new Sync().syncInventoryItem(it);
@@ -60,7 +76,9 @@ public class InventoryFragment extends Fragment {
     }
 
     private void loadItems() {
-        List<InventoryItem> items = new ArrayList<>();//AppDatabase.getInstance(getContext()).inventoryDao().getAll(); TODO replace
-        adapter.setItems(items);
+        List<InventoryItem> buf = new ArrayList<>();//AppDatabase.getInstance(getContext()).inventoryDao().getAll();
+        loader.getLogs(buf, ()-> {
+            adapter.setItems(buf);
+        });
     }
 }

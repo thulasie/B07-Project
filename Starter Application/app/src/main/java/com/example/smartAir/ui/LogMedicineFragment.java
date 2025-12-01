@@ -24,7 +24,21 @@ import java.util.List;
 
 public class LogMedicineFragment extends Fragment {
 
+    public interface LogMedicineLoader { // TODO create implementation of this
+        long getID();
+        void getLogs(List<MedicineLog> buf, Callback c);
+    }
+
+    interface Callback {
+        void run();
+    }
+
     private MedicineLogAdapter adapter;
+    private LogMedicineLoader loader;
+
+    public void setLoader(LogMedicineLoader loader) {
+        this.loader = loader;
+    }
 
     @Nullable
     @Override
@@ -57,7 +71,7 @@ public class LogMedicineFragment extends Fragment {
             log.dose = dosePicker.getValue();
             log.timestamp = System.currentTimeMillis();
 
-            long id = 0;//AppDatabase.getInstance(getContext()).medicineLogDao().insert(log); TODO replace
+            long id = loader.getID();//AppDatabase.getInstance(getContext()).medicineLogDao().insert(log);
             log.id = id;
 
             new Sync().syncMedicineLog(log);
@@ -67,7 +81,7 @@ public class LogMedicineFragment extends Fragment {
     }
 
     private void loadLogs() {
-        List<MedicineLog> items = new ArrayList<>(); //AppDatabase.getInstance(getContext()).medicineLogDao().getAll(); TODO replace
-        adapter.setItems(items);
+        List<MedicineLog> buf = new ArrayList<>(); //AppDatabase.getInstance(getContext()).medicineLogDao().getAll();
+        loader.getLogs(buf, () -> adapter.setItems(buf));
     }
 }

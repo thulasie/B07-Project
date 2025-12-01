@@ -14,7 +14,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.smartAir.R;
 import com.example.smartAir.data.R6Repository;
-import com.example.smartAir.R6logic.AdherenceCalculator;
+import com.example.smartAir.logic.AdherenceCalculator;
 import com.example.smartAir.logic.R6AlertManager;
 import com.example.smartAir.R6model.ControllerDoseEvent;
 import com.example.smartAir.R6model.RescueEvent;
