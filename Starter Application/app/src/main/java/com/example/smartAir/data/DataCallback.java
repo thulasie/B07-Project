@@ -27,10 +27,9 @@ public class DataCallback {
 //class ExampleModelClass {
 //      // In your model class add an interface like this below:
 //    public interface ExampleModelClassDatabaseInterface {
-//          // Add methods as needed, which will be used whenever this wants to update data
-//          // or get data by some means
+//          // Add methods as needed
 //          // a "slug" basically just refers to something that can identify an object or a resource
-//          // Please use a string or integer for the slug
+//          // Please use a string or integer
 //        void updateDataModel1(anyType insertion, SlugType slug, DataCallback.SingularCallback<anyType> callback); // the type in the callback doesn't matter fo rhtis one
 //
 //        void fetchDataModel1(SlugType slug, DataCallback.singularCallback<anyType> callback); //
