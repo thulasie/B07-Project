@@ -8,6 +8,10 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * When overriding this class, please also create an enum in DatabaseLogType, and add a case in
+ * the switch statement of DatabaseLogEntryFactory
+ */
 public abstract class DatabaseLogEntryData {
     @Exclude
     public abstract String getLogEntry();
@@ -47,10 +51,8 @@ public abstract class DatabaseLogEntryData {
             } catch (IllegalAccessException e) {
                 System.err.println("No access to field: " + entry.getKey());
                 System.err.println("Try making this field private or provide your own implementation if needed...");
-            } catch (NoSuchMethodException e) {
-                throw new RuntimeException(e);
-            } catch (InvocationTargetException e) {
-                throw new RuntimeException(e);
+            } catch (NoSuchMethodException | InvocationTargetException e) {
+                e.printStackTrace();
             }
         }
     }

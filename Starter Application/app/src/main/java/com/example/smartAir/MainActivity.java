@@ -1,6 +1,7 @@
 package com.example.smartAir;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -9,8 +10,11 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.smartAir.pefAndRecovery.ZoneChangeMonitor;
 import com.example.smartAir.pefAndRecovery.ZoneEntryFacade;
 import com.example.smartAir.triaging.TriageFragment;
+import com.example.smartAir.triaging.TriageScreenCreator;
+import com.example.smartAir.triaging.ZoneStepsProvider;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.chip.Chip;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
@@ -31,8 +35,25 @@ public class MainActivity extends AppCompatActivity {
                     System.out.println("Logged in !");
                     FirebaseAuth auth = FirebaseAuth.getInstance();
 
+                    TriageScreenCreator creator = new TriageScreenCreator(auth.getUid());
+
                     ZoneEntryFacade.changeUser(auth.getUid(), () -> {
-                        loadFragment(ZoneEntryFacade.createPersonalBestEntry());
+                        creator.setHomeController(() -> {
+                            System.out.println("Going home...");
+                        });
+
+                        creator.setZoneStepsProvider((inflater, zone) -> {
+                            Chip view = (Chip) inflater.inflate(R.layout.triage_symptom_chip, null);
+                            view.setText(zone + " plan");
+
+                            return view;
+                        });
+
+                        creator.setBreathInformationProvider(ZoneEntryFacade.getBreathProvider());
+
+
+
+                        loadFragment(creator.createTriageFragment());
                     });
                 });
     }

@@ -2,6 +2,9 @@ package com.example.smartAir.pefAndRecovery;
 
 import android.view.View;
 
+import com.example.smartAir.domain.Zone;
+import com.example.smartAir.triaging.BreathInformationProvider;
+
 public class ZoneEntryFacade {
     public interface CallbackGenerator {
         ExitScreenAction callback (String userID);
@@ -57,5 +60,32 @@ public class ZoneEntryFacade {
         frag.setOnExit(singleton.gen.callback(singleton.userID));
 
         return frag;
+    }
+
+    public static Zone enterPef(Float f) {
+        PefLog.getSingletonInstance().logPEF(f);
+        return ZoneChangeMonitor.getSingletonInstance().getCurrentZone();
+    }
+
+    public static BreathInformationProvider getBreathProvider() {
+        return new BreathInformationProvider() {
+            private Zone zone = ZoneChangeMonitor.getSingletonInstance().getCurrentZone();
+            private Float personalBest = PersonalBestLog.getSingletonInstance().getPersonalBest();
+
+            @Override
+            public Float getPB() {
+                return personalBest;
+            }
+
+            @Override
+            public Zone getZone() {
+                return zone;
+            }
+
+            @Override
+            public void setPEF(Float f) {
+                PefLog.getSingletonInstance().logPEF(f);
+            }
+        };
     }
 }

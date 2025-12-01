@@ -66,11 +66,10 @@ public class ZoneChangeMonitor {
         ZoneChangeData data = new ZoneChangeData(this.currentZone, newZone);
         logger.addLog(new DatabaseLogEntry(new Date(), "ZONE_CHANGE", data));
         this.currentZone = newZone;
-
-        // TODO
     }
 
     public Zone getCurrentZone() {
+        System.out.println("Zone change monitor: gave zone " + this.currentZone);
         return this.currentZone;
     }
 }

@@ -9,12 +9,18 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.smartAir.R;
 
-public class TriageFragment extends Fragment implements TriageController.TriageFragmentSwitcher{
+public class TriageFragment extends Fragment implements TriageFragmentSwitcher{
 
-    TriageController controller = new TriageController(this);
+    TriageController controller;
+    HomeController exitController;
+    ZoneStepsProvider zoneStepsProvider;
 
     public TriageFragment() {
         super(R.layout.triage_fragment);
+    }
+
+    void setTriageController (TriageController c) {
+        this.controller = c;
     }
 
     @Override
@@ -41,7 +47,9 @@ public class TriageFragment extends Fragment implements TriageController.TriageF
 
     @Override
     public void startDecisionCard() {
-        loadFragment(new DecisionCard(controller));
+        DecisionCard frag = new DecisionCard(controller);
+        frag.setZoneStepsProvider(zoneStepsProvider);
+        loadFragment(frag);
     }
 
     @Override
@@ -51,8 +59,18 @@ public class TriageFragment extends Fragment implements TriageController.TriageF
 
     @Override
     public void showResolutionScreen() {
-        loadFragment(new TriageResolutionScreen(controller));
+        TriageResolutionScreen frag = new TriageResolutionScreen(controller);
+        frag.setHomeController(exitController);
+        loadFragment(frag);
         // Make sure to include a return home controller...
+    }
+
+    public void setZoneStepsProvider(ZoneStepsProvider zoneStepsProvider) {
+        this.zoneStepsProvider = zoneStepsProvider;
+    }
+
+    public void setExitController(HomeController c) {
+        this.exitController = c;
     }
 }
 

@@ -11,16 +11,12 @@ import androidx.fragment.app.Fragment;
 
 import com.example.smartAir.R;
 
-public class TriageResolutionScreen extends Fragment implements TriageController.TriageResolver {
+public class TriageResolutionScreen extends Fragment implements TriageResolver {
     private TriageController triageController;
     private HomeController controller = () -> System.out.println("No home controller set.");
 
     public TriageResolutionScreen() {
         super(R.layout.triage_generic_screen);
-    }
-
-    public interface HomeController {
-        void returnToHome();
     }
 
     public TriageResolutionScreen(TriageController t) {
@@ -41,8 +37,6 @@ public class TriageResolutionScreen extends Fragment implements TriageController
         Button button = requireView().findViewById(R.id.triage_generic_button);
         TextView title = requireView().findViewById(R.id.triage_generic_title);
         title.setText("We suggest calling the emergency room");
-
-
 
         button.setOnClickListener((view) -> {
             System.out.println("Emergency called...");

@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.smartAir.R;
 import com.example.smartAir.domain.SevereSymptoms;
+import com.google.android.material.checkbox.MaterialCheckBox;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
 
@@ -46,9 +47,7 @@ public class CheckBackScreen extends Fragment {
             symptom_box.addView(a);
         };
 
-        Switch feelingWorseSwitch = view.findViewById(R.id.triage_check_back_feeling_worse_switch);
-
-        feelingWorseSwitch.setChecked(triageController.isFeelingBetter());
+        MaterialCheckBox feelingWorseSwitch = view.findViewById(R.id.triage_check_back_feeling_worse_switch);
 
         feelingWorseSwitch.setOnCheckedChangeListener((button, newState) -> {
             triageController.setFeelingBetter(newState);

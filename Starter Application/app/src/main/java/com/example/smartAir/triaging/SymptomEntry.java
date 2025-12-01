@@ -28,7 +28,7 @@ public class SymptomEntry extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         ChipGroup symptom_box = view.findViewById(R.id.triage_symptoms);
-        Button b = (Button) view.findViewById(R.id.triage_symptoms_button);
+        Button b = view.findViewById(R.id.triage_symptoms_button);
 
         for (SevereSymptoms severeSymptoms : SevereSymptoms.values()) {
             Chip a = (Chip) getLayoutInflater().inflate(R.layout.triage_symptom_chip, null, false);

@@ -13,11 +13,7 @@ import com.example.smartAir.R;
 import com.example.smartAir.domain.Zone;
 import com.google.android.material.chip.Chip;
 
-public class DecisionCard extends Fragment implements TriageController.DecisionCardView {
-
-    public interface ZoneStepsProvider {
-        View getZoneAlignedSteps(Zone z);
-    }
+public class DecisionCard extends Fragment implements DecisionCardView {
 
     private TriageController triageController;
 
@@ -32,21 +28,13 @@ public class DecisionCard extends Fragment implements TriageController.DecisionC
         this.triageController = t;
     }
 
-    @Override
-    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-        zoneStepsProvider = z -> {
-            Chip v = (Chip) getLayoutInflater().inflate(R.layout.triage_symptom_chip, null);
-            v.setText(z.name());
-            return v;
-        };
-
-        triageController.setDecisionCardView(this);
+    public void setZoneStepsProvider(ZoneStepsProvider zoneStepsProvider) {
+        this.zoneStepsProvider = zoneStepsProvider;
     }
 
-    public void callEmergency() {
-        ((TextView) requireView().findViewById(R.id.triage_decision_description)).setText("(Emergency called. Don't want to implement this functionality FR though)");
-        Button proceed = (Button) getLayoutInflater().inflate(R.layout.triage_decision_button, null);
-        proceed.setText("Call emergency now");
+    @Override
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+        triageController.setDecisionCardView(this);
     }
 
     @Override
@@ -55,19 +43,15 @@ public class DecisionCard extends Fragment implements TriageController.DecisionC
 
         ((TextView) view.findViewById(R.id.triage_decision_description)).setText("Treat your symptoms...");
 
-        LinearLayout l = requireView().findViewById(R.id.triage_decision_action_box);
-
-        Button betterButton = (Button) getLayoutInflater().inflate(R.layout.triage_decision_button, null);
-        betterButton.setText("I'm feeling better!");
+        Button betterButton = requireView().findViewById(R.id.triage_decision_left_button);
         betterButton.setOnClickListener((view1) -> triageController.concludeTriage());
 
-        Button worseButton = (Button) getLayoutInflater().inflate(R.layout.triage_decision_button, null);
-        worseButton.setText("I'm feeling worse...");
-        worseButton.setOnClickListener((view1) -> triageController.enterCheckBack(false));
+        Button worseButton = requireView().findViewById(R.id.triage_decision_right_button);
+        worseButton.setOnClickListener((view1) -> triageController.enterCheckBack());
 
-        l.addView(zoneStepsProvider.getZoneAlignedSteps(triageController.getZone()));
-        l.addView(betterButton);
-        l.addView(worseButton);
+        LinearLayout l = requireView().findViewById(R.id.triage_decision_action_box);
+        l.addView(zoneStepsProvider.getZoneAlignedSteps(getLayoutInflater(), triageController.getZone()));
+        setRemainingTriageTime(triageController.getTimeLeft());
     }
 
     @Override
@@ -78,6 +62,10 @@ public class DecisionCard extends Fragment implements TriageController.DecisionC
     // Helpers
 
     private String formatTime (long i) {
-        return String.valueOf(Math.floor(i / 1000.));
+        long secondsTotal = i / 1000;
+        long secondsOnly = secondsTotal % 60;
+        long minutes = secondsTotal / 60;
+
+        return "We'll check back in " + String.format("%02d", minutes) + ":" + String.format("%02d", secondsOnly) ;
     }
 }

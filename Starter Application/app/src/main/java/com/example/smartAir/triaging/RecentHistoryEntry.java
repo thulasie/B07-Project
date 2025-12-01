@@ -28,7 +28,7 @@ public class RecentHistoryEntry extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         EditText pEFEntry = view.findViewById(R.id.triage_recent_history_pef);
         EditText rescueCountEntry = view.findViewById(R.id.triage_recent_history_rescue_count);
-        Button submit = (Button) view.findViewById(R.id.triage_recent_history_button);
+        Button submit = view.findViewById(R.id.triage_recent_history_button);
 
         pEFEntry.addTextChangedListener(new TextWatcher() {
             @Override

@@ -9,34 +9,6 @@ import com.example.smartAir.domain.Zone;
 
 public class TriageController {
 
-    interface TriageFragmentSwitcher {
-
-        void startSymptomEntry();
-        void startRecentHistoryEntry();
-        void startDecisionCard();
-        void startCheckBack();
-
-        void showResolutionScreen();
-    }
-
-    interface DecisionCardView {
-        void startAtHomeSteps();
-
-        void setRemainingTriageTime(long timeRemaining);
-
-    }
-
-    interface TriageResolver {
-        void callEmergency();
-        void showTriageEnd();
-    }
-
-    interface AlerterService {
-        void notifyOfStart();
-        void notifyOfEmergency();
-        void notifyOfEscalation();
-    }
-
     enum TriageState {
         ENTRY_SCREEN, SYMPTOM_SCREEN, RECENT_HISTORY, DECISION_CARD, CALLING_EMERGENCY,
         STARTING_TREATMENT_PLAN, CHECK_BACK, FINISH
@@ -46,17 +18,6 @@ public class TriageController {
         this.state = TriageState.ENTRY_SCREEN;
         this.model = new TriageModel();
         this.triageFragmentSwitcher = s;
-        TriageModel.setProvider(new TriageModel.BreathInformationProvider() {
-            @Override
-            public float getPB() {
-                return 10;
-            }
-
-            @Override
-            public float getPEF() {
-                return 5;
-            }
-        });
     }
 
     private final long TIMER_LENGTH = 15000;
@@ -66,22 +27,23 @@ public class TriageController {
     private DecisionCardView decisionCardView;
     private CountDownTimer fireTimer;
     private boolean feelingBetter = false;
-    private AlerterService alerter = new AlerterService() {
-        @Override
-        public void notifyOfStart() {
-            System.out.println("rump AlerterterService: Triage started!");
-        }
+    private AlerterService alerter;
+    private Float temporaryPEF;
+    private long timeLeft = -1L;
 
-        @Override
-        public void notifyOfEmergency() {
-            System.out.println("rump AlerterterService: Emergency started!");
-        }
+    // Initialization methods
 
-        @Override
-        public void notifyOfEscalation() {
-            System.out.println("rump AlerterterService: Escalation started!");
-        }
-    };
+    void setInformationProvider(BreathInformationProvider provider) {
+        model.setProvider(provider);
+    }
+
+    void setAlerter(AlerterService alerter) {
+        this.alerter = alerter;
+    }
+
+    void setTriageLogger(TriageLogger l) {
+        model.setLogger(l);
+    }
 
     // Starting the process
 
@@ -90,15 +52,16 @@ public class TriageController {
         fireTimer = new CountDownTimer(TIMER_LENGTH, 1000) {
             @Override
             public void onFinish() {
+                timeLeft = 0;
                 if (getState() == TriageState.STARTING_TREATMENT_PLAN) {
                     alerter.notifyOfEscalation();
-                    enterCheckBack(false);
+                    enterCheckBack();
                 }
             }
 
             @Override
             public void onTick(long millisUntilFinished) {
-                System.out.println("time left: " + millisUntilFinished);
+                timeLeft = millisUntilFinished;
                 if (getState() == TriageState.STARTING_TREATMENT_PLAN) {
                     decisionCardView.setRemainingTriageTime(millisUntilFinished);
                 }
@@ -134,7 +97,7 @@ public class TriageController {
     // Recent history
 
     void setPEF(@Nullable Float f) {
-        model.setPEF(f);
+        this.temporaryPEF = f;
     }
 
     void setRescueCount(int c) {
@@ -142,6 +105,7 @@ public class TriageController {
     }
 
     void submitRecentHistory() {
+        model.setPEF(this.temporaryPEF);
         triageFragmentSwitcher.startDecisionCard();
         this.state = TriageState.DECISION_CARD;
     }
@@ -156,13 +120,13 @@ public class TriageController {
             decisionCardView.startAtHomeSteps();
             model.setDecision(TriageModel.TriageDecision.HOME_STEPS);
             state = TriageState.STARTING_TREATMENT_PLAN;
+            model.recordZoneAlignedStepsInGuidance();
         }
     }
 
     // Second screening
 
-    void enterCheckBack(boolean feelingBetter) {
-        this.feelingBetter = feelingBetter;
+    void enterCheckBack() {
         this.triageFragmentSwitcher.startCheckBack();
         this.state = TriageState.CHECK_BACK;
     }
@@ -171,12 +135,8 @@ public class TriageController {
         feelingBetter = b;
     }
 
-    boolean isFeelingBetter() {
-        return feelingBetter;
-    }
-
     void submitCheckBack() {
-        if (!isFeelingBetter() || model.hasSevereSymptoms()) {
+        if (!feelingBetter || model.hasSevereSymptoms()) {
             startEmergency();
         } else {
             concludeTriage();
@@ -190,7 +150,10 @@ public class TriageController {
         state = TriageState.CALLING_EMERGENCY;
         alerter.notifyOfEmergency();
         model.setDecision(TriageModel.TriageDecision.EMERGENCY_CALLED);
+        model.addGuidance("Asked user to call emergency");
         triageFragmentSwitcher.showResolutionScreen();
+
+        model.updateLog();
     }
 
     // but if they do get better
@@ -202,6 +165,8 @@ public class TriageController {
         fireTimer.cancel();
         model.setDecision(TriageModel.TriageDecision.RESOLVED);
         triageFragmentSwitcher.showResolutionScreen();
+
+        model.updateLog();
     }
 
     // Show triage results
@@ -222,6 +187,10 @@ public class TriageController {
 
     TriageState getState() {
         return this.state;
+    }
+
+    long getTimeLeft () {
+        return timeLeft;
     }
 
 }
