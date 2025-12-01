@@ -23,7 +23,7 @@ public class DashboardFragment extends Fragment {
                              @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.dashboard_fragment, container, false);
+        View view = inflater.inflate(R.layout.fragment_parent_dashboard, container, false);
 
         todayZoneText = view.findViewById(R.id.todayZoneText);
         lastRescueText = view.findViewById(R.id.lastRescueText);
