@@ -37,8 +37,7 @@ public class HomeFragment extends Fragment {
 
         buttonSpinner.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                loadFragment(new SpinnerFragment());
+            public void onClick(View v) {loadFragment(new TempParentHomeFragment());
             }
         });
 
