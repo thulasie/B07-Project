@@ -109,6 +109,14 @@
                     android:id="@+id/trendChart"
                     android:layout_width="match_parent"
                     android:layout_height="60dp" />
+
+                <TextView
+                    android:id="@+id/textTrendSummary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:text="0" />
             </LinearLayout>
         </LinearLayout>
 
@@ -121,6 +129,13 @@
 
         <Button
             android:id="@+id/buttonExportPdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Export provider report"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/buttonGenerateReport"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Export provider report"

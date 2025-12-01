@@ -8,7 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
-/*
+
 public class DashboardFragment extends Fragment {
 
     private TextView todayZoneText, lastRescueText, weeklyCountText, trendSummaryText;
@@ -25,11 +25,11 @@ public class DashboardFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_parent_dashboard, container, false);
 
-        todayZoneText = view.findViewById(R.id.todayZoneText);
-        lastRescueText = view.findViewById(R.id.lastRescueText);
-        weeklyCountText = view.findViewById(R.id.weeklyCountText);
-        trendSummaryText = view.findViewById(R.id.trendSummaryText);
-        generateReportButton = view.findViewById(R.id.generateReportButton);
+        todayZoneText = view.findViewById(R.id.textTodayZone);
+        lastRescueText = view.findViewById(R.id.textLastRescue);
+        weeklyCountText = view.findViewById(R.id.textWeeklyRescue);
+        trendSummaryText = view.findViewById(R.id.textTrendSummary);
+        generateReportButton = view.findViewById(R.id.buttonGenerateReport);
 
         viewModel = new ViewModelProvider(this).get(DashboardViewModel.class);
 
@@ -58,5 +58,3 @@ public class DashboardFragment extends Fragment {
                 summary -> trendSummaryText.setText("Trend Summary: " + summary));
     }
 }
-
-*/
