@@ -1,5 +1,5 @@
 package com.example.smartAir.dao;
-
+/*
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
@@ -20,3 +20,4 @@ public interface BadgeDao {
     @Update
     void update(Badge badge);
 }
+*/

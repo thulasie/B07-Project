@@ -10,11 +10,12 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.smartAir.AppDatabase;
+//import com.example.smartAir.AppDatabase;
 import com.example.smartAir.R;
 import com.example.smartAir.adapter.BadgeAdapter;
 import com.example.smartAir.model.Badge;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MotivationFragment extends Fragment {
@@ -39,7 +40,8 @@ public class MotivationFragment extends Fragment {
     }
 
     private void loadBadges() {
-        List<Badge> badges = AppDatabase.getInstance(getContext()).badgeDao().getAll();
+        List<Badge> badges = new ArrayList<>();
+        // = AppDatabase.getInstance(getContext()).badgeDao().getAll(); // TODO replace badge loader
         adapter.setItems(badges);
     }
 }

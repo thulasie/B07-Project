@@ -11,12 +11,13 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.smartAir.AppDatabase;
+//import com.example.smartAir.AppDatabase;
 import com.example.smartAir.R;
 import com.example.smartAir.adapter.InventoryAdapter;
 import com.example.smartAir.firebase.Sync;
 import com.example.smartAir.model.InventoryItem;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class InventoryFragment extends Fragment {
@@ -49,7 +50,7 @@ public class InventoryFragment extends Fragment {
             it.expiryDate = "2026-03-01";
             it.parentMarked = true;
 
-            long id = AppDatabase.getInstance(getContext()).inventoryDao().insert(it);
+            long id = 0; //AppDatabase.getInstance(getContext()).inventoryDao().insert(it); TODO replace
             it.id = id;
 
             new Sync().syncInventoryItem(it);
@@ -59,7 +60,7 @@ public class InventoryFragment extends Fragment {
     }
 
     private void loadItems() {
-        List<InventoryItem> items = AppDatabase.getInstance(getContext()).inventoryDao().getAll();
+        List<InventoryItem> items = new ArrayList<>();//AppDatabase.getInstance(getContext()).inventoryDao().getAll(); TODO replace
         adapter.setItems(items);
     }
 }

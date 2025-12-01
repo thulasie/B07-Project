@@ -1,5 +1,5 @@
 package com.example.smartAir.dao;
-
+/*
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -24,3 +24,4 @@ public interface InventoryDao {
     @Delete
     void delete(InventoryItem item);
 }
+*/

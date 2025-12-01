@@ -13,12 +13,13 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.smartAir.AppDatabase;
+//import com.example.smartAir.AppDatabase;
 import com.example.smartAir.R;
 import com.example.smartAir.adapter.MedicineLogAdapter;
 import com.example.smartAir.firebase.Sync;
 import com.example.smartAir.model.MedicineLog;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class LogMedicineFragment extends Fragment {
@@ -56,7 +57,7 @@ public class LogMedicineFragment extends Fragment {
             log.dose = dosePicker.getValue();
             log.timestamp = System.currentTimeMillis();
 
-            long id = AppDatabase.getInstance(getContext()).medicineLogDao().insert(log);
+            long id = 0;//AppDatabase.getInstance(getContext()).medicineLogDao().insert(log); TODO replace
             log.id = id;
 
             new Sync().syncMedicineLog(log);
@@ -66,7 +67,7 @@ public class LogMedicineFragment extends Fragment {
     }
 
     private void loadLogs() {
-        List<MedicineLog> items = AppDatabase.getInstance(getContext()).medicineLogDao().getAll();
+        List<MedicineLog> items = new ArrayList<>(); //AppDatabase.getInstance(getContext()).medicineLogDao().getAll(); TODO replace
         adapter.setItems(items);
     }
 }

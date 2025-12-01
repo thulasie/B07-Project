@@ -1,15 +1,15 @@
 package com.example.smartAir.dao;
 
-import androidx.room.Dao;
+/*import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
-import androidx.room.Update;
+import androidx.room.Update;*/
 
 import com.example.smartAir.model.MedicineLog;
 
 import java.util.List;
-
+/*
 @Dao
 public interface MedicineLogDao {
     @Insert
@@ -27,3 +27,4 @@ public interface MedicineLogDao {
     @Delete
     void delete(MedicineLog log);
 }
+*/

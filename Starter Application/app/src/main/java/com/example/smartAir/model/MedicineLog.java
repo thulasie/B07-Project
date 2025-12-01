@@ -1,10 +1,10 @@
 package com.example.smartAir.model;
-import androidx.room.Entity;
-import androidx.room.PrimaryKey;
+/*import androidx.room.Entity;
+import androidx.room.PrimaryKey;*/
 
-@Entity(tableName = "medicine_logs")
+/*@Entity(tableName = "medicine_logs")*/
 public class MedicineLog {
-    @PrimaryKey(autoGenerate = true)
+    /*@PrimaryKey(autoGenerate = true)*/
     public long id;
 
     public String type;
