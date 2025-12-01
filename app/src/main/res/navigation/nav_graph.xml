@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/logMedicineFragment">
+
+    <fragment
+        android:id="@+id/logMedicineFragment"
+        android:name="com.example.smartAir.MedicineLogFragment"
+        android:label="Logs" />
+
+    <fragment
+        android:id="@+id/techniqueHelperFragment"
+        android:name="com.example.smartAir.TechniqueGuideFragment"
+        android:label="Technique" />
+
+    <fragment
+        android:id="@+id/prePostCheckFragment"
+        android:name="com.example.smartAir.PrePostCheckFragment"
+        android:label="Pre/Post" />
+
+    <fragment
+        android:id="@+id/inventoryFragment"
+        android:name="com.example.smartAir.InventoryFragment"
+        android:label="Inventory" />
+
+    <fragment
+        android:id="@+id/motivationFragment"
+        android:name="com.example.smartAir.MotivationFragment"
+        android:label="Motivation" />
+
+</navigation>
