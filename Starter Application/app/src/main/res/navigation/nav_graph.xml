@@ -63,12 +63,18 @@
         android:name="com.example.smartAir.ui.child.ChildHomeFragment"
         android:label="Child Home"
         tools:layout="@layout/fragment_child_home" />
+        <action
+            android:id="@+id/action_childHome_to_dailyCheckIn"
+            app:destination="@id/dailyCheckInFragment" />
 
     <fragment
         android:id="@+id/parentHomeFragment"
         android:name="com.example.smartAir.ui.parent.ParentHomeFragment"
         android:label="Parent Home"
         tools:layout="@layout/fragment_parent_home" />
+        <action
+            android:id="@+id/action_parentHome_to_dailyCheckIn"
+            app:destination="@id/dailyCheckInFragment" />
 
     <fragment
         android:id="@+id/providerHomeFragment"
@@ -119,5 +125,13 @@
         android:name="com.example.smartAir.SpinnerFragment"
         android:label="Spinner"
         tools:layout="@layout/fragment_spinner" />
+
+        <!-- Daily Check-in (R5) -->
+    <fragment
+        android:id="@+id/dailyCheckInFragment"
+        android:name="com.example.smartAir.ui.DailyCheckInFragment"
+        android:label="Daily Check-in"
+        tools:layout="@layout/fragment_daily_check_in" />
+
 
 </navigation>
