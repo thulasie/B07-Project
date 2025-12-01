@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">smartAir</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="delete_item">Delete Item</string>
     <string name="add_item">Add Item</string>
@@ -9,6 +8,11 @@
     <string name="scroller">Scroller</string>
     <string name="spinner">Spinner</string>
     <string name="manage_items">Manage Items</string>
+    <string name="child_home_title">Child Home Screen</string>
+    <string name="parent_home_title">Parent Home Screen</string>
+    <string name="provider_home_title">Provider Home Screen</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="shared_preferences_key">com.example.smartAir.sharedPreferences</string>
 
     <string-array name="categories_array">
         <item>Books</item>
