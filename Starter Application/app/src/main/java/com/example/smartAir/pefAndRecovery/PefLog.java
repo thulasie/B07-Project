@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class PefLog implements PefController.PefLogger {
+class PefLog implements PefController.PefLogger {
     private final HashMap<Date, Pef> log = new HashMap<>();
     private final static PefLog singletonInstance = new PefLog();
     private DatabaseLogger logger;

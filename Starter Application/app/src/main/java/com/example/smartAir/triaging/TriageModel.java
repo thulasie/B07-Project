@@ -4,6 +4,7 @@ import androidx.annotation.Nullable;
 
 import com.example.smartAir.domain.SevereSymptoms;
 import com.example.smartAir.domain.Zone;
+import com.example.smartAir.pefAndRecovery.BreathInformationProvider;
 
 import java.util.ArrayList;
 import java.util.Date;

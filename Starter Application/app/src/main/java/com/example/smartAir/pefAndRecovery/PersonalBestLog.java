@@ -4,7 +4,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class PersonalBestLog {
+class PersonalBestLog {
     private static final PersonalBestLog singletonInstance = new PersonalBestLog();
     private String username;
     private Float currentPersonalBest;

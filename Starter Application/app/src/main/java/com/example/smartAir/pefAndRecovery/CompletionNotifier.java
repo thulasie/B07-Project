@@ -1,5 +1,5 @@
 package com.example.smartAir.pefAndRecovery;
 
-public interface CompletionNotifier {
+interface CompletionNotifier {
     void notifyMonitor();
 }

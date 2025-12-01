@@ -6,8 +6,9 @@ import androidx.annotation.Nullable;
 
 import com.example.smartAir.domain.SevereSymptoms;
 import com.example.smartAir.domain.Zone;
+import com.example.smartAir.pefAndRecovery.BreathInformationProvider;
 
-public class TriageController {
+class TriageController {
 
     enum TriageState {
         ENTRY_SCREEN, SYMPTOM_SCREEN, RECENT_HISTORY, DECISION_CARD, CALLING_EMERGENCY,

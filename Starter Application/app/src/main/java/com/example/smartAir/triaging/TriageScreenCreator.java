@@ -1,10 +1,7 @@
 package com.example.smartAir.triaging;
 
-import android.view.View;
-
 import com.example.smartAir.data.DatabaseLogger;
-import com.example.smartAir.domain.Zone;
-import com.example.smartAir.pefAndRecovery.ZoneEntryFacade;
+import com.example.smartAir.pefAndRecovery.BreathInformationProvider;
 
 // Facade class for triage screen
 public class TriageScreenCreator {

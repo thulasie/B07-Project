@@ -7,15 +7,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.smartAir.pefAndRecovery.ZoneChangeMonitor;
 import com.example.smartAir.pefAndRecovery.ZoneEntryFacade;
-import com.example.smartAir.triaging.TriageFragment;
 import com.example.smartAir.triaging.TriageScreenCreator;
-import com.example.smartAir.triaging.ZoneStepsProvider;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.android.material.chip.Chip;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 

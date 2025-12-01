@@ -11,6 +11,8 @@ import com.example.smartAir.R;
 public class OnboardingCollectionAdapter extends FragmentStateAdapter {
     OnboardingContent onboardingContent;
 
+    private OnboardingExitAction action = ()-> {System.out.println("Please set an aciton");};
+
     public OnboardingCollectionAdapter(Fragment fragment) {
         super(fragment);
     }
@@ -24,10 +26,14 @@ public class OnboardingCollectionAdapter extends FragmentStateAdapter {
         this.onboardingContent = onboardingContent;
     }
 
+    void setOnboardingExitAction (OnboardingExitAction a) {
+        action = a;
+    }
+
     @NonNull
     @Override
     public Fragment createFragment(int position) {
-        Fragment fragment = new OnboardingPanelFragment();
+        OnboardingPanelFragment fragment = new OnboardingPanelFragment();
         Bundle args = new Bundle();
 
         if (onboardingContent == null) {
@@ -40,9 +46,8 @@ public class OnboardingCollectionAdapter extends FragmentStateAdapter {
                 args.putInt("onboarding_image", onboardingContent.getPageImage(position));
                 args.putBoolean("onboarding_exit_page", false);
             } else {
-                args.putString("onboarding_caption", "Finish onboarding");
-                args.putBoolean("onboarding_exit_page", true);
-                args.putSerializable("userRole", onboardingContent.getRole());
+                fragment.setExitScreen(true);
+                fragment.setOnboardingExitAction(action);
             }
         }
 

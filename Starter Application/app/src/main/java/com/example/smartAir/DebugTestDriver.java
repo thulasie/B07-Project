@@ -9,7 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.smartAir.pefAndRecovery.PefLog;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class DebugTestDriver extends Fragment {
@@ -27,8 +26,6 @@ public class DebugTestDriver extends Fragment {
         FirebaseAuth auth = FirebaseAuth.getInstance();
         auth.signInWithEmailAndPassword("t.gu@mail.utoronto.ca", "xrpentxkrt");
 
-        PefLog.initializeTodaysPefLog("testUserID", () -> {});
-        PefLog.getSingletonInstance().logPEF(10F, 15F);
     }
 
     void printMessage(CharSequence msg) {

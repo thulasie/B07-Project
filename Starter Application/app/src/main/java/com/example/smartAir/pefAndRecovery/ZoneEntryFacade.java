@@ -1,9 +1,6 @@
 package com.example.smartAir.pefAndRecovery;
 
-import android.view.View;
-
 import com.example.smartAir.domain.Zone;
-import com.example.smartAir.triaging.BreathInformationProvider;
 
 public class ZoneEntryFacade {
     public interface CallbackGenerator {
@@ -85,6 +82,11 @@ public class ZoneEntryFacade {
             @Override
             public void setPEF(Float f) {
                 PefLog.getSingletonInstance().logPEF(f);
+            }
+
+            @Override
+            public Float getHighestPef() {
+                return PefLog.getSingletonInstance().getHighestPEF();
             }
         };
     }

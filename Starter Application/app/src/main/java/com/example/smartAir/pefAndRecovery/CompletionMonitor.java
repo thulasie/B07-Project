@@ -1,6 +1,6 @@
 package com.example.smartAir.pefAndRecovery;
 
-public class CompletionMonitor {
+class CompletionMonitor {
     public interface Callback {
         void onEnd();
     }

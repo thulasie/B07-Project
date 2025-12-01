@@ -13,42 +13,33 @@ import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
 public class OnboardingContainerFragment extends Fragment {
+
+    private UserRole role = UserRole.CHILD;
+    private OnboardingContent content;
+
     public OnboardingContainerFragment() {
         super(R.layout.onboarding_container);
+        role = null;
+    }
+    public OnboardingContainerFragment(UserRole role) {
+        super(R.layout.onboarding_container);
+        this.role = role;
+    }
+
+    void setOnboardingContent (OnboardingContent a) {
+        content = a;
     }
 
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         ViewPager2 onboarding = (ViewPager2) view.findViewById(R.id.onboarding_pager);
-        Object a = null;
-        if (getArguments() != null) {
-            a = getArguments().get("userRole"); // Replace with however the roles are
-        }
-        OnboardingCollectionAdapter adapter = getOnboardingCollectionAdapter(a);
+        OnboardingCollectionAdapter adapter = new OnboardingCollectionAdapter(this, content);
         onboarding.setAdapter(adapter);
-        System.out.println("OnboardingContainerFragment: " + a);
 
         // Connect to pagination dots
         TabLayout pager_dots = view.findViewById(R.id.onboarding_pager_dots);
         new TabLayoutMediator(pager_dots, onboarding,
                 (tab, position) -> {}).attach();
-    }
-
-    @NonNull
-    private OnboardingCollectionAdapter getOnboardingCollectionAdapter(Object a) {
-        OnboardingContent c = new TestOnboarding();
-
-        if (a instanceof UserRole) {
-            if (a == UserRole.CHILD) { // child
-                c = new ChildOnboarding();
-            } else if (a == UserRole.PARENT) { // parent
-                c = new ParentOnboarding();
-            } else if (a == UserRole.PROVIDER) { // provider
-                c = new ProviderOnboarding();
-            }
-        }
-        // Some code to switch onboarding style based on instance...
-        return new OnboardingCollectionAdapter(this, c);
     }
 }
 

@@ -6,7 +6,7 @@ import com.example.smartAir.domain.Zone;
 
 import java.util.Date;
 
-public class ZoneChangeMonitor {
+class ZoneChangeMonitor {
     private Zone currentZone = Zone.NOT_APPLICABLE;
     private Float highestPEF;
     private Float currentPersonalBest;
