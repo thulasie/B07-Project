@@ -25,7 +25,7 @@ public class ChildHomeActivity extends AppCompatActivity {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
         if (user == null){      // if the user is not logged in, we are redirected to the login page
-            startActivity(new Intent(this, LoginFragment.class));   // this is a PLACEHOLDER for the Login page, replace with real LoginPage
+            startActivity(new Intent(this, LoginPage.class));   // this is a PLACEHOLDER for the Login page, replace with real LoginPage
             finish();   // user is not logged in so we cannot go back (destroys)
             return;
         }
@@ -34,7 +34,7 @@ public class ChildHomeActivity extends AppCompatActivity {
         logoutButton.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v){
                 FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(ChildHomeActivity.this, LoginFragment.class));
+                startActivity(new Intent(ChildHomeActivity.this, LoginPage.class));
                 finish();   // can't go back to the original page
 
 

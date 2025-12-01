@@ -7,7 +7,6 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.Map;
 
 public class SignUpModel {
-
     private final FirebaseFirestore firestore = FirebaseFirestore.getInstance();
 
     // Create a user document under "users/{uid}"
