@@ -1,14 +1,16 @@
 package com.example.smartAir;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.smartAir.onboarding.OnboardingContainerFragment;
-import com.example.smartAir.onboarding.OnboardingPanelFragment;
-import com.google.firebase.database.DatabaseReference;
+import com.example.smartAir.pefAndRecovery.ZoneEntryFacade;
+import com.example.smartAir.triaging.TriageScreenCreator;
+import com.google.android.material.chip.Chip;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,12 +23,33 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         db = FirebaseDatabase.getInstance("https://b07projectlogin-default-rtdb.firebaseio.com");
-        DatabaseReference myRef = db.getReference("initiate");
-        myRef.setValue("Begin");
 
-        if (savedInstanceState == null) {
-            loadFragment(new OnboardingContainerFragment());
-        }
+        FirebaseAuth.getInstance().signInWithEmailAndPassword("elderflowerings@gmail.com", "thereisnogoodandbad")
+                .addOnCompleteListener(task -> {
+                    System.out.println("Logged in !");
+                    FirebaseAuth auth = FirebaseAuth.getInstance();
+
+                    TriageScreenCreator creator = new TriageScreenCreator(auth.getUid());
+
+                    ZoneEntryFacade.changeUser(auth.getUid(), () -> {
+                        creator.setHomeController(() -> {
+                            System.out.println("Going home...");
+                        });
+
+                        creator.setZoneStepsProvider((inflater, zone) -> {
+                            Chip view = (Chip) inflater.inflate(R.layout.triage_symptom_chip, null);
+                            view.setText(zone + " plan");
+
+                            return view;
+                        });
+
+                        creator.setBreathInformationProvider(ZoneEntryFacade.getBreathProvider());
+
+
+
+                        loadFragment(creator.createTriageFragment());
+                    });
+                });
     }
 
     private void loadFragment(Fragment fragment) {

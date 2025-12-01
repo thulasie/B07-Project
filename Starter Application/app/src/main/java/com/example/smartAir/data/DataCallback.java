@@ -10,13 +10,13 @@ public class DataCallback {
         void onFailure();
     }
 
-    interface ManyCallback<T> {
+    public interface ManyCallback<T> {
         void onArraySuccess(T[] receivedData);
 
         void onFailure();
     }
 
-    interface InsertionCallback<T> {
+    public interface InsertionCallback<T> {
         void onInsertion(T inserted);
 
         void onFailure();

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/triage_check_back_feeling_worse_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are you feeling better?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/triage_check_back_feeling_worse_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/triage_check_back_feeling_worse_label"/>
+
+
+    <TextView
+        android:id="@+id/triage_check_back_symptoms_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Are you experiencing any of these?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/triage_check_back_feeling_worse_switch" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/triage_check_back_symptoms_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/triage_check_back_symptoms_label"
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="79dp">
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/triage_check_back_button"
+        app:layout_constraintTop_toBottomOf="@id/triage_check_back_symptoms_entry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Submit"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

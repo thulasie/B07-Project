@@ -42,7 +42,7 @@
 
     <fragment
         android:id="@+id/onboardingContainerFragment"
-        android:name="com.example.smartAir.onboarding.OnboardingContainerFragment"
+        android:name="com.example.smartAir.ui.onboarding.OnboardingContainerFragment"
         android:label="Onboarding screen">
         <action
             android:id="@+id/action_onboarding_to_childHome"

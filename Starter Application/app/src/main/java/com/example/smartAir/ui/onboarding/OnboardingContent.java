@@ -1,11 +1,13 @@
-package com.example.smartAir.onboarding;
+package com.example.smartAir.ui.onboarding;
 
 import com.example.smartAir.R;
+import com.example.smartAir.domain.UserRole;
 
-public abstract class OnboardingContent {
+abstract class OnboardingContent {
     int pageCount;
     String[] pageCaptions;
     int[] pageImages;
+    UserRole role;
 
     public String getPageCaption (int i) {
         return pageCaptions[i];
@@ -18,6 +20,8 @@ public abstract class OnboardingContent {
     public int getPageCount () {
         return pageCount;
     }
+
+    public UserRole getRole() {return role;}
 }
 
 class TestOnboarding extends OnboardingContent {
@@ -33,6 +37,7 @@ class ChildOnboarding extends OnboardingContent {
         pageCount = 2;
         pageCaptions = new String[]{"As a child, you can...", "Are you ready?!"};
         pageImages = new int[]{R.drawable.not_my_cat_low_res, R.drawable.squeak};
+        role = UserRole.CHILD;
     }
 }
 
@@ -41,6 +46,7 @@ class ProviderOnboarding extends OnboardingContent {
         pageCount = 2;
         pageCaptions = new String[]{"As a provider, you may", "Are you ready?!"};
         pageImages = new int[]{R.drawable.not_my_cat_low_res, R.drawable.squeak};
+        role = UserRole.PROVIDER;
 
     }
 }
@@ -50,7 +56,7 @@ class ParentOnboarding extends OnboardingContent {
         pageCount = 2;
         pageCaptions = new String[]{"As a parent, you may", "Are you ready?!"};
         pageImages = new int[]{R.drawable.not_my_cat_low_res, R.drawable.squeak};
-
+        role = UserRole.PARENT;
     }
 }
 
