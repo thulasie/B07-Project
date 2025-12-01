@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Night waking" />
+
+        <RadioGroup
+            android:id="@+id/rgNightWaking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbNightNone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="None" />
+            <RadioButton
+                android:id="@+id/rbNightOnce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Once" />
+            <RadioButton
+                android:id="@+id/rbNightMany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More than once" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity limits" />
+
+        <RadioGroup
+            android:id="@+id/rgActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbActNone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="None" />
+            <RadioButton
+                android:id="@+id/rbActSome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Some" />
+            <RadioButton
+                android:id="@+id/rbActSevere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Severe" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cough / wheeze" />
+
+        <RadioGroup
+            android:id="@+id/rgCough"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbCoughNone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="None" />
+            <RadioButton
+                android:id="@+id/rbCoughSome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Some" />
+            <RadioButton
+                android:id="@+id/rbCoughSevere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Severe" />
+        </RadioGroup>
+
+        <!-- Triggers -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Triggers" />
+
+        <CheckBox
+            android:id="@+id/cbExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercise" />
+
+        <CheckBox
+            android:id="@+id/cbColdAir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cold air" />
+
+        <CheckBox
+            android:id="@+id/cbDustPets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dust / pets" />
+
+        <CheckBox
+            android:id="@+id/cbSmoke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smoke" />
+
+        <CheckBox
+            android:id="@+id/cbIllness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Illness" />
+
+        <CheckBox
+            android:id="@+id/cbOdors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Strong odors / perfume" />
+
+        <EditText
+            android:id="@+id/etNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Notes (optional)" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+    </LinearLayout>
+</ScrollView>
