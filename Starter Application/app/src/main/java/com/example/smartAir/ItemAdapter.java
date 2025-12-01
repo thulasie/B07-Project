@@ -25,10 +25,10 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
     @Override
     public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
         Item item = itemList.get(position);
-        holder.textViewTitle.setText(item.getTitle());
-        holder.textViewAuthor.setText(item.getAuthor());
-        holder.textViewGenre.setText(item.getGenre());
-        holder.textViewDescription.setText(item.getDescription());
+        holder.textViewTitle.setText(item.getName());
+        holder.textViewAuthor.setText(item.getPassword());
+        holder.textViewGenre.setText(item.getDateOfBirth());
+        holder.textViewDescription.setText(item.getOptionalnote());
     }
 
     @Override

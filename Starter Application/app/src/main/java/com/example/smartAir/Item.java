@@ -2,31 +2,27 @@ package com.example.smartAir;
 
 public class Item {
 
-    private String id;
-    private String title;
-    private String author;
-    private String genre;
-    private String description;
+    private String name;
+    private String password;
+    private String dateofbirth;
+    private String optionalnote;
 
     public Item() {}
 
-    public Item(String id, String title, String author, String genre, String description) {
-        this.id = id;
-        this.title = title;
-        this.author = author;
-        this.genre = genre;
-        this.description = description;
+    public Item(String Name, String password, String dateOfBirth, String optionalnote) {
+        this.name = Name;
+        this.password = password;
+        this.dateofbirth = dateOfBirth;
+        this.optionalnote = optionalnote;
     }
 
     // Getters and setters
-    public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
-    public String getTitle() { return title; }
-    public void setTitle(String title) { this.title = title; }
-    public String getAuthor() { return author; }
-    public void setAuthor(String author) { this.author = author; }
-    public String getGenre() { return genre; }
-    public void setGenre(String genre) { this.genre = genre; }
-    public String getDescription() { return description; }
-    public void setDescription(String description) { this.description = description; }
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+    public String getPassword() { return password; }
+    public void setPassword(String password) { this.password = password; }
+    public String getDateOfBirth() { return dateofbirth; }
+    public void setDateOfBirth(String dateOfBirth) { this.dateofbirth = dateOfBirth; }
+    public String getOptionalnote() { return optionalnote; }
+    public void setOptionalnote(String optionalnote) { this.optionalnote = optionalnote; }
 }
