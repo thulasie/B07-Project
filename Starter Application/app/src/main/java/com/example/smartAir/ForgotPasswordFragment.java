@@ -1,6 +1,8 @@
 package com.example.smartAir;
 
+import android.os.Build;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,34 +23,42 @@ public class ForgotPasswordFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
+
         View view = inflater.inflate(R.layout.forgot_password_fragment, container, false);
 
-        // Initializing the Firebase Authentication
         mAuth = FirebaseAuth.getInstance();
 
-        //Referencing the UI elements
-        Button buttonResendLink = view.findViewById(R.id.btnSendResetLink);
-        EditText editTextEmail = view.findViewById(R.id.editTextTextEmailAddress);
+        // UI elements
+        Button resendButton = view.findViewById(R.id.btnSendResetLink);
+        EditText emailInput = view.findViewById(R.id.editTextTextEmailAddress);
         Button backButton = view.findViewById(R.id.backButton);
 
-        //Setting OnClickListener for the "Send reset Link" button
-        buttonResendLink.setOnClickListener(v -> {
-            String email = editTextEmail.getText().toString().trim();
+        // Send reset link
+        resendButton.setOnClickListener(v -> {
+            String email = emailInput.getText().toString().trim();
+
             if (email.isEmpty()) {
-                Toast.makeText(getContext(), "Please eneter an Email address", Toast.LENGTH_SHORT).show();
-            } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                Toast.makeText(getContext(), "Please enter a valid email", Toast.LENGTH_SHORT).show();
-            } else {
-                sendResetLink(email);
+                Toast.makeText(getContext(), "Please enter an email address", Toast.LENGTH_SHORT).show();
+                return;
             }
+
+            if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                Toast.makeText(getContext(), "Please enter a valid email", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            sendResetLink(email);
         });
 
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                loadFragment(new LoginFragment());
-            }
+        // BACK BUTTON LOGIC
+        backButton.setOnClickListener(v -> {
+            FragmentTransaction t = getParentFragmentManager().beginTransaction();
+            t.replace(R.id.fragment_container, new LoginFragment());
+            t.addToBackStack(null);
+            t.commit();
         });
 
         return view;
@@ -59,14 +69,10 @@ public class ForgotPasswordFragment extends Fragment {
             if (task.isSuccessful()) {
                 Toast.makeText(getContext(), "Password reset email sent to: " + email, Toast.LENGTH_LONG).show();
             } else {
-                Toast.makeText(getContext(), "Failed to sent reset email: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(),
+                        "Failed to send reset email: " + task.getException().getMessage(),
+                        Toast.LENGTH_LONG).show();
             }
         });
-    }
-    private void loadFragment(Fragment fragment) {
-        FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
-        transaction.replace(R.id.fragment_container, fragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
     }
 }
