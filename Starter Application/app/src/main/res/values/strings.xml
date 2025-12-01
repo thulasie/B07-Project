@@ -13,6 +13,17 @@
     <string name="provider_home_title">Provider Home Screen</string>
     <string name="sign_out">Sign Out</string>
     <string name="shared_preferences_key">com.example.smartAir.sharedPreferences</string>
+    <string name="next">\"Next\"</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit</string>
+    <string name="prompt_email">Get email address</string>
+    <string name="prompt_password">password</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="previous">Previous</string>
+    <string name="invalid_username">Invalid username</string>
+    <string name="invalid_password">Invalid password</string>
+    <string name="login_failed">Login failed</string>
+
 
     <string-array name="categories_array">
         <item>Books</item>

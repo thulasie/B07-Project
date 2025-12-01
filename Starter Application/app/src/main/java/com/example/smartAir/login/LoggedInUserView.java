@@ -1,4 +1,4 @@
-package com.example.smartAir.ui.login;
+package com.example.smartAir.login;
 
 /**
  * Class exposing authenticated user details to the UI.

@@ -8,7 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
-
+/*
 public class DashboardFragment extends Fragment {
 
     private TextView todayZoneText, lastRescueText, weeklyCountText, trendSummaryText;
@@ -59,3 +59,4 @@ public class DashboardFragment extends Fragment {
     }
 }
 
+*/

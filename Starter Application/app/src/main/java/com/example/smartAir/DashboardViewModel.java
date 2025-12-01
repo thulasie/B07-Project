@@ -13,17 +13,21 @@ public class DashboardViewModel extends ViewModel {
     private final MutableLiveData<Integer> weeklyCount = new MutableLiveData<>();
     private final MutableLiveData<String> trendSummary = new MutableLiveData<>();
 
-    private final R6Repository repository = new R6Repository();
+    //private final R6Repository repository = new R6Repository();
 
     public DashboardViewModel() {
         loadData();
     }
 
     private void loadData() {
-        todayZone.setValue(repository.getTodayZone());
+        /*todayZone.setValue(repository.getTodayZone());
         lastRescue.setValue(repository.getLastRescueTime());
         weeklyCount.setValue(repository.getWeeklyRescueCount());
-        trendSummary.setValue(repository.getTrendSummary());
+        trendSummary.setValue(repository.getTrendSummary());*/
+        todayZone.setValue("HORRIBLE");
+        lastRescue.setValue("none");
+        weeklyCount.setValue(12);
+        trendSummary.setValue("Asthma is Rising");
     }
 
     public LiveData<String> getTodayZone() { return todayZone; }
@@ -32,6 +36,6 @@ public class DashboardViewModel extends ViewModel {
     public LiveData<String> getTrendSummary() { return trendSummary; }
 
     public void generateProviderReport(Context context) {
-        ProviderReportGenerator.generate(context, repository);
+        /*ProviderReportGenerator.generate(context, repository);*/
     }
 }

@@ -1,4 +1,4 @@
-package com.example.smartAir.ui.login;
+package com.example.smartAir.login;
 
 import androidx.annotation.Nullable;
 

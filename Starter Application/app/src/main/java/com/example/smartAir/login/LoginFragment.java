@@ -1,4 +1,4 @@
-package com.example.smartAir.ui.login;
+package com.example.smartAir.login;
 
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
@@ -23,17 +23,17 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.smartAir.databinding.FragmentLoginBinding;
+//import com.example.smartAir.databinding.FragmentLoginBinding;
 
 import com.example.smartAir.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
-
+/*
 public class LoginFragment extends Fragment {
 
     private LoginViewModel loginViewModel;
-    private FragmentLoginBinding binding;
+    //private FragmentLoginBinding binding;
 
     @Nullable
     @Override
@@ -41,7 +41,7 @@ public class LoginFragment extends Fragment {
                              @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
-        binding = FragmentLoginBinding.inflate(inflater, container, false);
+        //binding = FragmentLoginBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -205,6 +205,5 @@ public class LoginFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        binding = null;
     }
-}
+}*/

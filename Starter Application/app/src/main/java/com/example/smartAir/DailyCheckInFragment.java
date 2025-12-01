@@ -14,7 +14,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.smartAir.R;
-import com.example.smartAir.data.AuthProfileRepo;
 import com.example.smartAir.data.InMemorySymptomRepository;
 import com.example.smartAir.domain.EntryAuthor;
 import com.example.smartAir.domain.SymptomEntry;
@@ -37,6 +36,10 @@ public class DailyCheckInFragment extends Fragment {
     private EntryAuthor author = EntryAuthor.CHILD; // 默认 CHILD
     private String childId = "unknown";
 
+    public void setUserID (String childId) {
+        this.childId = childId;
+    }
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,12 +55,6 @@ public class DailyCheckInFragment extends Fragment {
                     author = EntryAuthor.CHILD;
                 }
             }
-        }
-
-        // get uid from AuthProfileRepo，as childId
-        AuthProfileRepo repo = new AuthProfileRepo();
-        if (repo.getCurrentUser() != null) {
-            childId = repo.getCurrentUser().getUid();
         }
     }
 
