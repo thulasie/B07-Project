@@ -1,4 +1,7 @@
-package com.example.b07demosummer2024;
+package com.example.smartAir;
+
+import com.example.smartAir.data.UserProfile;
+import com.example.smartAir.domain.UserRole;
 
 public class LoginPresenter {
     public interface View {
@@ -25,10 +28,12 @@ public class LoginPresenter {
         view.showLoading(true);
         model.authenticateEmailUser(email, password, new LoginModel.LoginCallback() {
             @Override
-            public void onSuccess(String uid, String role) {
+            public void onSuccess(String uid, UserRole role) {
                 view.showLoading(false);
                 view.showMessage("Welcome!");
-                view.navigateToRoleDashboard(role);
+                UserProfile.initializeEmailProfile(() -> {
+                    view.navigateToRoleDashboard(String.valueOf(role));
+                });
             }
 
             @Override
@@ -47,7 +52,7 @@ public class LoginPresenter {
         view.showLoading(true);
         model.loginChildProfile(childId, new LoginModel.LoginCallback() {
             @Override
-            public void onSuccess(String uid, String role) {
+            public void onSuccess(String uid, UserRole role) {
                 view.showLoading(false);
                 view.showMessage("Child profile loaded.");
                 view.navigateToChildDashboard();

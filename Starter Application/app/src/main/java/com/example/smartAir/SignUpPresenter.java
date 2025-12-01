@@ -1,4 +1,4 @@
-package com.example.b07demosummer2024;
+package com.example.smartAir;
 
 import android.text.TextUtils;
 
@@ -43,7 +43,7 @@ public class SignUpPresenter {
                     String uid = auth.getCurrentUser().getUid();
                     Map<String, Object> data = new HashMap<>();
                     data.put("email", email);
-                    data.put("role", role);
+                    data.put("role", role.toLowerCase());
                     data.put("createdAt", System.currentTimeMillis());
 
                     model.createUserDocument(uid, data)

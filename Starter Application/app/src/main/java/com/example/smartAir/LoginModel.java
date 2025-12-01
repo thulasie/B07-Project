@@ -1,7 +1,9 @@
-package com.example.b07demosummer2024;
+package com.example.smartAir;
 
 import androidx.annotation.NonNull;
 
+import com.example.smartAir.data.UserProfile;
+import com.example.smartAir.domain.UserRole;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -16,7 +18,7 @@ public class LoginModel {
     private final FirebaseFirestore firestore = FirebaseFirestore.getInstance();
 
     public interface LoginCallback {
-        void onSuccess(String uid, String role);
+        void onSuccess(String uid, UserRole role);
         void onError(String message);
     }
 
@@ -35,6 +37,11 @@ public class LoginModel {
                     }
                     String uid = auth.getCurrentUser().getUid();
                     // fetch role from Firestore
+
+                    UserProfile.initializeEmailProfile(() -> {
+                        callback.onSuccess(uid, UserProfile.getProfileSingleton().getRole());
+                    });/*
+
                     firestore.collection("users").document(uid).get()
                             .addOnCompleteListener(docTask -> {
                                 if (!docTask.isSuccessful() || !docTask.getResult().exists()) {
@@ -43,8 +50,8 @@ public class LoginModel {
                                 }
                                 String role = docTask.getResult().getString("role");
                                 if (role == null) role = "child";
-                                callback.onSuccess(uid, role);
-                            });
+                                callback.onSuccess(uid, UserRole.extract(role));
+                            });*/
                 });
     }
 
@@ -72,7 +79,7 @@ public class LoginModel {
                         return;
                     }
                     String parentUid = parentDocRef.getId();
-                    callback.onSuccess(parentUid, "child");
+                    callback.onSuccess(parentUid, UserRole.CHILD);
                 });
     }
 

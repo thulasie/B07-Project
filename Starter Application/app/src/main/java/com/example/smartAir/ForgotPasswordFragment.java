@@ -1,6 +1,8 @@
-package com.example.b07demosummer2024;
+package com.example.smartAir;
 
+import android.os.Build;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="24dp"
+    android:fillViewport="true"
     android:background="#FFFFFF">
 
     <LinearLayout
@@ -65,7 +66,7 @@
 
 
         <!-- Forgot Password -->
-        <TextView
+        <Button
             android:id="@+id/forgotPasswordButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

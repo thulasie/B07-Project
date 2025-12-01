@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editModifyOptionalNote"
+        android:layout_width="408dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Optional Note"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonChecking" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonSymptom"
+        android:layout_width="88dp"
+        android:layout_height="50dp"
+        android:text="ToggleButton"
+        android:textOff="Hidden"
+        android:textOn="Visible"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButtonControllerSummary"
+        app:layout_constraintStart_toStartOf="@+id/toggleButtonControllerSummary"
+        app:layout_constraintEnd_toEndOf="@+id/toggleButtonControllerSummary"
+         />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonTriangleIncident"
+        android:layout_width="88dp"
+        android:layout_height="50dp"
+        android:text="ToggleButton"
+        android:textOff="Hidden"
+        android:textOn="Visible"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButtonPeakFlow"
+        app:layout_constraintStart_toStartOf="@+id/toggleButtonPeakFlow"
+        app:layout_constraintEnd_toEndOf="@+id/toggleButtonPeakFlow" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonSummaryChart"
+        android:layout_width="88dp"
+        android:layout_height="50dp"
+        android:text="ToggleButton"
+        android:textOff="Hidden"
+        android:textOn="Visible"
+        app:layout_constraintEnd_toEndOf="@+id/toggleButtonTriangleIncident"
+        app:layout_constraintStart_toStartOf="@+id/toggleButtonTriangleIncident"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButtonTriangleIncident" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonControllerSummary"
+        android:layout_width="88dp"
+        android:layout_height="50dp"
+        android:text="ToggleButton"
+        android:textOff="Hidden"
+        android:textOn="Visible"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButtonRescueLogs"
+        app:layout_constraintStart_toStartOf="@+id/toggleButtonRescueLogs"
+        app:layout_constraintEnd_toEndOf="@+id/toggleButtonRescueLogs"
+        />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonPeakFlow"
+        android:layout_width="88dp"
+        android:layout_height="50dp"
+        android:text="ToggleButton"
+        android:textOff="Hidden"
+        android:textOn="Visible"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButtonTrigger"
+        app:layout_constraintStart_toStartOf="@+id/toggleButtonTrigger"
+        app:layout_constraintEnd_toEndOf="@+id/toggleButtonTrigger" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonRescueLogs"
+        android:layout_width="88dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:text="ToggleButton"
+        android:textOff="Hidden"
+        android:textOn="Visible"
+        app:layout_constraintEnd_toEndOf="@+id/textModifyDescription"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textModifyDescription"
+        app:layout_constraintTop_toBottomOf="@+id/textModifyDescription" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonTrigger"
+        android:layout_width="88dp"
+        android:layout_height="50dp"
+        android:text="ToggleButton"
+        android:textOff="Hidden"
+        android:textOn="Visible"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButtonSymptom"
+        app:layout_constraintStart_toStartOf="@+id/toggleButtonSymptom"
+        app:layout_constraintEnd_toEndOf="@+id/toggleButtonSymptom" />
+
+    <TextView
+        android:id="@+id/textRescueLog"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:text="Rescue Logs"
+        app:layout_constraintEnd_toEndOf="@+id/textModifyDescription"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textModifyDescription"
+        app:layout_constraintTop_toBottomOf="@+id/textModifyDescription" />
+
+    <TextView
+        android:id="@+id/textControllerSummary"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="Controller adherence summary"
+        app:layout_constraintTop_toBottomOf="@+id/textRescueLog"
+        app:layout_constraintStart_toStartOf="@+id/textRescueLog"
+        app:layout_constraintEnd_toEndOf="@+id/textRescueLog" />
+
+    <TextView
+        android:id="@+id/textSymptom"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="Symptoms"
+        app:layout_constraintTop_toBottomOf="@+id/textControllerSummary"
+        app:layout_constraintStart_toStartOf="@+id/textControllerSummary"
+        app:layout_constraintEnd_toEndOf="@+id/textControllerSummary" />
+
+    <TextView
+        android:id="@+id/textTrigger"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="Triggers"
+        app:layout_constraintTop_toBottomOf="@+id/textSymptom"
+        app:layout_constraintStart_toStartOf="@+id/textSymptom"
+        app:layout_constraintEnd_toEndOf="@+id/textSymptom" />
+
+    <TextView
+        android:id="@+id/textPeakFlow"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="Peak-Flow (PEF)"
+        app:layout_constraintTop_toBottomOf="@+id/textTrigger"
+        app:layout_constraintStart_toStartOf="@+id/textTrigger"
+        app:layout_constraintEnd_toEndOf="@+id/textTrigger" />
+
+    <TextView
+        android:id="@+id/textTriangleIncident"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="Triangle incidents"
+        app:layout_constraintTop_toBottomOf="@+id/textPeakFlow"
+        app:layout_constraintStart_toStartOf="@+id/textPeakFlow"
+        app:layout_constraintEnd_toEndOf="@+id/textPeakFlow" />
+
+    <TextView
+        android:id="@+id/textSummaryChart"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="Summary charts"
+        app:layout_constraintTop_toBottomOf="@+id/textTriangleIncident"
+        app:layout_constraintStart_toStartOf="@+id/textTriangleIncident"
+        app:layout_constraintEnd_toEndOf="@+id/textTriangleIncident" />
+
+    <Button
+        android:id="@+id/buttonUpdateChild"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:text="Update Child"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSummaryChart" />
+
+    <TextView
+        android:id="@+id/textModifyDescription"
+        android:layout_width="372dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:text="Check information that you want to share with the provider:"
+        app:layout_constraintEnd_toEndOf="@+id/editOptionalNote"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editModifyOptionalNote" />
+
+    <EditText
+        android:id="@+id/editPickChild"
+        android:layout_width="408dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Name of the child to update"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/editProviderEmail"
+        android:layout_width="408dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:hint="Provider's email"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPickChild"/>
+
+    <Button
+        android:id="@+id/buttonChecking"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="Check"
+        app:layout_constraintEnd_toEndOf="@+id/editProviderEmail"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="@+id/editProviderEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editProviderEmail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
