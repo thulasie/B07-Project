@@ -25,6 +25,17 @@ import java.util.Objects;
 
 public class OnboardingPanelFragment extends Fragment {
 
+    private OnboardingExitAction action;
+    private boolean isExitScreen = false;
+
+    void setOnboardingExitAction(OnboardingExitAction a) {
+        action = a;
+    }
+
+    void setExitScreen(boolean isExitScreen) {
+        this.isExitScreen = isExitScreen;
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
@@ -38,7 +49,7 @@ public class OnboardingPanelFragment extends Fragment {
         assert args != null;
         Button exitButton = view.findViewById(R.id.onboarding_exit_button);
 
-        if (!args.getBoolean("onboarding_exit_page")) {
+        if (!isExitScreen) {
             ((TextView) view.findViewById(R.id.onboarding_caption))
                     .setText(args.getString("onboarding_caption"));
             ((ImageView) view.findViewById(R.id.onboarding_image))
@@ -48,38 +59,14 @@ public class OnboardingPanelFragment extends Fragment {
             ((ImageView) view.findViewById(R.id.onboarding_image))
                     .setImageResource(R.drawable.onboarding_tab_indicator);
             ((TextView) view.findViewById(R.id.onboarding_caption))
-                    .setText("You're finished! Go on with your day :)");
+                    .setText("You've finished!");
             exitButton.setVisibility(View.VISIBLE);
             exitButton.setText("Exit onboarding");
 
             Serializable obj = args.getSerializable("userRole");
 
             exitButton.setOnClickListener(v -> {
-                FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
-                Fragment nextFragment;
-                UserRole role;
-                if (obj instanceof UserRole) {
-                    System.out.println("success yay");
-                    role = (UserRole) obj;
-                    switch (role) {
-                        case CHILD:
-                            nextFragment = new ChildHomeFragment();
-                            break;
-                        case PARENT:
-                            nextFragment = new ParentHomeFragment();
-                            break;
-                        default:
-                            nextFragment = new ProviderHomeFragment();
-                            break;
-                    }
-                } else {
-                    System.out.println("defaulted :(");
-                    nextFragment = new ChildHomeFragment();
-                }
-
-                transaction.replace(R.id.fragment_container, nextFragment);
-                transaction.addToBackStack(null);
-                transaction.commit();
+                action.run();
             });
         }
     }

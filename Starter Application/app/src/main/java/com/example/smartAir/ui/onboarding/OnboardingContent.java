@@ -3,7 +3,7 @@ package com.example.smartAir.ui.onboarding;
 import com.example.smartAir.R;
 import com.example.smartAir.domain.UserRole;
 
-public abstract class OnboardingContent {
+abstract class OnboardingContent {
     int pageCount;
     String[] pageCaptions;
     int[] pageImages;
@@ -57,7 +57,6 @@ class ParentOnboarding extends OnboardingContent {
         pageCaptions = new String[]{"As a parent, you may", "Are you ready?!"};
         pageImages = new int[]{R.drawable.not_my_cat_low_res, R.drawable.squeak};
         role = UserRole.PARENT;
-
     }
 }
 
