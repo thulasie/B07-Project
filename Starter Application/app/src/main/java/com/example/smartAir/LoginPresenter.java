@@ -1,6 +1,6 @@
 package com.example.smartAir;
 
-//import com.example.smartAir.data.UserProfile;
+import com.example.smartAir.data.UserProfile;
 import com.example.smartAir.domain.UserRole;
 
 public class LoginPresenter {
@@ -8,9 +8,6 @@ public class LoginPresenter {
         void showLoading(boolean loading);
         void showMessage(String msg);
         void showError(String err);
-        void navigateToParentHome();
-        void navigateToChildHome();
-        void navigateToProviderHome();
         void navigateToRoleDashboard(String role);
         void navigateToChildDashboard();
     }
@@ -29,16 +26,14 @@ public class LoginPresenter {
             return;
         }
         view.showLoading(true);
-
         model.authenticateEmailUser(email, password, new LoginModel.LoginCallback() {
             @Override
             public void onSuccess(String uid, UserRole role) {
                 view.showLoading(false);
                 view.showMessage("Welcome!");
-
-                /*UserProfile.initializeEmailProfile(() -> {
-                    routeByRole(role);
-                });*/
+                UserProfile.initializeEmailProfile(() -> {
+                    view.navigateToRoleDashboard(String.valueOf(role));
+                });
             }
 
             @Override
@@ -60,7 +55,7 @@ public class LoginPresenter {
             public void onSuccess(String uid, UserRole role) {
                 view.showLoading(false);
                 view.showMessage("Child profile loaded.");
-                view.navigateToChildHome();
+                view.navigateToChildDashboard();
             }
 
             @Override
@@ -90,29 +85,6 @@ public class LoginPresenter {
                 view.showError(message);
             }
         });
-    }
-
-    private void routeByRole(UserRole role) {
-        if (role == null) {
-            view.showError("Unknown role");
-            return;
-        }
-        switch (role) {
-            case PARENT:
-                view.navigateToParentHome();
-                break;
-
-            case CHILD:
-                view.navigateToChildHome();
-                break;
-
-            case PROVIDER:
-                view.navigateToProviderHome();
-                break;
-
-            default:
-                view.showError("Invalid role: " + role);
-        }
     }
 
     public void detach() {
