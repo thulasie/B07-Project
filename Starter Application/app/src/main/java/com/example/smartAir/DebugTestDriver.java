@@ -4,14 +4,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.smartAir.alerting.AlertMonitor;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class DebugTestDriver extends Fragment {
+import java.util.ArrayList;
+
+public class DebugTestDriver extends Fragment implements AlertMonitor.Alerter {
 
     LinearLayout debugMessages;
 
@@ -23,9 +27,11 @@ public class DebugTestDriver extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         debugMessages = view.findViewById(R.id.debug_messages);
-        FirebaseAuth auth = FirebaseAuth.getInstance();
-        auth.signInWithEmailAndPassword("t.gu@mail.utoronto.ca", "xrpentxkrt");
 
+        AlertMonitor.registerAlerter(this);
+        ArrayList<String> children = new ArrayList<>();
+        children.add("testUsername");
+        AlertMonitor.setChildren(children);
     }
 
     void printMessage(CharSequence msg) {
@@ -34,5 +40,11 @@ public class DebugTestDriver extends Fragment {
         text.setText(msg);
 
         debugMessages.addView(text);
+    }
+
+    public void showAlert(String user, String msg) {
+        Toast toast = Toast.makeText(getContext(), user + ": " + msg, Toast.LENGTH_LONG);
+        toast.show();
+        printMessage(msg);
     }
 }

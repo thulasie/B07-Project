@@ -26,11 +26,10 @@ public class MedicineDatabaseLogger {
 
     static void logRescueUse(MedicineLog ml) {
         singleton.logger.addLog(new DatabaseLogEntry(new Date(), "RESCUE_USE", ml));
-
-        // TODO Execute the side effect of >3 consecutive rescue uses
+        // TODO: Execute side effect of inventory getting called
     }
 
-    static void getLogs(ArrayList<MedicineLog> logs, LogMedicineFragment.Callback callback) {
+    static void getLogs(ArrayList<MedicineLog> logs, MedicineLogFragment.Callback callback) {
         HashSet<DatabaseLogType> set = new HashSet<>();
         set.add(DatabaseLogType.CONTROLLER_USE);
         set.add(DatabaseLogType.RESCUE_USE);

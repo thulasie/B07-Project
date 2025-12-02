@@ -3,20 +3,69 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:tag="canister_entry">
 
     <TextView
         android:id="@+id/canister_name"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:text="Name"/>
+        android:text="Name"
+        android:textSize="18dp"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"/>
 
-    <EditText
-        android:id="@+id/canister_amount"
-        android:layout_height="wrap_content"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:inputType="number"
-        android:hint="Amount left..."/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Amount left"/>
+
+            <EditText
+                android:id="@+id/canister_amount"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:hint="Amount left..."/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Total amount"/>
+            <EditText
+                android:id="@+id/canister_total_amount"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:hint="Amount left..."/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,6 +96,7 @@
                 android:id="@+id/canister_purchase_date_button"/>
         </LinearLayout>
 
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -72,13 +122,14 @@
                 android:id="@+id/canister_expiry_date_button"/>
         </LinearLayout>
     </LinearLayout>
-
-
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"/>
 
     <Button
         android:id="@+id/canister_add_item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add item (demo)" />
+        android:text="Update item" />
 
 </LinearLayout>

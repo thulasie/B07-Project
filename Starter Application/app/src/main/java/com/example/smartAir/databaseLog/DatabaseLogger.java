@@ -107,4 +107,34 @@ public class DatabaseLogger {
                     }
                 });
     }
+
+    public void getLogs(HashSet<DatabaseLogType> typesWanted, ArrayList<DatabaseLogEntry> list, LogCallback callback, Date startAt, Date endAt) {
+        System.out.println("DatabaseLogger: Retrieving data...");
+
+        instance.getReference("logs/" + userID)
+                .orderByKey().startAt(String.valueOf(startAt.getTime())).endAt(String.valueOf(endAt.getTime()))
+                .get().addOnCompleteListener((task) -> {
+                    if (task.isSuccessful()) {
+                        for (DataSnapshot s: task.getResult().getChildren()) {
+                            HashMap<String, Object> a = (HashMap) s.getValue();
+                            String type = (String) a.get("type");
+                            if (typesWanted.contains(DatabaseLogType.valueOf(type))) {
+                                try {
+                                    DatabaseLogEntryFactory creator = DatabaseLogEntryFactory.make(DatabaseLogType.valueOf(type));
+
+                                    final DatabaseLogEntryData data = creator.createFromDB((HashMap<String, Object>) a.get("data"));
+                                    final Date date = new Date(Long.parseLong(s.getKey()));
+
+                                    DatabaseLogEntry entry = new DatabaseLogEntry(date, (String) a.get("type"), data);
+                                    list.add(entry);
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }
+
+                        callback.finalCallback();
+                    }
+                });
+    }
 }

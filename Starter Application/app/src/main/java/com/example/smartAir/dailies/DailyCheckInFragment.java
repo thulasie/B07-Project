@@ -1,4 +1,4 @@
-package com.example.smartAir.symptom;
+package com.example.smartAir.dailies;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -19,7 +19,9 @@ import com.example.smartAir.domain.SymptomEntry;
 import com.example.smartAir.domain.TriggerType;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.UUID;
 
@@ -109,7 +111,7 @@ public class DailyCheckInFragment extends Fragment {
         String notes = etNotes.getText().toString();
 
         String id = UUID.randomUUID().toString();
-        Date today = new Date(); // TODO replace with midnight declaration
+        Date today = getTodaysMidnight();
 
         SymptomEntry entry = new SymptomEntry(
                 id,
@@ -145,5 +147,16 @@ public class DailyCheckInFragment extends Fragment {
         if (id == R.id.rbCoughSome) return 1;
         if (id == R.id.rbCoughSevere) return 2;
         return 0;
+    }
+
+    private static Date getTodaysMidnight() {
+        Calendar c = new GregorianCalendar();
+        c.setTime(new Date());
+        c.set(Calendar.HOUR_OF_DAY, 0);
+        c.set(Calendar.MINUTE, 0);
+        c.set(Calendar.SECOND, 0);
+        c.set(Calendar.MILLISECOND, 0);
+
+        return c.getTime();
     }
 }

@@ -3280,6 +3280,7 @@ int id btnSendResetLink 0x7f09007d
 int id btnSignOutChild 0x7f09007e
 int id btnSignOutParent 0x7f09007f
 int id btnSignOutProvider 0x7f090080
+int id btn_exit_log 0x7f0902f5
 int id btn_save_log 0x7f090082
 int id button 0x7f090083
 int id buttonAdd 0x7f090084
@@ -3302,9 +3303,11 @@ int id canister_add_item 0x7f0902e4
 int id canister_amount 0x7f0902e5
 int id canister_expiry_date_button 0x7f0902e6
 int id canister_expiry_date_picker_text 0x7f0902e7
+int id canister_home_exit_button 0x7f0902f0
 int id canister_name 0x7f0902e8
 int id canister_purchase_date_button 0x7f0902e9
 int id canister_purchase_date_picker_text 0x7f0902ea
+int id canister_total_amount 0x7f0902f6
 int id carryVelocity 0x7f090094
 int id cbColdAir 0x7f090095
 int id cbDustPets 0x7f090096
@@ -3496,12 +3499,17 @@ int id linear 0x7f09014c
 int id listMode 0x7f09014d
 int id list_item 0x7f09014e
 int id locale 0x7f09014f
+int id log_item_description 0x7f0902f7
+int id log_item_timestamp 0x7f0902f8
+int id log_item_title 0x7f0902f9
 int id loginButton 0x7f090150
 int id loginEmailInput 0x7f090151
 int id loginPasswordInput 0x7f090152
 int id loginProgressBar 0x7f090153
 int id loginRoleSpinner 0x7f090154
 int id loginTitle 0x7f090155
+int id logs_spinner 0x7f0902fa
+int id logs_title 0x7f0902fb
 int id ltr 0x7f090156
 int id m3_side_sheet 0x7f090157
 int id main 0x7f090158
@@ -3657,8 +3665,11 @@ int id rbCoughSome 0x7f0901ed
 int id rbNightMany 0x7f0901ee
 int id rbNightNone 0x7f0901ef
 int id rbNightOnce 0x7f0901f0
+int id rb_better 0x7f0902f1
 int id rb_controller 0x7f0901f1
 int id rb_rescue 0x7f0901f2
+int id rb_same 0x7f0902f2
+int id rb_worse 0x7f0902f3
 int id rectangles 0x7f0901f3
 int id recyclerView 0x7f0901f4
 int id recyclerViewFragment 0x7f0901f5
@@ -3669,6 +3680,7 @@ int id reverseSawtooth 0x7f0901f7
 int id rgActivity 0x7f0901f8
 int id rgCough 0x7f0901f9
 int id rgNightWaking 0x7f0901fa
+int id rg_rating 0x7f0902f4
 int id rg_type 0x7f0901fb
 int id right 0x7f0901fc
 int id rightToLeft 0x7f0901fd
@@ -4048,7 +4060,6 @@ int layout fragment_child_home 0x7f0c0035
 int layout fragment_container 0x7f0c0036
 int layout fragment_daily_check_in 0x7f0c0037
 int layout fragment_delete_item 0x7f0c0038
-int layout fragment_log_medicine 0x7f0c003a
 int layout fragment_manage_items 0x7f0c003b
 int layout fragment_motivation 0x7f0c003c
 int layout fragment_parent_dashboard 0x7f0c003d
@@ -4067,9 +4078,11 @@ int layout inventory_container 0x7f0c00a0
 int layout item_badge 0x7f0c0049
 int layout item_inventory 0x7f0c004a
 int layout item_layout 0x7f0c004b
+int layout item_log 0x7f0c00a2
 int layout item_medicine_log 0x7f0c004c
 int layout item_technique_step 0x7f0c004d
 int layout log_in_fragment 0x7f0c004e
+int layout log_spinner_fragment 0x7f0c00a3
 int layout m3_alert_dialog 0x7f0c004f
 int layout m3_alert_dialog_actions 0x7f0c0050
 int layout m3_alert_dialog_title 0x7f0c0051
@@ -4089,6 +4102,7 @@ int layout material_time_input 0x7f0c005e
 int layout material_timepicker 0x7f0c005f
 int layout material_timepicker_dialog 0x7f0c0060
 int layout material_timepicker_textinput_display 0x7f0c0061
+int layout medicine_log_fragment 0x7f0c00a1
 int layout mtrl_alert_dialog 0x7f0c0062
 int layout mtrl_alert_dialog_actions 0x7f0c0063
 int layout mtrl_alert_dialog_title 0x7f0c0064

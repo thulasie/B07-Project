@@ -10,21 +10,19 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.smartAir.R;
 
-public class CanisterFragmentContainer extends Fragment implements CanisterEntryFragment.FragmentSwitcher, CanisterMainPage.FragmentSwitcher {
+public class CanisterFragmentContainer extends Fragment implements CanisterEntryFragment.FragmentSwitcher, CanisterHomePage.FragmentSwitcher {
     public CanisterFragmentContainer() {
         super(R.layout.inventory_container);
     }
 
-    public static void setGoBackToDashboard(Callback goBackToDashboard) {
-        CanisterFragmentContainer.goBackToDashboard = goBackToDashboard;
-    }
-
     static Callback goBackToDashboard;
+
+    static InventoryMarking marks;
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        CanisterMainPage frag = new CanisterMainPage();
+        CanisterHomePage frag = new CanisterHomePage();
         loadFragment(frag);
     }
 
@@ -36,8 +34,8 @@ public class CanisterFragmentContainer extends Fragment implements CanisterEntry
     }
 
     @Override
-    public void goHome() {
-        CanisterMainPage frag = new CanisterMainPage();
+    public void goCanisterHome() {
+        CanisterHomePage frag = new CanisterHomePage();
         loadFragment(frag);
     }
 
@@ -45,6 +43,12 @@ public class CanisterFragmentContainer extends Fragment implements CanisterEntry
     public void goEditCanister(Canister c) {
         CanisterEntryFragment frag = new CanisterEntryFragment();
         frag.setCan(c);
+        frag.setMarking(marks);
         loadFragment(frag);
+    }
+
+    @Override
+    public void goHome() {
+        goBackToDashboard.run();
     }
 }

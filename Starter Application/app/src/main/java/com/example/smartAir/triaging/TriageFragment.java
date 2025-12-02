@@ -25,7 +25,8 @@ public class TriageFragment extends Fragment implements TriageFragmentSwitcher{
 
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-        loadFragment(new TriageStartScreen(controller));
+        this.startSymptomEntry(); // Automatically skips start screen for 1 tap triage
+        controller.startTriage();
     }
 
     public void loadFragment(Fragment fragment) {

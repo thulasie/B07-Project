@@ -70,7 +70,7 @@ app:startDestination="@id/signInFragment" >
     app:destination="@id/dailyCheckInFragment" />
 <fragment
     android:id="@+id/parentHomeFragment"
-    android:name="com.example.smartAir.ParentHomeFragment"
+    android:name="com.example.smartAir.ui.parent.ParentHomeFragment"
     android:label="Parent Home"
     tools:layout="@layout/fragment_parent_home" />
 <action

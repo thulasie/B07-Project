@@ -6,16 +6,13 @@ import java.util.GregorianCalendar;
 
 public class InventoryHelpers {
 
-    private static Date getTodaysMidnight() {
-        return convertToMidnight(new Date());
-    }
-
     static Date convertToMidnight(Date d) {
         Calendar c = new GregorianCalendar();
-        c.setTime(new Date());
+        c.setTime(d);
         c.set(Calendar.HOUR_OF_DAY, 0);
         c.set(Calendar.MINUTE, 0);
         c.set(Calendar.SECOND, 0);
+        c.set(Calendar.MILLISECOND, 0);
 
         return c.getTime();
     }

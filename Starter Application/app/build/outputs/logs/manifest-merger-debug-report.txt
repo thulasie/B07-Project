@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:2:1-39:12
+ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:2:1-27:12
 MERGED from [com.google.firebase:firebase-analytics:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/7c91c60f4e700a87f976a1c4491bb5a3/transformed/firebase-analytics-23.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/1193f050f0cf64b878005f953729830a/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:2:1-26:12
 MERGED from [androidx.navigation:navigation-runtime-android:2.9.6] /Users/tylergu/.gradle/caches/8.13/transforms/072f49c52e74b15e13aaed88117b515e/transformed/navigation-runtime-release/AndroidManifest.xml:17:1-22:12
@@ -121,8 +121,8 @@ MERGED from [com.google.android.play:core-common:2.0.3] /Users/tylergu/.gradle/c
 	xmlns:android
 		ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:6:5-37:19
-INJECTED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:6:5-37:19
+ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:6:5-25:19
+INJECTED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:6:5-25:19
 MERGED from [com.google.firebase:firebase-analytics:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/7c91c60f4e700a87f976a1c4491bb5a3/transformed/firebase-analytics-23.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/7c91c60f4e700a87f976a1c4491bb5a3/transformed/firebase-analytics-23.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/1193f050f0cf64b878005f953729830a/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:13:5-24:19
@@ -224,13 +224,13 @@ MERGED from [com.google.android.play:core-common:2.0.3] /Users/tylergu/.gradle/c
 	android:dataExtractionRules
 		ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:8:9-65
 activity#com.example.smartAir.MainActivity
-ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:17:9-25:20
+ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:17:9-24:20
 	android:exported
 		ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:19:13-36
 	android:name
 		ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:18:13-41
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:20:13-24:29
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:20:13-23:29
 action#android.intent.action.MAIN
 ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:21:17-69
 	android:name
@@ -239,22 +239,6 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:22:17-77
 	android:name
 		ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:22:27-74
-category#android.intent.category.DEFAULT
-ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:23:17-76
-	android:name
-		ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:23:27-73
-activity#com.example.smartAir.ParentHomeFragment
-ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:27:9-36:20
-	android:exported
-		ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:29:13-36
-	android:name
-		ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:28:13-47
-intent-filter#action:name:android.intent.action.MAIN+action:name:com.example.smartAir.ParentHomeFragment+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:30:13-35:29
-action#com.example.smartAir.ParentHomeFragment
-ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:32:17-82
-	android:name
-		ADDED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:32:25-79
 uses-sdk
 INJECTED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml
@@ -583,6 +567,10 @@ action#android.intent.action.VIEW
 ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:36:17-69
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:36:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:38:17-76
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:38:27-73
 category#android.intent.category.BROWSABLE
 ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:39:17-78
 	android:name

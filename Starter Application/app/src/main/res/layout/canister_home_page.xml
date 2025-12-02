@@ -60,5 +60,15 @@
             android:layout_gravity="right"/>
 
     </LinearLayout>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Exit"
+        android:id="@+id/canister_home_exit_button"/>
 
 </LinearLayout>

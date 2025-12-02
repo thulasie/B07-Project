@@ -17,8 +17,6 @@ public class InventoryDatabaseAccess {
         singleton.dbRef = FirebaseDatabase.getInstance()
                 .getReference("inventory").child(s);
 
-        // TODO get canisters
-
         singleton.dbRef.get().addOnSuccessListener((v) -> {
             for (DataSnapshot dat: v.getChildren()) {
                 if (Objects.equals(dat.getKey(), "Rescue")) {

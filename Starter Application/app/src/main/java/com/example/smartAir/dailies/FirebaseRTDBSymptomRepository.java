@@ -1,4 +1,4 @@
-package com.example.smartAir.symptom;
+package com.example.smartAir.dailies;
 
 import com.example.smartAir.databaseLog.DatabaseLogEntry;
 import com.example.smartAir.databaseLog.DatabaseLogType;

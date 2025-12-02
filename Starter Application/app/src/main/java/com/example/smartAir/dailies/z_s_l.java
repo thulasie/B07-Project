@@ -1,4 +1,4 @@
-package com.example.smartAir.symptom;
+package com.example.smartAir.dailies;
 
 public class z_s_l {
 

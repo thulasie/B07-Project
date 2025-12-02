@@ -1,37 +1,9 @@
 package com.example.smartAir.ui.parent;
 
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
-import android.view.*;
-import android.widget.Button;
-import android.widget.TextView;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.core.content.FileProvider;
-import androidx.fragment.app.Fragment;
-
-import com.example.smartAir.R;
-import com.example.smartAir.data.R6Repository;
-import com.example.smartAir.data.R6RepositoryInterface;
-import com.example.smartAir.medicine.AdherenceCalculator;
+//import com.example.smartAir.data.R6Repository;
 //import com.example.smartAir.alerting.R6AlertManager;
-import com.example.smartAir.medicine.ControllerDoseEvent;
-import com.example.smartAir.R6model.RescueEvent;
-import com.example.smartAir.symptom.z_s_l;
-import com.example.smartAir.alerting.AlertManager;
-import com.example.smartAir.report.ProviderReportPdfUtil;
-import com.example.smartAir.ui.charts.TrendChartView;
-import com.google.android.gms.tasks.Tasks;
 
-import java.io.File;
-import java.util.Calendar;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.concurrent.Executors;
-
+/*
 public class ParentDashboardFragment extends Fragment {
 
     private TextView textTodayZone, textLastRescue, textWeeklyRescue;
@@ -197,4 +169,4 @@ public class ParentDashboardFragment extends Fragment {
 
         });
     }
-}
+}*/

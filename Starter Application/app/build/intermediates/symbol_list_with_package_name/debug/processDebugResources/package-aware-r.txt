@@ -3281,6 +3281,7 @@ id btnSendResetLink
 id btnSignOutChild
 id btnSignOutParent
 id btnSignOutProvider
+id btn_exit_log
 id btn_save_log
 id button
 id buttonAdd
@@ -3303,9 +3304,11 @@ id canister_add_item
 id canister_amount
 id canister_expiry_date_button
 id canister_expiry_date_picker_text
+id canister_home_exit_button
 id canister_name
 id canister_purchase_date_button
 id canister_purchase_date_picker_text
+id canister_total_amount
 id carryVelocity
 id cbColdAir
 id cbDustPets
@@ -3497,12 +3500,17 @@ id linear
 id listMode
 id list_item
 id locale
+id log_item_description
+id log_item_timestamp
+id log_item_title
 id loginButton
 id loginEmailInput
 id loginPasswordInput
 id loginProgressBar
 id loginRoleSpinner
 id loginTitle
+id logs_spinner
+id logs_title
 id ltr
 id m3_side_sheet
 id main
@@ -3658,8 +3666,11 @@ id rbCoughSome
 id rbNightMany
 id rbNightNone
 id rbNightOnce
+id rb_better
 id rb_controller
 id rb_rescue
+id rb_same
+id rb_worse
 id rectangles
 id recyclerView
 id recyclerViewFragment
@@ -3670,6 +3681,7 @@ id reverseSawtooth
 id rgActivity
 id rgCough
 id rgNightWaking
+id rg_rating
 id rg_type
 id right
 id rightToLeft
@@ -4049,7 +4061,6 @@ layout fragment_child_home
 layout fragment_container
 layout fragment_daily_check_in
 layout fragment_delete_item
-layout fragment_log_medicine
 layout fragment_manage_items
 layout fragment_motivation
 layout fragment_parent_dashboard
@@ -4068,9 +4079,11 @@ layout inventory_container
 layout item_badge
 layout item_inventory
 layout item_layout
+layout item_log
 layout item_medicine_log
 layout item_technique_step
 layout log_in_fragment
+layout log_spinner_fragment
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -4090,6 +4103,7 @@ layout material_time_input
 layout material_timepicker
 layout material_timepicker_dialog
 layout material_timepicker_textinput_display
+layout medicine_log_fragment
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title

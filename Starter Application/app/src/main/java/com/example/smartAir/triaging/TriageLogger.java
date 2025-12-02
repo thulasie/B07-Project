@@ -19,6 +19,10 @@ class DefaultTriageLogger implements TriageLogger {
 class DatabaseTriageLogger implements TriageLogger {
     private DatabaseLogger logger;
 
+    DatabaseTriageLogger(String userID) {
+        logger = new DatabaseLogger(userID);
+    }
+
     public void setLogger(DatabaseLogger l) {
         this.logger = l;
     }

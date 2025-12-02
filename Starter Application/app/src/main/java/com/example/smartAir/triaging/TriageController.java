@@ -11,24 +11,23 @@ import com.example.smartAir.pefAndRecovery.BreathInformationProvider;
 class TriageController {
 
     enum TriageState {
-        ENTRY_SCREEN, SYMPTOM_SCREEN, RECENT_HISTORY, DECISION_CARD, CALLING_EMERGENCY,
+        SYMPTOM_SCREEN, RECENT_HISTORY, DECISION_CARD, CALLING_EMERGENCY,
         STARTING_TREATMENT_PLAN, CHECK_BACK, FINISH
     }
 
     TriageController (TriageFragmentSwitcher s) {
-        this.state = TriageState.ENTRY_SCREEN;
+        this.state = TriageState.SYMPTOM_SCREEN;
         this.model = new TriageModel();
         this.triageFragmentSwitcher = s;
     }
 
-    private final long TIMER_LENGTH = 15000;
+    private static final long TIMER_LENGTH = 10 * 60 * 1000;
     private final TriageModel model;
     private TriageState state;
     private final TriageFragmentSwitcher triageFragmentSwitcher;
     private DecisionCardView decisionCardView;
     private CountDownTimer fireTimer;
     private boolean feelingBetter = false;
-    private AlerterService alerter;
     private Float temporaryPEF;
     private long timeLeft = -1L;
 
@@ -36,10 +35,6 @@ class TriageController {
 
     void setInformationProvider(BreathInformationProvider provider) {
         model.setProvider(provider);
-    }
-
-    void setAlerter(AlerterService alerter) {
-        this.alerter = alerter;
     }
 
     void setTriageLogger(TriageLogger l) {
@@ -55,7 +50,6 @@ class TriageController {
             public void onFinish() {
                 timeLeft = 0;
                 if (getState() == TriageState.STARTING_TREATMENT_PLAN) {
-                    alerter.notifyOfEscalation();
                     enterCheckBack();
                 }
             }
@@ -70,10 +64,6 @@ class TriageController {
         };
 
         fireTimer.start();
-
-        // Alert the parent
-
-        alerter.notifyOfStart();
 
         // Go to symptoms
 
@@ -149,7 +139,6 @@ class TriageController {
     void startEmergency () {
         fireTimer.cancel();
         state = TriageState.CALLING_EMERGENCY;
-        alerter.notifyOfEmergency();
         model.setDecision(TriageModel.TriageDecision.EMERGENCY_CALLED);
         model.addGuidance("Asked user to call emergency");
         triageFragmentSwitcher.showResolutionScreen();

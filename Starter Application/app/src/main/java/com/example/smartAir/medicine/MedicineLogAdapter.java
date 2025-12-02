@@ -35,7 +35,7 @@ public class MedicineLogAdapter extends RecyclerView.Adapter<MedicineLogAdapter.
     @Override
     public void onBindViewHolder(@NonNull VH holder, int position) {
         MedicineLog m = items.get(position);
-        holder.tvType.setText(m.type);
+        holder.tvType.setText(m.type + ": " + m.rating);
         holder.tvDose.setText(String.valueOf(m.dose));
         holder.tvTime.setText(df.format(new Date(m.timestamp)));
     }

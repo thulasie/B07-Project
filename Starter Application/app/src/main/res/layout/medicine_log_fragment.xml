@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How many doses?"/>
+
+    <NumberPicker
+        android:id="@+id/picker_dose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/rg_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_controller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Controller" />
+
+        <RadioButton
+            android:id="@+id/rb_rescue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rescue" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_better"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Better" />
+
+        <RadioButton
+            android:id="@+id/rb_same"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Same" />
+
+        <RadioButton
+            android:id="@+id/rb_worse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Worse" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_save_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_exit_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exit" />
+
+    </LinearLayout>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_logs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

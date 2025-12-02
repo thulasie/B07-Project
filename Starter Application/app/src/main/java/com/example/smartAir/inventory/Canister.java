@@ -3,6 +3,9 @@ package com.example.smartAir.inventory;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.Exclude;
 
+import java.time.Instant;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 public abstract class Canister {
@@ -21,7 +24,12 @@ public abstract class Canister {
 
     @Exclude
     public String getSummary() {
-        return "Expires on " + new Date(purchaseDate) + ", have " + amountLeft +" left. Last updated by " + whoLastMarked;
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd").withZone(ZoneId.systemDefault());
+
+        return "Expires on " + formatter.format(Instant.ofEpochMilli(this.expiryDate))
+                + ". " + amountLeft + " out of " + fullAmount + " units left. " +
+                "Last updated by " + whoLastMarked.toString().toLowerCase()
+                + ".";
     }
     public int getPuffsUsed() {
         return puffsUsed;

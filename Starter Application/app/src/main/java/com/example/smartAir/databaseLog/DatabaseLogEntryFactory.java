@@ -4,7 +4,7 @@ import com.example.smartAir.medicine.MedicineLog;
 import com.example.smartAir.motivation.Badge;
 import com.example.smartAir.pefAndRecovery.Pef;
 import com.example.smartAir.pefAndRecovery.ZoneChangeData;
-import com.example.smartAir.symptom.SymptomEntryData;
+import com.example.smartAir.dailies.SymptomEntryData;
 import com.example.smartAir.triaging.TriageLogEntryData;
 
 import java.util.HashMap;
