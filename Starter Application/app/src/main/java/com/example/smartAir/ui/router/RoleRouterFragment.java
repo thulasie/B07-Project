@@ -18,6 +18,7 @@ import com.example.smartAir.data.UserProfile;
 import com.example.smartAir.domain.UserRole;
 import com.example.smartAir.ui.onboarding.OnboardingContainerFragment;
 import com.example.smartAir.ui.child.ChildHomeFragment;
+import com.example.smartAir.ui.onboarding.OnboardingCreator;
 import com.example.smartAir.ui.parent.ParentHomeFragment;
 import com.example.smartAir.ui.provider.ProviderHomeFragment;
 
@@ -66,13 +67,11 @@ public class RoleRouterFragment extends Fragment {
         } else {
             a.edit().putBoolean("not_first_launch", true);
 
-            Bundle args = new Bundle();
-            args.putSerializable("userRole", role);
+            OnboardingCreator creator = new OnboardingCreator(role, () -> {
+                System.out.println("Put a function here to navigate elsewhere...");
+            });
 
-            OnboardingContainerFragment onboarding = new OnboardingContainerFragment();
-            onboarding.setArguments(args);
-
-            navigateTo(onboarding);
+            navigateTo(creator.createOnboardingFragment());
         }
     }
 
