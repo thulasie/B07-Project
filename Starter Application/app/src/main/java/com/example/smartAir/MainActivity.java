@@ -22,34 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        db = FirebaseDatabase.getInstance("https://b07projectlogin-default-rtdb.firebaseio.com");
-
-        FirebaseAuth.getInstance().signInWithEmailAndPassword("elderflowerings@gmail.com", "thereisnogoodandbad")
-                .addOnCompleteListener(task -> {
-                    System.out.println("Logged in !");
-                    FirebaseAuth auth = FirebaseAuth.getInstance();
-
-                    TriageScreenCreator creator = new TriageScreenCreator(auth.getUid());
-
-                    ZoneEntryFacade.changeUser(auth.getUid(), () -> {
-                        creator.setHomeController(() -> {
-                            System.out.println("Going home...");
-                        });
-
-                        creator.setZoneStepsProvider((inflater, zone) -> {
-                            Chip view = (Chip) inflater.inflate(R.layout.triage_symptom_chip, null);
-                            view.setText(zone + " plan");
-
-                            return view;
-                        });
-
-                        creator.setBreathInformationProvider(ZoneEntryFacade.getBreathProvider());
-
-
-
-                        loadFragment(creator.createTriageFragment());
-                    });
-                });
+        loadFragment(new LoginFragment());
     }
 
     private void loadFragment(Fragment fragment) {
