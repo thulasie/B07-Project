@@ -1,4 +1,4 @@
-package com.example.smartAir.model;
+package com.example.smartAir.motivation;
 /*
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;*/

@@ -1,4 +1,4 @@
-package com.example.smartAir.adapter;
+package com.example.smartAir.ui.technique;
 
 import android.view.LayoutInflater;
 import android.view.View;

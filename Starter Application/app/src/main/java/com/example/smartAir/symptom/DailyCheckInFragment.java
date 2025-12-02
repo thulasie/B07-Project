@@ -1,4 +1,4 @@
-package com.example.smartAir.ui;
+package com.example.smartAir.symptom;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -19,11 +19,9 @@ import com.example.smartAir.domain.EntryAuthor;
 import com.example.smartAir.domain.SymptomEntry;
 import com.example.smartAir.domain.TriggerType;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 import java.util.UUID;
 
 public class DailyCheckInFragment extends Fragment {

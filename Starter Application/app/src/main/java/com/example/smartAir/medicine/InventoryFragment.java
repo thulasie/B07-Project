@@ -1,4 +1,4 @@
-package com.example.smartAir.ui;
+package com.example.smartAir.medicine;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,10 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 //import com.example.smartAir.AppDatabase;
 import com.example.smartAir.R;
-import com.example.smartAir.adapter.InventoryAdapter;
 import com.example.smartAir.firebase.Sync;
-import com.example.smartAir.model.InventoryItem;
-import com.example.smartAir.model.MedicineLog;
 
 import java.util.ArrayList;
 import java.util.List;

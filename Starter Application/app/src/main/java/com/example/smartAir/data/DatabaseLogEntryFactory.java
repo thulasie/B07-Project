@@ -1,5 +1,6 @@
 package com.example.smartAir.data;
 
+import com.example.smartAir.medicine.MedicineLog;
 import com.example.smartAir.pefAndRecovery.Pef;
 import com.example.smartAir.pefAndRecovery.ZoneChangeData;
 import com.example.smartAir.triaging.TriageLogEntryData;
@@ -17,6 +18,10 @@ public abstract class DatabaseLogEntryFactory {
                 return new PefFactory();
             case ZONE_CHANGE:
                 return new ZoneChangeFactory();
+            case SYMPTOM_ENTRY:
+                return new SymptomEntryDataFactory();
+            case MEDICINE_LOG:
+                return new MedicineLogFactory();
             default:
                 return new DefaultFactory();
         }
@@ -58,4 +63,15 @@ class DefaultFactory extends DatabaseLogEntryFactory {
 class ZoneChangeFactory extends DatabaseLogEntryFactory {
     @Override
     protected DatabaseLogEntryData create() {return new ZoneChangeData();}
+}
+
+class MedicineLogFactory extends DatabaseLogEntryFactory {
+    @Override
+    protected DatabaseLogEntryData create() {return new MedicineLog();}
+}
+
+class SymptomEntryDataFactory extends DatabaseLogEntryFactory {
+    @Override
+    protected DatabaseLogEntryData create() {return new SymptomEntryData();}
+
 }

@@ -1,4 +1,4 @@
-package com.example.smartAir.logic;
+package com.example.smartAir.alerting;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -9,13 +9,13 @@ import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
 import com.example.smartAir.R;
-import com.example.smartAir.R6model.InventoryStatus;
+import com.example.smartAir.medicine.InventoryStatus;
 import com.example.smartAir.R6model.RescueEvent;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class R6AlertManager {
+public class AlertManager {
 
     private static final String CHANNEL_ID = "SMART_AIR_R6_ALERTS";
 

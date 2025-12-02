@@ -8,9 +8,9 @@ import android.content.Context;
 import com.example.smartAir.dao.BadgeDao;
 import com.example.smartAir.dao.InventoryDao;
 import com.example.smartAir.dao.MedicineLogDao;
-import com.example.smartAir.model.Badge;
-import com.example.smartAir.model.InventoryItem;
-import com.example.smartAir.model.MedicineLog;
+import com.example.smartAir.motivation.Badge;
+import com.example.smartAir.Medicine.InventoryItem;
+import com.example.smartAir.Medicine.MedicineLog;
 
 @Database(entities = {MedicineLog.class, InventoryItem.class, Badge.class}, version = 1)
 public abstract class AppDatabase extends RoomDatabase {

@@ -1,4 +1,4 @@
-package com.example.smartAir.adapter;
+package com.example.smartAir.medicine;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,7 +8,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.smartAir.R;
-import com.example.smartAir.model.InventoryItem;
 
 import java.util.ArrayList;
 import java.util.List;

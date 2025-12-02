@@ -14,7 +14,6 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.smartAir.LoginFragment;
 import com.example.smartAir.R;
-import com.example.smartAir.data.UserProfile;
 import com.example.smartAir.domain.UserRole;
 import com.example.smartAir.ui.onboarding.OnboardingContainerFragment;
 import com.example.smartAir.ui.child.ChildHomeFragment;
@@ -35,12 +34,6 @@ public class RoleRouterFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        if (UserProfile.getProfileSingleton() == null) {
-            navigateTo(new LoginFragment());
-            System.out.println("Not logged in!");
-            return;
-        }
         UserRole role = null;
 
         if (getArguments() != null) {

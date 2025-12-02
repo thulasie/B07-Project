@@ -1,4 +1,4 @@
-package com.example.smartAir.ui;
+package com.example.smartAir.ui.technique;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -15,7 +15,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.smartAir.R;
-import com.example.smartAir.adapter.TechniqueStepsAdapter;
 
 import java.util.Arrays;
 import java.util.List;

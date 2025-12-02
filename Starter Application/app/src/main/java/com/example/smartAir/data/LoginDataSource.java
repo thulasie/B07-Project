@@ -1,7 +1,5 @@
 package com.example.smartAir.data;
 
-import com.example.smartAir.data.model.LoggedInUser;
-
 import java.io.IOException;
 
 /**

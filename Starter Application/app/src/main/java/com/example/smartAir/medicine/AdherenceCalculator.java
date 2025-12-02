@@ -1,6 +1,4 @@
-package com.example.smartAir.logic;
-
-import com.example.smartAir.R6model.ControllerDoseEvent;
+package com.example.smartAir.medicine;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;

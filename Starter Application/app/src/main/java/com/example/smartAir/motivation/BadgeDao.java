@@ -1,11 +1,11 @@
-package com.example.smartAir.dao;
+package com.example.smartAir.motivation;
 /*
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.smartAir.model.Badge;
+import com.example.smartAir.motivation.Badge;
 
 import java.util.List;
 

@@ -2,10 +2,10 @@ package com.example.smartAir.data;
 
 import androidx.annotation.NonNull;
 
-import com.example.smartAir.R6model.ControllerDoseEvent;
-import com.example.smartAir.R6model.InventoryStatus;
+import com.example.smartAir.medicine.ControllerDoseEvent;
+import com.example.smartAir.medicine.InventoryStatus;
 import com.example.smartAir.R6model.RescueEvent;
-import com.example.smartAir.R6model.SymptomLog;
+import com.example.smartAir.symptom.SymptomLog;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-public class R6Repository {
+public class R6Repository implements R6RepositoryInterface {
 
     private final FirebaseFirestore db;
     private final String childId;
@@ -24,6 +24,7 @@ public class R6Repository {
         this.childId = childId;
     }
 
+    @Override
     public Task<List<RescueEvent>> getRescueEvents(long fromMillis, long toMillis) {
         return db.collection("children").document(childId)
                 .collection("rescueEvents")
@@ -40,6 +41,7 @@ public class R6Repository {
                 });
     }
 
+    @Override
     public Task<List<ControllerDoseEvent>> getControllerDoses(long fromMillis, long toMillis) {
         return db.collection("children").document(childId)
                 .collection("controllerDoses")
@@ -56,6 +58,7 @@ public class R6Repository {
                 });
     }
 
+    @Override
     public Task<List<SymptomLog>> getSymptomLogs(long fromMillis, long toMillis) {
         return db.collection("children").document(childId)
                 .collection("symptoms")
@@ -72,6 +75,7 @@ public class R6Repository {
                 });
     }
 
+    @Override
     public Task<List<InventoryStatus>> getInventoryStatuses() {
         return db.collection("children").document(childId)
                 .collection("inventory")
@@ -86,10 +90,12 @@ public class R6Repository {
                 });
     }
 
+    @Override
     public long now() {
         return System.currentTimeMillis();
     }
 
+    @Override
     public long getStartMillisMonthsAgo(int months) {
         Calendar cal = Calendar.getInstance();
         cal.add(Calendar.MONTH, -months);

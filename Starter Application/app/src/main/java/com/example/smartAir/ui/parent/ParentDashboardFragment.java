@@ -14,12 +14,13 @@ import androidx.fragment.app.Fragment;
 
 import com.example.smartAir.R;
 import com.example.smartAir.data.R6Repository;
-import com.example.smartAir.logic.AdherenceCalculator;
-//import com.example.smartAir.logic.R6AlertManager;
-import com.example.smartAir.R6model.ControllerDoseEvent;
+import com.example.smartAir.data.R6RepositoryInterface;
+import com.example.smartAir.medicine.AdherenceCalculator;
+//import com.example.smartAir.alerting.R6AlertManager;
+import com.example.smartAir.medicine.ControllerDoseEvent;
 import com.example.smartAir.R6model.RescueEvent;
-import com.example.smartAir.R6model.SymptomLog;
-import com.example.smartAir.logic.R6AlertManager;
+import com.example.smartAir.symptom.SymptomLog;
+import com.example.smartAir.alerting.AlertManager;
 import com.example.smartAir.report.ProviderReportPdfUtil;
 import com.example.smartAir.ui.charts.TrendChartView;
 import com.google.android.gms.tasks.Tasks;
@@ -38,7 +39,7 @@ public class ParentDashboardFragment extends Fragment {
     private Button buttonToggleTrend, buttonExportPdf;
 
     private boolean show30Days = false;
-    private R6Repository repo;
+    private R6RepositoryInterface repo;
 
     private final String childId = "demoChildId"; // TODO real child id
     private final String childName = "Child";
@@ -117,8 +118,8 @@ public class ParentDashboardFragment extends Fragment {
                 String zone = AdherenceCalculator.calculateTodayZone(rescuesToday, symptomToday);
 
                 if (getContext() != null) {
-                    R6AlertManager.checkRedZoneDay(getContext(), rescuesToday);
-                    R6AlertManager.checkRapidRescues(getContext(), rescues);
+                    AlertManager.checkRedZoneDay(getContext(), rescuesToday);
+                    AlertManager.checkRapidRescues(getContext(), rescues);
                 }
 
                 int finalWeeklyRescues = weeklyRescues;

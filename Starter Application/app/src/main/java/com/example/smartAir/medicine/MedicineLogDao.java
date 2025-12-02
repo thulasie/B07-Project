@@ -1,4 +1,4 @@
-package com.example.smartAir.dao;
+package com.example.smartAir.medicine;
 
 /*import androidx.room.Dao;
 import androidx.room.Delete;
@@ -6,9 +6,6 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;*/
 
-import com.example.smartAir.model.MedicineLog;
-
-import java.util.List;
 /*
 @Dao
 public interface MedicineLogDao {

@@ -1,4 +1,4 @@
-package com.example.smartAir.R6model;
+package com.example.smartAir.medicine;
 
 public class InventoryStatus {
 

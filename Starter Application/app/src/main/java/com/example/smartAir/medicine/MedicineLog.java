@@ -1,9 +1,11 @@
-package com.example.smartAir.model;
+package com.example.smartAir.medicine;
 /*import androidx.room.Entity;
 import androidx.room.PrimaryKey;*/
 
+import com.example.smartAir.data.DatabaseLogEntryData;
+
 /*@Entity(tableName = "medicine_logs")*/
-public class MedicineLog {
+public class MedicineLog extends DatabaseLogEntryData {
     /*@PrimaryKey(autoGenerate = true)*/
     public long id;
 
@@ -11,4 +13,9 @@ public class MedicineLog {
     public long timestamp;
     public int dose;
     public boolean techniqueDone;
+
+    @Override
+    public String getLogEntry() {
+        return "";
+    }
 }

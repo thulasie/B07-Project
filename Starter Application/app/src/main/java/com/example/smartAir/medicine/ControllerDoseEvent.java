@@ -1,6 +1,6 @@
-package com.example.smartAir.R6model;
+package com.example.smartAir.medicine;
 
-public class ControllerDoseEvent {
+public class ControllerDoseEvent { // TODO CHANGE THIS UPPPP AGAIN!!!!
 
     private long timestampMillis;
     private boolean taken;

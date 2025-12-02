@@ -1,4 +1,4 @@
-package com.example.smartAir.dao;
+package com.example.smartAir.medicine;
 /*
 import androidx.room.Dao;
 import androidx.room.Delete;
@@ -6,7 +6,7 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.smartAir.model.InventoryItem;
+import com.example.smartAir.Medicine.InventoryItem;
 
 import java.util.List;
 

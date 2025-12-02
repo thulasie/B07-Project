@@ -1,14 +1,13 @@
 package com.example.smartAir.firebase;
 
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.example.smartAir.model.MedicineLog;
-import com.example.smartAir.model.InventoryItem;
-import com.example.smartAir.model.Badge;
+import com.example.smartAir.medicine.MedicineLog;
+import com.example.smartAir.medicine.InventoryItem;
+import com.example.smartAir.motivation.Badge;
 
-public class Sync {
+public class Sync { // TODO CHANGE THIS UP!!!!!!
 
     private final FirebaseFirestore db = FirebaseFirestore.getInstance();
-
 
     public void syncMedicineLog(MedicineLog log) {
         db.collection("medicine_logs")

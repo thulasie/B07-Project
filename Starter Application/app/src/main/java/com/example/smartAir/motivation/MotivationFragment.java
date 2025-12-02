@@ -1,4 +1,4 @@
-package com.example.smartAir.ui;
+package com.example.smartAir.motivation;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,8 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 //import com.example.smartAir.AppDatabase;
 import com.example.smartAir.R;
-import com.example.smartAir.adapter.BadgeAdapter;
-import com.example.smartAir.model.Badge;
 
 import java.util.ArrayList;
 import java.util.List;
