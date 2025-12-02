@@ -1,4 +1,4 @@
-package com.example.smartAir.logic;
+package com.example.smartAir.R6logic;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
