@@ -1,5 +1,6 @@
 package com.example.smartAir;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.*;
@@ -9,8 +10,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-
-import com.example.smartAir.ui.parent.ParentHomeFragment;
 
 public class LoginFragment extends Fragment implements LoginPresenter.View {
 
@@ -90,9 +89,11 @@ public class LoginFragment extends Fragment implements LoginPresenter.View {
 
     @Override
     public void navigateToParentHome() {
-        Intent intent = new Intent();
-        intent.setAction(".ParentHomeFragment");
-        startActivity(intent);
+//        Intent intent = new Intent();
+//        Activity parentActivity = getActivity();
+//        intent.setAction("com.example.smartAir.");
+//        startActivity(intent);
+        startActivity(new Intent(requireContext(), ParentHomeFragment.class));
 //        loadFragment(new ParentHomeFragment());
     }
 

@@ -1,4 +1,4 @@
-package com.example.smartAir.ui.parent;
+package com.example.smartAir;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,7 +13,6 @@ import androidx.navigation.NavController;
 import androidx.navigation.NavOptions;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.smartAir.R;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class ParentHomeFragment extends Fragment {
@@ -23,7 +22,8 @@ public class ParentHomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_parent_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_parent_home, container, false);
+        return view;
     }
 
     @Override
