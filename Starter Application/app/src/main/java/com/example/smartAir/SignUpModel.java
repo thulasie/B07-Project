@@ -68,11 +68,12 @@ public class SignUpModel {
     // Create a child profile under: users/{parentUid}/children/{childUid}
     public Task<Void> createChildProfile(String parentUid, Map<String, Object> childData) {
 
-        DatabaseReference childRef =
-                db.getReference("users")
-                        .child(parentUid)
-                        .child("children")
-                        .push();   // generate childID
+//        DatabaseReference childRef =
+//                db.getReference("users")
+//                        .child(parentUid)
+//                        .child("children")
+//                        .push();   // generate childID
+        DatabaseReference childRef = db.getReference("users");
         return childRef.setValue(childData);
     }
 }
