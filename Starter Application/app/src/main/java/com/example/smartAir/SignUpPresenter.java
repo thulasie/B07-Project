@@ -2,6 +2,7 @@ package com.example.smartAir;
 
 import android.text.TextUtils;
 
+import com.example.smartAir.domain.UserRole;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.HashMap;
@@ -16,12 +17,10 @@ public class SignUpPresenter {
     }
 
     private final View view;
-    private final SignUpModel model;
     private final FirebaseAuth auth;
 
-    public SignUpPresenter(View view, SignUpModel model) {
+    public SignUpPresenter(View view) {
         this.view = view;
-        this.model = model;
         this.auth = FirebaseAuth.getInstance();
     }
 
@@ -30,6 +29,12 @@ public class SignUpPresenter {
             view.showError("Email and password are required.");
             return;
         }
+
+        if (!email.contains("@")){
+            email = email + "@smartair.com";
+        }
+
+        final String user = email;
 
         view.showLoading(true);
         auth.createUserWithEmailAndPassword(email, password)
@@ -40,49 +45,20 @@ public class SignUpPresenter {
                         return;
                     }
 
-                    String uid = auth.getCurrentUser().getUid();
-                    Map<String, Object> data = new HashMap<>();
-                    data.put("email", email);
-                    data.put("role", role.toLowerCase());
-                    data.put("createdAt", System.currentTimeMillis());
+                    SignUpModel.registerUser(task.getResult().getUser().getUid(), user, UserRole.valueOf(role.toUpperCase()), new SignUpModel.OnSuccessListener() {
+                        @Override
+                        public void onSuccess() {
+                            view.showLoading(false);
+                            view.showMessage("Try logging in now!");
+                            view.navigateToLogin();
+                        }
 
-                    model.createUserDocument(uid, data)
-                            .addOnCompleteListener(docTask -> {
-                                view.showLoading(false);
-                                if (docTask.isSuccessful()) {
-                                    view.showMessage("Account created. Please login.");
-                                    view.navigateToLogin();
-                                } else {
-                                    view.showError("Failed to save user data: " + (docTask.getException() != null ? docTask.getException().getMessage() : "unknown"));
-                                }
-                            });
-                });
-    }
-
-    public void createChildProfile(String parentUid, String childName, String childDOB) {
-        if (TextUtils.isEmpty(parentUid)) {
-            view.showError("Parent must be logged in to create a child profile.");
-            return;
-        }
-        if (TextUtils.isEmpty(childName)) {
-            view.showError("Child name is required.");
-            return;
-        }
-
-        view.showLoading(true);
-        Map<String, Object> childData = new HashMap<>();
-        childData.put("name", childName);
-        childData.put("dob", childDOB);
-        childData.put("createdAt", System.currentTimeMillis());
-
-        model.createChildProfile(parentUid, childData)
-                .addOnCompleteListener(task -> {
-                    view.showLoading(false);
-                    if (task.isSuccessful()) {
-                        view.showMessage("Child profile created.");
-                    } else {
-                        view.showError("Failed to create child profile: " + (task.getException() != null ? task.getException().getMessage() : "unknown"));
-                    }
+                        @Override
+                        public void onFailure() {
+                            view.showLoading(false);
+                            view.showError("Sign up failed for some reason");
+                        }
+                    });
                 });
     }
 

@@ -20,7 +20,7 @@ public class SignUpFragment extends Fragment implements SignUpPresenter.View {
     private EditText inputEmail, inputPassword;
     private EditText childNameInput, childDOBInput;
     private Spinner roleSpinner;
-    private Button signUpButton, createChildProfileButton, backButton;
+    private Button signUpButton, backButton;
     private ProgressBar progressBar;
 
     private SignUpPresenter presenter;
@@ -38,47 +38,32 @@ public class SignUpFragment extends Fragment implements SignUpPresenter.View {
         roleSpinner = view.findViewById(R.id.roleSpinner);
         inputEmail = view.findViewById(R.id.inputEmail);
         inputPassword = view.findViewById(R.id.inputPassword);
-        childNameInput = view.findViewById(R.id.childNameInput);
-        childDOBInput = view.findViewById(R.id.childDOBInput);
         signUpButton = view.findViewById(R.id.signUpButton);
-        createChildProfileButton = view.findViewById(R.id.createChildProfileButton);
         backButton = view.findViewById(R.id.backButton);
         progressBar = view.findViewById(R.id.progressBar);
 
         // spinner
         ArrayAdapter<String> adapter = new ArrayAdapter<>(requireContext(),
                 android.R.layout.simple_spinner_item,
-                new String[]{"Parent", "Provider", "Child (Email)", "Child (Profile)"});
+                new String[]{"Parent", "Provider", "Child"});
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         roleSpinner.setAdapter(adapter);
 
         // firebase + presenter
         mAuth = FirebaseAuth.getInstance();
-        presenter = new SignUpPresenter(this, new SignUpModel());
+        presenter = new SignUpPresenter(this);
 
         signUpButton.setOnClickListener(v -> {
             String sel = roleSpinner.getSelectedItem().toString();
             String role = parseRole(sel);
 
-            if ("child_profile".equals(role)) {
-                showError("Use 'Create Child Profile' for child profiles without email.");
-                return;
+            if ("child".equalsIgnoreCase(role)) {
+                presenter.registerEmailUser(inputEmail.getText().toString().trim() + "@smartair.com",
+                        inputPassword.getText().toString().trim(), role);
+            } else {
+                presenter.registerEmailUser(inputEmail.getText().toString().trim(),
+                        inputPassword.getText().toString().trim(), role);
             }
-            presenter.registerEmailUser(inputEmail.getText().toString().trim(),
-                    inputPassword.getText().toString().trim(),
-                    role);
-        });
-
-        createChildProfileButton.setOnClickListener(v -> {
-            // require logged in parent
-            if (mAuth.getCurrentUser() == null) {
-                showError("Parent must be logged in to create child profiles.");
-                return;
-            }
-            String parentUid = mAuth.getCurrentUser().getUid();
-            presenter.createChildProfile(parentUid,
-                    childNameInput.getText().toString().trim(),
-                    childDOBInput.getText().toString().trim());
         });
 
         backButton.setOnClickListener(v -> navigateToLogin());
@@ -90,8 +75,7 @@ public class SignUpFragment extends Fragment implements SignUpPresenter.View {
         sel = sel.toLowerCase();
         if (sel.contains("parent")) return "parent";
         if (sel.contains("provider")) return "provider";
-        if (sel.contains("email")) return "child";
-        return "child_profile";
+        return "child";
     }
 
     // View methods

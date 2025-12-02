@@ -49,13 +49,13 @@ public class HomeFragmentChild extends Fragment {
     }
 
     private void navigateToDailyLogin() {
-        DailyCheckInFacade.create(UserInfo.singleton.username,
-                () -> loader.load(UserInfo.getFactory().makeUserDashboard()),
+        DailyCheckInFacade.create(UserBasicInfo.getUsername(),
+                () -> loader.load(UserBasicInfo.getHomeFragment()),
                 EntryAuthor.CHILD);
     }
 
     private void navigateToBadges() {
-        loader.load(MotivationFacade.createMotivationFragment(UserInfo.singleton.username));
+        loader.load(MotivationFacade.createMotivationFragment(UserBasicInfo.getUsername()));
     }
 
     private void navigateToPEFEntry() {
@@ -64,12 +64,12 @@ public class HomeFragmentChild extends Fragment {
     }
 
     private void navigateToMedicineLog() {
-        loader.load(MedicineLogFragmentFactory.create(UserInfo.singleton.username, provider::goBack));
+        loader.load(MedicineLogFragmentFactory.create(UserBasicInfo.getUsername(), provider::goBack));
 
     }
 
     private void navigateToTriage() {
-        TriageScreenCreator t = new TriageScreenCreator(UserInfo.singleton.username);
+        TriageScreenCreator t = new TriageScreenCreator(UserBasicInfo.getUsername());
         t.setHomeController(provider::goBack);
         t.setBreathInformationProvider(ZoneEntryFacade.getBreathProvider());
         loader.load(t.createTriageFragment());

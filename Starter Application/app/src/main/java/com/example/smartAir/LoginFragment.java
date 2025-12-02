@@ -11,12 +11,11 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.smartAir.ui.router.RoleRouterFragment;
+import com.example.smartAir.userinfo.UserBasicInfo;
 
 public class LoginFragment extends Fragment implements LoginPresenter.View {
 
     private EditText emailInput, passwordInput, childIdInput;
-    private Spinner roleSpinner;
     private Button loginButton, goSignupButton, forgotButton;
     private ProgressBar progressBar;
 
@@ -32,32 +31,18 @@ public class LoginFragment extends Fragment implements LoginPresenter.View {
 
         emailInput = view.findViewById(R.id.loginEmailInput);
         passwordInput = view.findViewById(R.id.loginPasswordInput);
-        childIdInput = view.findViewById(R.id.childIdInput); // optional in layout
-        roleSpinner = view.findViewById(R.id.loginRoleSpinner);
         loginButton = view.findViewById(R.id.loginButton);
         goSignupButton = view.findViewById(R.id.goToSignupButton);
         forgotButton = view.findViewById(R.id.forgotPasswordButton);
         progressBar = view.findViewById(R.id.loginProgressBar);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(requireContext(),
-                android.R.layout.simple_spinner_item,
-                new String[]{"Parent", "Provider", "Child (Email)", "Child (Profile)"});
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        roleSpinner.setAdapter(adapter);
-
         presenter = new LoginPresenter(this, new LoginModel());
 
         loginButton.setOnClickListener(v -> {
-            String roleSel = roleSpinner.getSelectedItem().toString().toLowerCase();
-            if (roleSel.contains("profile")) {
-                // child profile login - use childIdInput
-                String childId = childIdInput != null ? childIdInput.getText().toString().trim() : "";
-                presenter.loginChildProfile(childId);
-            } else {
-                String email = emailInput.getText().toString().trim();
-                String pw = passwordInput.getText().toString().trim();
-                presenter.loginWithEmail(email, pw);
-            }
+
+            String email = emailInput.getText().toString().trim();
+            String pw = passwordInput.getText().toString().trim();
+            presenter.loginWithEmail(email, pw);
         });
 
         goSignupButton.setOnClickListener(v -> navigateToFragment(new SignUpFragment()));
@@ -84,13 +69,9 @@ public class LoginFragment extends Fragment implements LoginPresenter.View {
     }
 
     @Override
-    public void navigateToRoleDashboard(String role) {
-        navigateToFragment(new RoleRouterFragment());
-    }
-
-    @Override
-    public void navigateToChildDashboard() {
-        navigateToFragment(new RoleRouterFragment());
+    public void navigateToDashboard() {
+        System.out.println("Logged in !");
+        navigateToFragment(UserBasicInfo.getHomeFragment());
     }
 
     private void navigateToFragment(Fragment f) {

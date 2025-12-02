@@ -23,19 +23,12 @@
             android:textColor="#333333"
             android:layout_marginBottom="20dp" />
 
-        <!-- Role Selector -->
-        <Spinner
-            android:id="@+id/loginRoleSpinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp" />
-
         <!-- Email Input -->
         <EditText
             android:id="@+id/loginEmailInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:hint="Email/Username"
             android:inputType="textEmailAddress"
             android:background="@android:drawable/edit_text"
             android:padding="12dp"
@@ -53,16 +46,6 @@
             android:padding="12dp"
             android:textSize="16sp"
             android:layout_marginBottom="8dp" />
-
-        <EditText
-            android:id="@+id/childIdInput"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="Child Profile ID"
-            android:padding="12dp"
-            android:textSize="16sp"
-            android:background="@android:drawable/edit_text"
-            android:layout_marginTop="12dp" />
 
 
         <!-- Forgot Password -->

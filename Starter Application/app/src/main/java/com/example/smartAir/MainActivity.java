@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         Date startDate = new Date(1764663968695L), endDate = new Date();
         wanted.add(DatabaseLogType.RESCUE_USE);
 
-        loadFragment(LogFragment.makeLogFragment(wanted, startDate, endDate, TEMP_USER));
+        loadFragment(new LoginFragment());
     }
 
     private void loadFragment(Fragment fragment) {
@@ -71,4 +71,5 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Provide bindings for navigating back....
+
 }

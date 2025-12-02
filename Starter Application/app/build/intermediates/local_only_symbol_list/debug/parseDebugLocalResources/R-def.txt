@@ -66,11 +66,8 @@ id cbExercise
 id cbIllness
 id cbOdors
 id cbSmoke
-id childDOBInput
 id childHomeFragment
-id childIdInput
 id childInfoButton
-id childNameInput
 id child_home_enter_log_medicine
 id child_home_enter_pef
 id child_home_sign_out_button
@@ -82,7 +79,6 @@ id child_home_triage_start
 id child_home_view_badges
 id controller_canister_button
 id controller_canister_details
-id createChildProfileButton
 id dailyCheckInFragment
 id debug_messages
 id editDateOfBirth
@@ -116,7 +112,6 @@ id loginButton
 id loginEmailInput
 id loginPasswordInput
 id loginProgressBar
-id loginRoleSpinner
 id loginTitle
 id logs_spinner
 id logs_title
