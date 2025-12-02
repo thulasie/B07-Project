@@ -16,13 +16,13 @@
             android:layout_height="wrap_content"
             android:text="Controller" />
 
-    </RadioGroup>
+        <RadioButton
+            android:id="@+id/rb_rescue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rescue" />
 
-    <RadioButton
-        android:id="@+id/rb_rescue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rescue" />
+    </RadioGroup>
 
     <NumberPicker
         android:id="@+id/picker_dose"

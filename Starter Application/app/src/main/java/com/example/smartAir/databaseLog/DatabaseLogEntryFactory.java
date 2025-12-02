@@ -22,7 +22,8 @@ public abstract class DatabaseLogEntryFactory {
                 return new ZoneChangeFactory();
             case SYMPTOM_ENTRY:
                 return new SymptomEntryDataFactory();
-            case MEDICINE_LOG:
+            case CONTROLLER_USE:
+            case RESCUE_USE:
                 return new MedicineLogFactory();
             case BADGE:
                 return new BadgeFactory();

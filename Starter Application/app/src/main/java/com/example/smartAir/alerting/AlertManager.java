@@ -9,7 +9,7 @@ import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
 import com.example.smartAir.R;
-import com.example.smartAir.medicine.InventoryStatus;
+import com.example.smartAir.inventory.InventoryStatus;
 import com.example.smartAir.R6model.RescueEvent;
 
 import java.util.List;

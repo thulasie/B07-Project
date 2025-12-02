@@ -18,4 +18,8 @@ public class MedicineLog extends DatabaseLogEntryData {
     public String getLogEntry() {
         return "";
     }
+
+    public long getTimestamp() {
+        return timestamp;
+    }
 }

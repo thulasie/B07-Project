@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.example.smartAir.app-debug-59:/layout_canister_entry.xml.flat",
+        "source": "com.example.smartAir.app-main-61:/layout/canister_entry.xml"
+    },
+    {
         "merged": "com.example.smartAir.app-debug-59:/layout_item_medicine_log.xml.flat",
         "source": "com.example.smartAir.app-main-61:/layout/item_medicine_log.xml"
     },
@@ -32,10 +36,6 @@
         "source": "com.example.smartAir.app-main-61:/layout/fragment_log_medicine.xml"
     },
     {
-        "merged": "com.example.smartAir.app-debug-59:/layout_fragment_login.xml.flat",
-        "source": "com.example.smartAir.app-main-61:/layout/fragment_login.xml"
-    },
-    {
         "merged": "com.example.smartAir.app-debug-59:/layout_triage_fragment_decision_card.xml.flat",
         "source": "com.example.smartAir.app-main-61:/layout/triage_fragment_decision_card.xml"
     },
@@ -56,8 +56,8 @@
         "source": "com.example.smartAir.app-main-61:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.smartAir.app-debug-59:/layout_activity_parent_home.xml.flat",
-        "source": "com.example.smartAir.app-main-61:/layout/activity_parent_home.xml"
+        "merged": "com.example.smartAir.app-debug-59:/layout_inventory_container.xml.flat",
+        "source": "com.example.smartAir.app-main-61:/layout/inventory_container.xml"
     },
     {
         "merged": "com.example.smartAir.app-debug-59:/drawable_not_my_cat_low_res.jpg.flat",
@@ -70,10 +70,6 @@
     {
         "merged": "com.example.smartAir.app-debug-59:/layout_onboarding_container.xml.flat",
         "source": "com.example.smartAir.app-main-61:/layout/onboarding_container.xml"
-    },
-    {
-        "merged": "com.example.smartAir.app-debug-59:/layout_content_login_page.xml.flat",
-        "source": "com.example.smartAir.app-main-61:/layout/content_login_page.xml"
     },
     {
         "merged": "com.example.smartAir.app-debug-59:/layout_triage_fragment.xml.flat",
@@ -90,10 +86,6 @@
     {
         "merged": "com.example.smartAir.app-debug-59:/drawable_squeak.jpg.flat",
         "source": "com.example.smartAir.app-main-61:/drawable/squeak.jpg"
-    },
-    {
-        "merged": "com.example.smartAir.app-debug-59:/layout_fragment_spinner.xml.flat",
-        "source": "com.example.smartAir.app-main-61:/layout/fragment_spinner.xml"
     },
     {
         "merged": "com.example.smartAir.app-debug-59:/layout_activity_item_adapater.xml.flat",
@@ -132,10 +124,6 @@
         "source": "com.example.smartAir.app-main-61:/layout/fragment_provider_home.xml"
     },
     {
-        "merged": "com.example.smartAir.app-debug-59:/layout_fragment_first.xml.flat",
-        "source": "com.example.smartAir.app-main-61:/layout/fragment_first.xml"
-    },
-    {
         "merged": "com.example.smartAir.app-debug-59:/layout_triage_symptom_chip.xml.flat",
         "source": "com.example.smartAir.app-main-61:/layout/triage_symptom_chip.xml"
     },
@@ -172,8 +160,8 @@
         "source": "com.example.smartAir.app-main-61:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.example.smartAir.app-debug-59:/layout_activity_child_home.xml.flat",
-        "source": "com.example.smartAir.app-main-61:/layout/activity_child_home.xml"
+        "merged": "com.example.smartAir.app-debug-59:/layout_fragment_container.xml.flat",
+        "source": "com.example.smartAir.app-main-61:/layout/fragment_container.xml"
     },
     {
         "merged": "com.example.smartAir.app-debug-59:/layout_triage_generic_screen.xml.flat",
@@ -216,20 +204,12 @@
         "source": "com.example.smartAir.app-main-61:/layout/debug_message.xml"
     },
     {
-        "merged": "com.example.smartAir.app-debug-59:/layout_fragment_scroller.xml.flat",
-        "source": "com.example.smartAir.app-main-61:/layout/fragment_scroller.xml"
-    },
-    {
         "merged": "com.example.smartAir.app-debug-59:/layout_forgot_password_fragment.xml.flat",
         "source": "com.example.smartAir.app-main-61:/layout/forgot_password_fragment.xml"
     },
     {
         "merged": "com.example.smartAir.app-debug-59:/layout_temp_information.xml.flat",
         "source": "com.example.smartAir.app-main-61:/layout/temp_information.xml"
-    },
-    {
-        "merged": "com.example.smartAir.app-debug-59:/layout_fragment_second2.xml.flat",
-        "source": "com.example.smartAir.app-main-61:/layout/fragment_second2.xml"
     },
     {
         "merged": "com.example.smartAir.app-debug-59:/layout_fragment_recycler_view_static.xml.flat",
@@ -240,28 +220,8 @@
         "source": "com.example.smartAir.app-main-61:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.smartAir.app-debug-59:/layout_content_activity_login_page.xml.flat",
-        "source": "com.example.smartAir.app-main-61:/layout/content_activity_login_page.xml"
-    },
-    {
-        "merged": "com.example.smartAir.app-debug-59:/layout_activity_provider_home.xml.flat",
-        "source": "com.example.smartAir.app-main-61:/layout/activity_provider_home.xml"
-    },
-    {
-        "merged": "com.example.smartAir.app-debug-59:/layout_activity_home_fragment.xml.flat",
-        "source": "com.example.smartAir.app-main-61:/layout/activity_home_fragment.xml"
-    },
-    {
-        "merged": "com.example.smartAir.app-debug-59:/layout_fragment_second.xml.flat",
-        "source": "com.example.smartAir.app-main-61:/layout/fragment_second.xml"
-    },
-    {
         "merged": "com.example.smartAir.app-debug-59:/layout_activity_mtmactivity.xml.flat",
         "source": "com.example.smartAir.app-main-61:/layout/activity_mtmactivity.xml"
-    },
-    {
-        "merged": "com.example.smartAir.app-debug-59:/layout_fragment_first2.xml.flat",
-        "source": "com.example.smartAir.app-main-61:/layout/fragment_first2.xml"
     },
     {
         "merged": "com.example.smartAir.app-debug-59:/mipmap-xxxhdpi_ic_launcher.webp.flat",
@@ -284,10 +244,6 @@
         "source": "com.example.smartAir.app-main-61:/layout/fragment_pef_entry.xml"
     },
     {
-        "merged": "com.example.smartAir.app-debug-59:/layout_activity_login_page.xml.flat",
-        "source": "com.example.smartAir.app-main-61:/layout/activity_login_page.xml"
-    },
-    {
         "merged": "com.example.smartAir.app-debug-59:/mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "com.example.smartAir.app-main-61:/mipmap-xhdpi/ic_launcher.webp"
     },
@@ -298,10 +254,6 @@
     {
         "merged": "com.example.smartAir.app-debug-59:/layout_item_layout.xml.flat",
         "source": "com.example.smartAir.app-main-61:/layout/item_layout.xml"
-    },
-    {
-        "merged": "com.example.smartAir.app-debug-59:/layout_fragment_inventory.xml.flat",
-        "source": "com.example.smartAir.app-main-61:/layout/fragment_inventory.xml"
     },
     {
         "merged": "com.example.smartAir.app-debug-59:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
@@ -338,5 +290,9 @@
     {
         "merged": "com.example.smartAir.app-debug-59:/mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "com.example.smartAir.app-main-61:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.smartAir.app-debug-59:/layout_canister_home_page.xml.flat",
+        "source": "com.example.smartAir.app-main-61:/layout/canister_home_page.xml"
     }
 ]

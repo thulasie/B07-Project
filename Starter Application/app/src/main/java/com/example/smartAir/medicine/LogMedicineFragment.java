@@ -12,31 +12,20 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import java.util.ArrayList;
 
 //import com.example.smartAir.AppDatabase;
 import com.example.smartAir.R;
-import com.example.smartAir.firebase.Sync;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Date;
 
 public class LogMedicineFragment extends Fragment {
-
-    public interface LogMedicineLoader { // TODO create implementation of this
-        long getID();
-        void getLogs(List<MedicineLog> buf, Callback c);
-    }
 
     interface Callback {
         void run();
     }
 
     private MedicineLogAdapter adapter;
-    private LogMedicineLoader loader;
-
-    public void setLoader(LogMedicineLoader loader) {
-        this.loader = loader;
-    }
 
     @Nullable
     @Override
@@ -62,24 +51,25 @@ public class LogMedicineFragment extends Fragment {
 
         loadLogs();
 
-        btnSave.setOnClickListener(v -> {
+        btnSave.setOnClickListener(v -> { // TODO study this
             MedicineLog log = new MedicineLog();
+            log.dose = dosePicker.getValue();
             int checked = typeGroup.getCheckedRadioButtonId();
             log.type = checked == R.id.rb_rescue ? "rescue" : "controller";
-            log.dose = dosePicker.getValue();
-            log.timestamp = System.currentTimeMillis();
-
-            long id = loader.getID();//AppDatabase.getInstance(getContext()).medicineLogDao().insert(log);
-            log.id = id;
-
-            new Sync().syncMedicineLog(log);
+            log.timestamp = new Date().getTime();
+            // Creates a new medicine log
+            if (checked == R.id.rb_rescue) {
+                MedicineDatabaseLogger.logRescueUse(log);
+            } else {
+                MedicineDatabaseLogger.logControllerUse(log);
+            }
 
             loadLogs();
         });
     }
 
     private void loadLogs() {
-        List<MedicineLog> buf = new ArrayList<>(); //AppDatabase.getInstance(getContext()).medicineLogDao().getAll();
-        loader.getLogs(buf, () -> adapter.setItems(buf));
+        ArrayList<MedicineLog> buf = new ArrayList<>(); //AppDatabase.getInstance(getContext()).medicineLogDao().getAll();
+        MedicineDatabaseLogger.getLogs(buf, () -> adapter.setItems(buf));
     }
 }

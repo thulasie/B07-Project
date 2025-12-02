@@ -99,12 +99,12 @@ public class LoginFragment extends Fragment implements LoginPresenter.View {
 
     @Override
     public void navigateToChildHome() {
-        startActivity(new Intent(requireContext(), ChildHomeActivity.class));
+        //startActivity(new Intent(requireContext(), ChildHomeActivity.class));
     }
 
     @Override
     public void navigateToProviderHome() {
-        startActivity(new Intent(requireContext(), ProviderHomeActivity.class));
+        //startActivity(new Intent(requireContext(), ProviderHomeActivity.class));
     }
 
     @Override

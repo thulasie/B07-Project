@@ -1,6 +1,6 @@
 package com.example.smartAir;
 
-import com.example.smartAir.data.UserProfile;
+//import com.example.smartAir.data.UserProfile;
 import com.example.smartAir.domain.UserRole;
 
 public class LoginPresenter {
@@ -36,9 +36,9 @@ public class LoginPresenter {
                 view.showLoading(false);
                 view.showMessage("Welcome!");
 
-                UserProfile.initializeEmailProfile(() -> {
+                /*UserProfile.initializeEmailProfile(() -> {
                     routeByRole(role);
-                });
+                });*/
             }
 
             @Override

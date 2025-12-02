@@ -11,53 +11,53 @@
 11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 12    <!-- <uses-sdk android:minSdkVersion="21" /> -->
 13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-13-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/e25c0fd63d5c17e7d06123ce12dab646/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:10:5-79
-13-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/e25c0fd63d5c17e7d06123ce12dab646/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:10:22-76
+13-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/1193f050f0cf64b878005f953729830a/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:10:5-79
+13-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/1193f050f0cf64b878005f953729830a/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:10:22-76
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/e25c0fd63d5c17e7d06123ce12dab646/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:11:5-67
-14-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/e25c0fd63d5c17e7d06123ce12dab646/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:11:22-64
+14-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/1193f050f0cf64b878005f953729830a/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:11:5-67
+14-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/1193f050f0cf64b878005f953729830a/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:11:22-64
 15    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-15-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:23:5-77
-15-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:23:22-74
+15-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:23:5-77
+15-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:23:22-74
 16    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-16-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:24:5-68
-16-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:24:22-65
+16-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:24:5-68
+16-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:24:22-65
 17    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-17-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:26:5-82
-17-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:26:22-79
+17-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:26:5-82
+17-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:26:22-79
 18    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-18-->[com.google.android.recaptcha:recaptcha:18.6.1] /Users/tylergu/.gradle/caches/8.13/transforms/1acf835885266faf62a9d8dc0a86811f/transformed/recaptcha-18.6.1/AndroidManifest.xml:9:5-98
-18-->[com.google.android.recaptcha:recaptcha:18.6.1] /Users/tylergu/.gradle/caches/8.13/transforms/1acf835885266faf62a9d8dc0a86811f/transformed/recaptcha-18.6.1/AndroidManifest.xml:9:22-95
+18-->[com.google.android.recaptcha:recaptcha:18.6.1] /Users/tylergu/.gradle/caches/8.13/transforms/3bda213422f4d8244f7819d5907361fe/transformed/recaptcha-18.6.1/AndroidManifest.xml:9:5-98
+18-->[com.google.android.recaptcha:recaptcha:18.6.1] /Users/tylergu/.gradle/caches/8.13/transforms/3bda213422f4d8244f7819d5907361fe/transformed/recaptcha-18.6.1/AndroidManifest.xml:9:22-95
 19    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-19-->[com.google.android.gms:play-services-measurement-api:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/04c5edec467d20825910a0a4139ccd1f/transformed/play-services-measurement-api-23.0.0/AndroidManifest.xml:25:5-79
-19-->[com.google.android.gms:play-services-measurement-api:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/04c5edec467d20825910a0a4139ccd1f/transformed/play-services-measurement-api-23.0.0/AndroidManifest.xml:25:22-76
+19-->[com.google.android.gms:play-services-measurement-api:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/3cdcfe8145eefd21b9114177b2f1ad17/transformed/play-services-measurement-api-23.0.0/AndroidManifest.xml:25:5-79
+19-->[com.google.android.gms:play-services-measurement-api:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/3cdcfe8145eefd21b9114177b2f1ad17/transformed/play-services-measurement-api-23.0.0/AndroidManifest.xml:25:22-76
 20    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
-20-->[com.google.android.gms:play-services-measurement-api:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/04c5edec467d20825910a0a4139ccd1f/transformed/play-services-measurement-api-23.0.0/AndroidManifest.xml:26:5-88
-20-->[com.google.android.gms:play-services-measurement-api:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/04c5edec467d20825910a0a4139ccd1f/transformed/play-services-measurement-api-23.0.0/AndroidManifest.xml:26:22-85
+20-->[com.google.android.gms:play-services-measurement-api:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/3cdcfe8145eefd21b9114177b2f1ad17/transformed/play-services-measurement-api-23.0.0/AndroidManifest.xml:26:5-88
+20-->[com.google.android.gms:play-services-measurement-api:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/3cdcfe8145eefd21b9114177b2f1ad17/transformed/play-services-measurement-api-23.0.0/AndroidManifest.xml:26:22-85
 21    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
-21-->[com.google.android.gms:play-services-measurement-api:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/04c5edec467d20825910a0a4139ccd1f/transformed/play-services-measurement-api-23.0.0/AndroidManifest.xml:27:5-82
-21-->[com.google.android.gms:play-services-measurement-api:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/04c5edec467d20825910a0a4139ccd1f/transformed/play-services-measurement-api-23.0.0/AndroidManifest.xml:27:22-79
+21-->[com.google.android.gms:play-services-measurement-api:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/3cdcfe8145eefd21b9114177b2f1ad17/transformed/play-services-measurement-api-23.0.0/AndroidManifest.xml:27:5-82
+21-->[com.google.android.gms:play-services-measurement-api:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/3cdcfe8145eefd21b9114177b2f1ad17/transformed/play-services-measurement-api-23.0.0/AndroidManifest.xml:27:22-79
 22    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-22-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/6f2e232ce41d9132d6e3b52f7702d096/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:26:5-110
-22-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/6f2e232ce41d9132d6e3b52f7702d096/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:26:22-107
+22-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/67defab36378ada4125068ed28a0d6bd/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:26:5-110
+22-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/67defab36378ada4125068ed28a0d6bd/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:26:22-107
 23
 24    <permission
-24-->[androidx.core:core:1.13.1] /Users/tylergu/.gradle/caches/8.13/transforms/e4e1ac3ea114f12d62cc9b1296cd8143/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+24-->[androidx.core:core:1.13.1] /Users/tylergu/.gradle/caches/8.13/transforms/73f55a66bc0736cf2173e14bd875c1aa/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
 25        android:name="com.example.smartAir.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-25-->[androidx.core:core:1.13.1] /Users/tylergu/.gradle/caches/8.13/transforms/e4e1ac3ea114f12d62cc9b1296cd8143/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+25-->[androidx.core:core:1.13.1] /Users/tylergu/.gradle/caches/8.13/transforms/73f55a66bc0736cf2173e14bd875c1aa/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
 26        android:protectionLevel="signature" />
-26-->[androidx.core:core:1.13.1] /Users/tylergu/.gradle/caches/8.13/transforms/e4e1ac3ea114f12d62cc9b1296cd8143/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+26-->[androidx.core:core:1.13.1] /Users/tylergu/.gradle/caches/8.13/transforms/73f55a66bc0736cf2173e14bd875c1aa/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
 27
 28    <uses-permission android:name="com.example.smartAir.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-28-->[androidx.core:core:1.13.1] /Users/tylergu/.gradle/caches/8.13/transforms/e4e1ac3ea114f12d62cc9b1296cd8143/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
-28-->[androidx.core:core:1.13.1] /Users/tylergu/.gradle/caches/8.13/transforms/e4e1ac3ea114f12d62cc9b1296cd8143/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+28-->[androidx.core:core:1.13.1] /Users/tylergu/.gradle/caches/8.13/transforms/73f55a66bc0736cf2173e14bd875c1aa/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+28-->[androidx.core:core:1.13.1] /Users/tylergu/.gradle/caches/8.13/transforms/73f55a66bc0736cf2173e14bd875c1aa/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
 29
 30    <application
-30-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:6:5-27:19
+30-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:6:5-37:19
 31        android:allowBackup="true"
 31-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:7:9-35
 32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-32-->[androidx.core:core:1.13.1] /Users/tylergu/.gradle/caches/8.13/transforms/e4e1ac3ea114f12d62cc9b1296cd8143/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+32-->[androidx.core:core:1.13.1] /Users/tylergu/.gradle/caches/8.13/transforms/73f55a66bc0736cf2173e14bd875c1aa/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 33        android:dataExtractionRules="@xml/data_extraction_rules"
 33-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:8:9-65
 34        android:debuggable="true"
@@ -76,13 +76,13 @@
 42        android:theme="@style/Theme.B07DemoSummer2024" >
 42-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:14:9-55
 43        <activity
-43-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:17:9-24:20
+43-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:17:9-25:20
 44            android:name="com.example.smartAir.MainActivity"
 44-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:18:13-41
 45            android:exported="true" >
 45-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:19:13-36
 46            <intent-filter>
-46-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:20:13-23:29
+46-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:20:13-24:29
 47                <action android:name="android.intent.action.MAIN" />
 47-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:21:17-69
 47-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:21:25-66
@@ -90,447 +90,467 @@
 49                <category android:name="android.intent.category.LAUNCHER" />
 49-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:22:17-77
 49-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:22:27-74
-50            </intent-filter>
-51        </activity>
-52        <activity
-52-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:26:9-72
-53            android:name="com.example.smartAir.MTMActivity"
-53-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:26:19-46
-54            android:exported="true" />
-54-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:26:47-70
-55
-56        <service
-56-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/e25c0fd63d5c17e7d06123ce12dab646/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:14:9-23:19
-57            android:name="com.google.firebase.components.ComponentDiscoveryService"
-57-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/e25c0fd63d5c17e7d06123ce12dab646/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:15:13-84
-58            android:directBootAware="true"
-58-->[com.google.firebase:firebase-common:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/93ca5442138901495fb868e38c0fe307/transformed/firebase-common-22.0.1/AndroidManifest.xml:32:13-43
-59            android:exported="false" >
-59-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/e25c0fd63d5c17e7d06123ce12dab646/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:16:13-37
-60            <meta-data
-60-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/e25c0fd63d5c17e7d06123ce12dab646/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:17:13-19:85
-61                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
-61-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/e25c0fd63d5c17e7d06123ce12dab646/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:18:17-122
-62                android:value="com.google.firebase.components.ComponentRegistrar" />
-62-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/e25c0fd63d5c17e7d06123ce12dab646/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:19:17-82
-63            <meta-data
-63-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/e25c0fd63d5c17e7d06123ce12dab646/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:20:13-22:85
-64                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-64-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/e25c0fd63d5c17e7d06123ce12dab646/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:21:17-111
-65                android:value="com.google.firebase.components.ComponentRegistrar" />
-65-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/e25c0fd63d5c17e7d06123ce12dab646/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:22:17-82
-66            <meta-data
-66-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:69:13-71:85
-67                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-67-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:70:17-109
-68                android:value="com.google.firebase.components.ComponentRegistrar" />
-68-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:71:17-82
+50                <category android:name="android.intent.category.DEFAULT" />
+50-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:23:17-76
+50-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:23:27-73
+51            </intent-filter>
+52        </activity>
+53        <activity
+53-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:27:9-36:20
+54            android:name="com.example.smartAir.ParentHomeFragment"
+54-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:28:13-47
+55            android:exported="true" >
+55-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:29:13-36
+56            <intent-filter>
+56-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:30:13-35:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:21:17-69
+57-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:21:25-66
+58                <action android:name="com.example.smartAir.ParentHomeFragment" />
+58-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:32:17-82
+58-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:32:25-79
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:22:17-77
+60-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:22:27-74
+61                <category android:name="android.intent.category.DEFAULT" />
+61-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:23:17-76
+61-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:23:27-73
+62            </intent-filter>
+63        </activity>
+64
+65        <service
+65-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/1193f050f0cf64b878005f953729830a/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:14:9-23:19
+66            android:name="com.google.firebase.components.ComponentDiscoveryService"
+66-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/1193f050f0cf64b878005f953729830a/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:15:13-84
+67            android:directBootAware="true"
+67-->[com.google.firebase:firebase-common:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/f399c6d5c88ee159da37c1f81e0aa76c/transformed/firebase-common-22.0.1/AndroidManifest.xml:32:13-43
+68            android:exported="false" >
+68-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/1193f050f0cf64b878005f953729830a/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:16:13-37
 69            <meta-data
-69-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:57:13-59:85
-70                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
-70-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:58:17-122
+69-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/1193f050f0cf64b878005f953729830a/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:17:13-19:85
+70                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+70-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/1193f050f0cf64b878005f953729830a/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:18:17-122
 71                android:value="com.google.firebase.components.ComponentRegistrar" />
-71-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:59:17-82
+71-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/1193f050f0cf64b878005f953729830a/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:19:17-82
 72            <meta-data
-72-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:60:13-62:85
-73                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-73-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:61:17-119
+72-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/1193f050f0cf64b878005f953729830a/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:20:13-22:85
+73                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+73-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/1193f050f0cf64b878005f953729830a/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:21:17-111
 74                android:value="com.google.firebase.components.ComponentRegistrar" />
-74-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:62:17-82
+74-->[com.google.firebase:firebase-firestore:26.0.2] /Users/tylergu/.gradle/caches/8.13/transforms/1193f050f0cf64b878005f953729830a/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:22:17-82
 75            <meta-data
-75-->[com.google.firebase:firebase-database:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ed37518498ce997cd9424340c3c625f0/transformed/firebase-database-22.0.1/AndroidManifest.xml:29:13-31:85
-76                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
-76-->[com.google.firebase:firebase-database:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ed37518498ce997cd9424340c3c625f0/transformed/firebase-database-22.0.1/AndroidManifest.xml:30:17-120
+75-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:69:13-71:85
+76                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+76-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:70:17-109
 77                android:value="com.google.firebase.components.ComponentRegistrar" />
-77-->[com.google.firebase:firebase-database:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ed37518498ce997cd9424340c3c625f0/transformed/firebase-database-22.0.1/AndroidManifest.xml:31:17-82
+77-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:71:17-82
 78            <meta-data
-78-->[com.google.firebase:firebase-database:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ed37518498ce997cd9424340c3c625f0/transformed/firebase-database-22.0.1/AndroidManifest.xml:32:13-34:85
-79                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-79-->[com.google.firebase:firebase-database:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ed37518498ce997cd9424340c3c625f0/transformed/firebase-database-22.0.1/AndroidManifest.xml:33:17-109
+78-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:57:13-59:85
+79                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+79-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:58:17-122
 80                android:value="com.google.firebase.components.ComponentRegistrar" />
-80-->[com.google.firebase:firebase-database:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ed37518498ce997cd9424340c3c625f0/transformed/firebase-database-22.0.1/AndroidManifest.xml:34:17-82
+80-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:59:17-82
 81            <meta-data
-81-->[com.google.android.gms:play-services-measurement-api:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/04c5edec467d20825910a0a4139ccd1f/transformed/play-services-measurement-api-23.0.0/AndroidManifest.xml:33:13-35:85
-82                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-82-->[com.google.android.gms:play-services-measurement-api:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/04c5edec467d20825910a0a4139ccd1f/transformed/play-services-measurement-api-23.0.0/AndroidManifest.xml:34:17-139
+81-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:60:13-62:85
+82                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+82-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:61:17-119
 83                android:value="com.google.firebase.components.ComponentRegistrar" />
-83-->[com.google.android.gms:play-services-measurement-api:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/04c5edec467d20825910a0a4139ccd1f/transformed/play-services-measurement-api-23.0.0/AndroidManifest.xml:35:17-82
+83-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:62:17-82
 84            <meta-data
-84-->[com.google.firebase:firebase-installations:19.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/9d82baccc1c0bfe2d432ff3e3b8eed77/transformed/firebase-installations-19.0.1/AndroidManifest.xml:15:13-17:85
-85                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
-85-->[com.google.firebase:firebase-installations:19.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/9d82baccc1c0bfe2d432ff3e3b8eed77/transformed/firebase-installations-19.0.1/AndroidManifest.xml:16:17-130
+84-->[com.google.firebase:firebase-database:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/46d356f84ea8c8e5a392fa5905c9f67c/transformed/firebase-database-22.0.1/AndroidManifest.xml:29:13-31:85
+85                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
+85-->[com.google.firebase:firebase-database:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/46d356f84ea8c8e5a392fa5905c9f67c/transformed/firebase-database-22.0.1/AndroidManifest.xml:30:17-120
 86                android:value="com.google.firebase.components.ComponentRegistrar" />
-86-->[com.google.firebase:firebase-installations:19.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/9d82baccc1c0bfe2d432ff3e3b8eed77/transformed/firebase-installations-19.0.1/AndroidManifest.xml:17:17-82
+86-->[com.google.firebase:firebase-database:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/46d356f84ea8c8e5a392fa5905c9f67c/transformed/firebase-database-22.0.1/AndroidManifest.xml:31:17-82
 87            <meta-data
-87-->[com.google.firebase:firebase-installations:19.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/9d82baccc1c0bfe2d432ff3e3b8eed77/transformed/firebase-installations-19.0.1/AndroidManifest.xml:18:13-20:85
-88                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-88-->[com.google.firebase:firebase-installations:19.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/9d82baccc1c0bfe2d432ff3e3b8eed77/transformed/firebase-installations-19.0.1/AndroidManifest.xml:19:17-127
+87-->[com.google.firebase:firebase-database:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/46d356f84ea8c8e5a392fa5905c9f67c/transformed/firebase-database-22.0.1/AndroidManifest.xml:32:13-34:85
+88                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+88-->[com.google.firebase:firebase-database:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/46d356f84ea8c8e5a392fa5905c9f67c/transformed/firebase-database-22.0.1/AndroidManifest.xml:33:17-109
 89                android:value="com.google.firebase.components.ComponentRegistrar" />
-89-->[com.google.firebase:firebase-installations:19.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/9d82baccc1c0bfe2d432ff3e3b8eed77/transformed/firebase-installations-19.0.1/AndroidManifest.xml:20:17-82
+89-->[com.google.firebase:firebase-database:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/46d356f84ea8c8e5a392fa5905c9f67c/transformed/firebase-database-22.0.1/AndroidManifest.xml:34:17-82
 90            <meta-data
-90-->[com.google.firebase:firebase-common:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/93ca5442138901495fb868e38c0fe307/transformed/firebase-common-22.0.1/AndroidManifest.xml:35:13-37:85
-91                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-91-->[com.google.firebase:firebase-common:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/93ca5442138901495fb868e38c0fe307/transformed/firebase-common-22.0.1/AndroidManifest.xml:36:17-109
+90-->[com.google.android.gms:play-services-measurement-api:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/3cdcfe8145eefd21b9114177b2f1ad17/transformed/play-services-measurement-api-23.0.0/AndroidManifest.xml:33:13-35:85
+91                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+91-->[com.google.android.gms:play-services-measurement-api:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/3cdcfe8145eefd21b9114177b2f1ad17/transformed/play-services-measurement-api-23.0.0/AndroidManifest.xml:34:17-139
 92                android:value="com.google.firebase.components.ComponentRegistrar" />
-92-->[com.google.firebase:firebase-common:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/93ca5442138901495fb868e38c0fe307/transformed/firebase-common-22.0.1/AndroidManifest.xml:37:17-82
+92-->[com.google.android.gms:play-services-measurement-api:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/3cdcfe8145eefd21b9114177b2f1ad17/transformed/play-services-measurement-api-23.0.0/AndroidManifest.xml:35:17-82
 93            <meta-data
-93-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/tylergu/.gradle/caches/8.13/transforms/143385fc790af601a5dd4fe7f9b3f9c6/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:25:13-27:85
-94                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-94-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/tylergu/.gradle/caches/8.13/transforms/143385fc790af601a5dd4fe7f9b3f9c6/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:26:17-115
+93-->[com.google.firebase:firebase-installations:19.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/95bd6629324a9f3b0dafd88e1013eb91/transformed/firebase-installations-19.0.1/AndroidManifest.xml:15:13-17:85
+94                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+94-->[com.google.firebase:firebase-installations:19.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/95bd6629324a9f3b0dafd88e1013eb91/transformed/firebase-installations-19.0.1/AndroidManifest.xml:16:17-130
 95                android:value="com.google.firebase.components.ComponentRegistrar" />
-95-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/tylergu/.gradle/caches/8.13/transforms/143385fc790af601a5dd4fe7f9b3f9c6/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:27:17-82
-96        </service>
-97
-98        <activity
-98-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:29:9-46:20
-99            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-99-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:30:13-80
-100            android:excludeFromRecents="true"
-100-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:31:13-46
-101            android:exported="true"
-101-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:32:13-36
-102            android:launchMode="singleTask"
-102-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:33:13-44
-103            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-103-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:34:13-72
-104            <intent-filter>
-104-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:35:13-45:29
-105                <action android:name="android.intent.action.VIEW" />
-105-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:36:17-69
-105-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:36:25-66
+95-->[com.google.firebase:firebase-installations:19.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/95bd6629324a9f3b0dafd88e1013eb91/transformed/firebase-installations-19.0.1/AndroidManifest.xml:17:17-82
+96            <meta-data
+96-->[com.google.firebase:firebase-installations:19.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/95bd6629324a9f3b0dafd88e1013eb91/transformed/firebase-installations-19.0.1/AndroidManifest.xml:18:13-20:85
+97                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+97-->[com.google.firebase:firebase-installations:19.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/95bd6629324a9f3b0dafd88e1013eb91/transformed/firebase-installations-19.0.1/AndroidManifest.xml:19:17-127
+98                android:value="com.google.firebase.components.ComponentRegistrar" />
+98-->[com.google.firebase:firebase-installations:19.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/95bd6629324a9f3b0dafd88e1013eb91/transformed/firebase-installations-19.0.1/AndroidManifest.xml:20:17-82
+99            <meta-data
+99-->[com.google.firebase:firebase-common:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/f399c6d5c88ee159da37c1f81e0aa76c/transformed/firebase-common-22.0.1/AndroidManifest.xml:35:13-37:85
+100                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+100-->[com.google.firebase:firebase-common:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/f399c6d5c88ee159da37c1f81e0aa76c/transformed/firebase-common-22.0.1/AndroidManifest.xml:36:17-109
+101                android:value="com.google.firebase.components.ComponentRegistrar" />
+101-->[com.google.firebase:firebase-common:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/f399c6d5c88ee159da37c1f81e0aa76c/transformed/firebase-common-22.0.1/AndroidManifest.xml:37:17-82
+102            <meta-data
+102-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/tylergu/.gradle/caches/8.13/transforms/694de033a91305ad54f797b316e40553/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:25:13-27:85
+103                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+103-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/tylergu/.gradle/caches/8.13/transforms/694de033a91305ad54f797b316e40553/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:26:17-115
+104                android:value="com.google.firebase.components.ComponentRegistrar" />
+104-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/tylergu/.gradle/caches/8.13/transforms/694de033a91305ad54f797b316e40553/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:27:17-82
+105        </service>
 106
-107                <category android:name="android.intent.category.DEFAULT" />
-107-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:38:17-76
-107-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:38:27-73
-108                <category android:name="android.intent.category.BROWSABLE" />
-108-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:39:17-78
-108-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:39:27-75
-109
-110                <data
-110-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:41:17-44:51
-111                    android:host="firebase.auth"
-111-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:42:21-49
-112                    android:path="/"
-112-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:43:21-37
-113                    android:scheme="genericidp" />
-113-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:44:21-48
-114            </intent-filter>
-115        </activity>
-116        <activity
-116-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:47:9-64:20
-117            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-117-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:48:13-79
-118            android:excludeFromRecents="true"
-118-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:49:13-46
-119            android:exported="true"
-119-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:50:13-36
-120            android:launchMode="singleTask"
-120-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:51:13-44
-121            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-121-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:52:13-72
-122            <intent-filter>
-122-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:53:13-63:29
-123                <action android:name="android.intent.action.VIEW" />
-123-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:36:17-69
-123-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:36:25-66
-124
-125                <category android:name="android.intent.category.DEFAULT" />
-125-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:38:17-76
-125-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:38:27-73
-126                <category android:name="android.intent.category.BROWSABLE" />
-126-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:39:17-78
-126-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:39:27-75
-127
-128                <data
-128-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:41:17-44:51
-129                    android:host="firebase.auth"
-129-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:42:21-49
-130                    android:path="/"
-130-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:43:21-37
-131                    android:scheme="recaptcha" />
-131-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/b7c1bdc3398bab30e2194a4d3f510717/transformed/firebase-auth-24.0.1/AndroidManifest.xml:44:21-48
-132            </intent-filter>
-133        </activity>
-134
-135        <receiver
-135-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:29:9-40:20
-136            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-136-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:30:13-78
-137            android:exported="true"
-137-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:31:13-36
-138            android:permission="com.google.android.c2dm.permission.SEND" >
-138-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:32:13-73
-139            <intent-filter>
-139-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:33:13-35:29
-140                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-140-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:34:17-81
-140-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:34:25-78
+107        <activity
+107-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:29:9-46:20
+108            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+108-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:30:13-80
+109            android:excludeFromRecents="true"
+109-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:31:13-46
+110            android:exported="true"
+110-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:32:13-36
+111            android:launchMode="singleTask"
+111-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:33:13-44
+112            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+112-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:34:13-72
+113            <intent-filter>
+113-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:35:13-45:29
+114                <action android:name="android.intent.action.VIEW" />
+114-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:36:17-69
+114-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:36:25-66
+115
+116                <category android:name="android.intent.category.DEFAULT" />
+116-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:23:17-76
+116-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:23:27-73
+117                <category android:name="android.intent.category.BROWSABLE" />
+117-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:39:17-78
+117-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:39:27-75
+118
+119                <data
+119-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:41:17-44:51
+120                    android:host="firebase.auth"
+120-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:42:21-49
+121                    android:path="/"
+121-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:43:21-37
+122                    android:scheme="genericidp" />
+122-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:44:21-48
+123            </intent-filter>
+124        </activity>
+125        <activity
+125-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:47:9-64:20
+126            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+126-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:48:13-79
+127            android:excludeFromRecents="true"
+127-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:49:13-46
+128            android:exported="true"
+128-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:50:13-36
+129            android:launchMode="singleTask"
+129-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:51:13-44
+130            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+130-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:52:13-72
+131            <intent-filter>
+131-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:53:13-63:29
+132                <action android:name="android.intent.action.VIEW" />
+132-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:36:17-69
+132-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:36:25-66
+133
+134                <category android:name="android.intent.category.DEFAULT" />
+134-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:23:17-76
+134-->/Users/tylergu/StudioProjects/B07-Project/Starter Application/app/src/main/AndroidManifest.xml:23:27-73
+135                <category android:name="android.intent.category.BROWSABLE" />
+135-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:39:17-78
+135-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:39:27-75
+136
+137                <data
+137-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:41:17-44:51
+138                    android:host="firebase.auth"
+138-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:42:21-49
+139                    android:path="/"
+139-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:43:21-37
+140                    android:scheme="recaptcha" />
+140-->[com.google.firebase:firebase-auth:24.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/254cd0b659e171316779d55d4e8c5f3c/transformed/firebase-auth-24.0.1/AndroidManifest.xml:44:21-48
 141            </intent-filter>
-142
-143            <meta-data
-143-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:37:13-39:40
-144                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
-144-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:38:17-92
-145                android:value="true" />
-145-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:39:17-37
-146        </receiver>
-147        <!--
-148             FirebaseMessagingService performs security checks at runtime,
-149             but set to not exported to explicitly avoid allowing another app to call it.
-150        -->
-151        <service
-151-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:46:9-53:19
-152            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-152-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:47:13-82
-153            android:directBootAware="true"
-153-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:48:13-43
-154            android:exported="false" >
-154-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:49:13-37
-155            <intent-filter android:priority="-500" >
-155-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:50:13-52:29
-155-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:50:28-51
-156                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-156-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:51:17-78
-156-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/ebbfef0e189f9ea3f44ba0d8c4287346/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:51:25-75
-157            </intent-filter>
-158        </service>
-159        <service
-159-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/94a9ed1be731f09e55182ebed93f00f1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:24:9-32:19
-160            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
-160-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/94a9ed1be731f09e55182ebed93f00f1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:25:13-94
-161            android:enabled="true"
-161-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/94a9ed1be731f09e55182ebed93f00f1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:26:13-35
-162            android:exported="false" >
-162-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/94a9ed1be731f09e55182ebed93f00f1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:27:13-37
-163            <meta-data
-163-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/94a9ed1be731f09e55182ebed93f00f1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:29:13-31:104
-164                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
-164-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/94a9ed1be731f09e55182ebed93f00f1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:30:17-76
-165                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
-165-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/94a9ed1be731f09e55182ebed93f00f1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:31:17-101
-166        </service>
-167
-168        <activity
-168-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/94a9ed1be731f09e55182ebed93f00f1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:34:9-41:20
-169            android:name="androidx.credentials.playservices.HiddenActivity"
-169-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/94a9ed1be731f09e55182ebed93f00f1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:35:13-76
-170            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
-170-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/94a9ed1be731f09e55182ebed93f00f1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:36:13-87
-171            android:enabled="true"
-171-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/94a9ed1be731f09e55182ebed93f00f1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:37:13-35
-172            android:exported="false"
-172-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/94a9ed1be731f09e55182ebed93f00f1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:38:13-37
-173            android:fitsSystemWindows="true"
-173-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/94a9ed1be731f09e55182ebed93f00f1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:39:13-45
-174            android:theme="@style/Theme.Hidden" >
-174-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/94a9ed1be731f09e55182ebed93f00f1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:40:13-48
-175        </activity>
-176        <activity
-176-->[com.google.android.gms:play-services-auth:20.7.0] /Users/tylergu/.gradle/caches/8.13/transforms/dd82dca59bf76dcc5dced800b015409a/transformed/play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
-177            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-177-->[com.google.android.gms:play-services-auth:20.7.0] /Users/tylergu/.gradle/caches/8.13/transforms/dd82dca59bf76dcc5dced800b015409a/transformed/play-services-auth-20.7.0/AndroidManifest.xml:24:13-93
-178            android:excludeFromRecents="true"
-178-->[com.google.android.gms:play-services-auth:20.7.0] /Users/tylergu/.gradle/caches/8.13/transforms/dd82dca59bf76dcc5dced800b015409a/transformed/play-services-auth-20.7.0/AndroidManifest.xml:25:13-46
-179            android:exported="false"
-179-->[com.google.android.gms:play-services-auth:20.7.0] /Users/tylergu/.gradle/caches/8.13/transforms/dd82dca59bf76dcc5dced800b015409a/transformed/play-services-auth-20.7.0/AndroidManifest.xml:26:13-37
-180            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-180-->[com.google.android.gms:play-services-auth:20.7.0] /Users/tylergu/.gradle/caches/8.13/transforms/dd82dca59bf76dcc5dced800b015409a/transformed/play-services-auth-20.7.0/AndroidManifest.xml:27:13-72
-181        <!--
-182            Service handling Google Sign-In user revocation. For apps that do not integrate with
-183            Google Sign-In, this service will never be started.
-184        -->
-185        <service
-185-->[com.google.android.gms:play-services-auth:20.7.0] /Users/tylergu/.gradle/caches/8.13/transforms/dd82dca59bf76dcc5dced800b015409a/transformed/play-services-auth-20.7.0/AndroidManifest.xml:33:9-37:51
-186            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-186-->[com.google.android.gms:play-services-auth:20.7.0] /Users/tylergu/.gradle/caches/8.13/transforms/dd82dca59bf76dcc5dced800b015409a/transformed/play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
-187            android:exported="true"
-187-->[com.google.android.gms:play-services-auth:20.7.0] /Users/tylergu/.gradle/caches/8.13/transforms/dd82dca59bf76dcc5dced800b015409a/transformed/play-services-auth-20.7.0/AndroidManifest.xml:35:13-36
-188            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-188-->[com.google.android.gms:play-services-auth:20.7.0] /Users/tylergu/.gradle/caches/8.13/transforms/dd82dca59bf76dcc5dced800b015409a/transformed/play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
-189            android:visibleToInstantApps="true" />
-189-->[com.google.android.gms:play-services-auth:20.7.0] /Users/tylergu/.gradle/caches/8.13/transforms/dd82dca59bf76dcc5dced800b015409a/transformed/play-services-auth-20.7.0/AndroidManifest.xml:37:13-48
-190
-191        <provider
-191-->[com.google.firebase:firebase-common:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/93ca5442138901495fb868e38c0fe307/transformed/firebase-common-22.0.1/AndroidManifest.xml:23:9-28:39
-192            android:name="com.google.firebase.provider.FirebaseInitProvider"
-192-->[com.google.firebase:firebase-common:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/93ca5442138901495fb868e38c0fe307/transformed/firebase-common-22.0.1/AndroidManifest.xml:24:13-77
-193            android:authorities="com.example.smartAir.firebaseinitprovider"
-193-->[com.google.firebase:firebase-common:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/93ca5442138901495fb868e38c0fe307/transformed/firebase-common-22.0.1/AndroidManifest.xml:25:13-72
-194            android:directBootAware="true"
-194-->[com.google.firebase:firebase-common:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/93ca5442138901495fb868e38c0fe307/transformed/firebase-common-22.0.1/AndroidManifest.xml:26:13-43
-195            android:exported="false"
-195-->[com.google.firebase:firebase-common:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/93ca5442138901495fb868e38c0fe307/transformed/firebase-common-22.0.1/AndroidManifest.xml:27:13-37
-196            android:initOrder="100" />
-196-->[com.google.firebase:firebase-common:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/93ca5442138901495fb868e38c0fe307/transformed/firebase-common-22.0.1/AndroidManifest.xml:28:13-36
-197
-198        <receiver
-198-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/6f2e232ce41d9132d6e3b52f7702d096/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:29:9-33:20
-199            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-199-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/6f2e232ce41d9132d6e3b52f7702d096/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:30:13-85
-200            android:enabled="true"
-200-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/6f2e232ce41d9132d6e3b52f7702d096/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:31:13-35
-201            android:exported="false" >
-201-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/6f2e232ce41d9132d6e3b52f7702d096/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:32:13-37
-202        </receiver>
-203
-204        <service
-204-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/6f2e232ce41d9132d6e3b52f7702d096/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:35:9-38:40
-205            android:name="com.google.android.gms.measurement.AppMeasurementService"
-205-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/6f2e232ce41d9132d6e3b52f7702d096/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:36:13-84
-206            android:enabled="true"
-206-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/6f2e232ce41d9132d6e3b52f7702d096/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:37:13-35
-207            android:exported="false" />
-207-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/6f2e232ce41d9132d6e3b52f7702d096/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:38:13-37
-208        <service
-208-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/6f2e232ce41d9132d6e3b52f7702d096/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:39:9-43:72
-209            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-209-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/6f2e232ce41d9132d6e3b52f7702d096/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:40:13-87
-210            android:enabled="true"
-210-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/6f2e232ce41d9132d6e3b52f7702d096/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:41:13-35
-211            android:exported="false"
-211-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/6f2e232ce41d9132d6e3b52f7702d096/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:42:13-37
-212            android:permission="android.permission.BIND_JOB_SERVICE" />
-212-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/6f2e232ce41d9132d6e3b52f7702d096/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:43:13-69
-213
-214        <uses-library
-214-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] /Users/tylergu/.gradle/caches/8.13/transforms/f60e7175119efdd405f29730dcc993fa/transformed/ads-adservices-1.1.0-beta11/AndroidManifest.xml:23:9-25:40
-215            android:name="android.ext.adservices"
-215-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] /Users/tylergu/.gradle/caches/8.13/transforms/f60e7175119efdd405f29730dcc993fa/transformed/ads-adservices-1.1.0-beta11/AndroidManifest.xml:24:13-50
-216            android:required="false" />
-216-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] /Users/tylergu/.gradle/caches/8.13/transforms/f60e7175119efdd405f29730dcc993fa/transformed/ads-adservices-1.1.0-beta11/AndroidManifest.xml:25:13-37
-217        <uses-library
-217-->[androidx.window:window:1.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/759e2954468f1350d8f453a00400328b/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
-218            android:name="androidx.window.extensions"
-218-->[androidx.window:window:1.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/759e2954468f1350d8f453a00400328b/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
-219            android:required="false" />
-219-->[androidx.window:window:1.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/759e2954468f1350d8f453a00400328b/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
-220        <uses-library
-220-->[androidx.window:window:1.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/759e2954468f1350d8f453a00400328b/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
-221            android:name="androidx.window.sidecar"
-221-->[androidx.window:window:1.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/759e2954468f1350d8f453a00400328b/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
-222            android:required="false" />
-222-->[androidx.window:window:1.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/759e2954468f1350d8f453a00400328b/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
-223
-224        <provider
-224-->[androidx.emoji2:emoji2:1.2.0] /Users/tylergu/.gradle/caches/8.13/transforms/a2b627d164b10ad73d269d61517e88bd/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-225            android:name="androidx.startup.InitializationProvider"
-225-->[androidx.emoji2:emoji2:1.2.0] /Users/tylergu/.gradle/caches/8.13/transforms/a2b627d164b10ad73d269d61517e88bd/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-226            android:authorities="com.example.smartAir.androidx-startup"
-226-->[androidx.emoji2:emoji2:1.2.0] /Users/tylergu/.gradle/caches/8.13/transforms/a2b627d164b10ad73d269d61517e88bd/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-227            android:exported="false" >
-227-->[androidx.emoji2:emoji2:1.2.0] /Users/tylergu/.gradle/caches/8.13/transforms/a2b627d164b10ad73d269d61517e88bd/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-228            <meta-data
-228-->[androidx.emoji2:emoji2:1.2.0] /Users/tylergu/.gradle/caches/8.13/transforms/a2b627d164b10ad73d269d61517e88bd/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-229                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-229-->[androidx.emoji2:emoji2:1.2.0] /Users/tylergu/.gradle/caches/8.13/transforms/a2b627d164b10ad73d269d61517e88bd/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-230                android:value="androidx.startup" />
-230-->[androidx.emoji2:emoji2:1.2.0] /Users/tylergu/.gradle/caches/8.13/transforms/a2b627d164b10ad73d269d61517e88bd/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-231            <meta-data
-231-->[androidx.lifecycle:lifecycle-process:2.9.0] /Users/tylergu/.gradle/caches/8.13/transforms/bc29cf616a99c011e4efcdad5f3f3f49/transformed/lifecycle-process-2.9.0/AndroidManifest.xml:29:13-31:52
-232                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-232-->[androidx.lifecycle:lifecycle-process:2.9.0] /Users/tylergu/.gradle/caches/8.13/transforms/bc29cf616a99c011e4efcdad5f3f3f49/transformed/lifecycle-process-2.9.0/AndroidManifest.xml:30:17-78
-233                android:value="androidx.startup" />
-233-->[androidx.lifecycle:lifecycle-process:2.9.0] /Users/tylergu/.gradle/caches/8.13/transforms/bc29cf616a99c011e4efcdad5f3f3f49/transformed/lifecycle-process-2.9.0/AndroidManifest.xml:31:17-49
-234            <meta-data
-234-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/3e7b9bf77c0b4b9002fe320f907219eb/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
-235                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-235-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/3e7b9bf77c0b4b9002fe320f907219eb/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
-236                android:value="androidx.startup" />
-236-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/3e7b9bf77c0b4b9002fe320f907219eb/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
-237        </provider>
-238
-239        <activity
-239-->[com.google.android.gms:play-services-base:18.5.0] /Users/tylergu/.gradle/caches/8.13/transforms/321910c98d9494c944fbbb315de7206f/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:9-173
-240            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-240-->[com.google.android.gms:play-services-base:18.5.0] /Users/tylergu/.gradle/caches/8.13/transforms/321910c98d9494c944fbbb315de7206f/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:19-85
-241            android:exported="false"
-241-->[com.google.android.gms:play-services-base:18.5.0] /Users/tylergu/.gradle/caches/8.13/transforms/321910c98d9494c944fbbb315de7206f/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:146-170
-242            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-242-->[com.google.android.gms:play-services-base:18.5.0] /Users/tylergu/.gradle/caches/8.13/transforms/321910c98d9494c944fbbb315de7206f/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:86-145
-243
-244        <meta-data
-244-->[com.google.android.gms:play-services-basement:18.8.0] /Users/tylergu/.gradle/caches/8.13/transforms/346d40534e3eb02b6630ee113606f421/transformed/play-services-basement-18.8.0/AndroidManifest.xml:21:9-23:69
-245            android:name="com.google.android.gms.version"
-245-->[com.google.android.gms:play-services-basement:18.8.0] /Users/tylergu/.gradle/caches/8.13/transforms/346d40534e3eb02b6630ee113606f421/transformed/play-services-basement-18.8.0/AndroidManifest.xml:22:13-58
-246            android:value="@integer/google_play_services_version" />
-246-->[com.google.android.gms:play-services-basement:18.8.0] /Users/tylergu/.gradle/caches/8.13/transforms/346d40534e3eb02b6630ee113606f421/transformed/play-services-basement-18.8.0/AndroidManifest.xml:23:13-66
+142        </activity>
+143
+144        <receiver
+144-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:29:9-40:20
+145            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+145-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:30:13-78
+146            android:exported="true"
+146-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:31:13-36
+147            android:permission="com.google.android.c2dm.permission.SEND" >
+147-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:32:13-73
+148            <intent-filter>
+148-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:33:13-35:29
+149                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+149-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:34:17-81
+149-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:34:25-78
+150            </intent-filter>
+151
+152            <meta-data
+152-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:37:13-39:40
+153                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+153-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:38:17-92
+154                android:value="true" />
+154-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:39:17-37
+155        </receiver>
+156        <!--
+157             FirebaseMessagingService performs security checks at runtime,
+158             but set to not exported to explicitly avoid allowing another app to call it.
+159        -->
+160        <service
+160-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:46:9-53:19
+161            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+161-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:47:13-82
+162            android:directBootAware="true"
+162-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:48:13-43
+163            android:exported="false" >
+163-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:49:13-37
+164            <intent-filter android:priority="-500" >
+164-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:50:13-52:29
+164-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:50:28-51
+165                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+165-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:51:17-78
+165-->[com.google.firebase:firebase-messaging:25.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/bda418eb0e3476151facbe15861b9b1c/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:51:25-75
+166            </intent-filter>
+167        </service>
+168        <service
+168-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/7dd89f692cad333e0b5e6b00a9e91f15/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:24:9-32:19
+169            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+169-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/7dd89f692cad333e0b5e6b00a9e91f15/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:25:13-94
+170            android:enabled="true"
+170-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/7dd89f692cad333e0b5e6b00a9e91f15/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:26:13-35
+171            android:exported="false" >
+171-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/7dd89f692cad333e0b5e6b00a9e91f15/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:27:13-37
+172            <meta-data
+172-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/7dd89f692cad333e0b5e6b00a9e91f15/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:29:13-31:104
+173                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+173-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/7dd89f692cad333e0b5e6b00a9e91f15/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:30:17-76
+174                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+174-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/7dd89f692cad333e0b5e6b00a9e91f15/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:31:17-101
+175        </service>
+176
+177        <activity
+177-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/7dd89f692cad333e0b5e6b00a9e91f15/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:34:9-41:20
+178            android:name="androidx.credentials.playservices.HiddenActivity"
+178-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/7dd89f692cad333e0b5e6b00a9e91f15/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:35:13-76
+179            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+179-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/7dd89f692cad333e0b5e6b00a9e91f15/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:36:13-87
+180            android:enabled="true"
+180-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/7dd89f692cad333e0b5e6b00a9e91f15/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:37:13-35
+181            android:exported="false"
+181-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/7dd89f692cad333e0b5e6b00a9e91f15/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:38:13-37
+182            android:fitsSystemWindows="true"
+182-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/7dd89f692cad333e0b5e6b00a9e91f15/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:39:13-45
+183            android:theme="@style/Theme.Hidden" >
+183-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/tylergu/.gradle/caches/8.13/transforms/7dd89f692cad333e0b5e6b00a9e91f15/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:40:13-48
+184        </activity>
+185        <activity
+185-->[com.google.android.gms:play-services-auth:20.7.0] /Users/tylergu/.gradle/caches/8.13/transforms/8f39c01d0f9f209857dc70739570831b/transformed/play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
+186            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+186-->[com.google.android.gms:play-services-auth:20.7.0] /Users/tylergu/.gradle/caches/8.13/transforms/8f39c01d0f9f209857dc70739570831b/transformed/play-services-auth-20.7.0/AndroidManifest.xml:24:13-93
+187            android:excludeFromRecents="true"
+187-->[com.google.android.gms:play-services-auth:20.7.0] /Users/tylergu/.gradle/caches/8.13/transforms/8f39c01d0f9f209857dc70739570831b/transformed/play-services-auth-20.7.0/AndroidManifest.xml:25:13-46
+188            android:exported="false"
+188-->[com.google.android.gms:play-services-auth:20.7.0] /Users/tylergu/.gradle/caches/8.13/transforms/8f39c01d0f9f209857dc70739570831b/transformed/play-services-auth-20.7.0/AndroidManifest.xml:26:13-37
+189            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+189-->[com.google.android.gms:play-services-auth:20.7.0] /Users/tylergu/.gradle/caches/8.13/transforms/8f39c01d0f9f209857dc70739570831b/transformed/play-services-auth-20.7.0/AndroidManifest.xml:27:13-72
+190        <!--
+191            Service handling Google Sign-In user revocation. For apps that do not integrate with
+192            Google Sign-In, this service will never be started.
+193        -->
+194        <service
+194-->[com.google.android.gms:play-services-auth:20.7.0] /Users/tylergu/.gradle/caches/8.13/transforms/8f39c01d0f9f209857dc70739570831b/transformed/play-services-auth-20.7.0/AndroidManifest.xml:33:9-37:51
+195            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+195-->[com.google.android.gms:play-services-auth:20.7.0] /Users/tylergu/.gradle/caches/8.13/transforms/8f39c01d0f9f209857dc70739570831b/transformed/play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
+196            android:exported="true"
+196-->[com.google.android.gms:play-services-auth:20.7.0] /Users/tylergu/.gradle/caches/8.13/transforms/8f39c01d0f9f209857dc70739570831b/transformed/play-services-auth-20.7.0/AndroidManifest.xml:35:13-36
+197            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+197-->[com.google.android.gms:play-services-auth:20.7.0] /Users/tylergu/.gradle/caches/8.13/transforms/8f39c01d0f9f209857dc70739570831b/transformed/play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
+198            android:visibleToInstantApps="true" />
+198-->[com.google.android.gms:play-services-auth:20.7.0] /Users/tylergu/.gradle/caches/8.13/transforms/8f39c01d0f9f209857dc70739570831b/transformed/play-services-auth-20.7.0/AndroidManifest.xml:37:13-48
+199
+200        <provider
+200-->[com.google.firebase:firebase-common:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/f399c6d5c88ee159da37c1f81e0aa76c/transformed/firebase-common-22.0.1/AndroidManifest.xml:23:9-28:39
+201            android:name="com.google.firebase.provider.FirebaseInitProvider"
+201-->[com.google.firebase:firebase-common:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/f399c6d5c88ee159da37c1f81e0aa76c/transformed/firebase-common-22.0.1/AndroidManifest.xml:24:13-77
+202            android:authorities="com.example.smartAir.firebaseinitprovider"
+202-->[com.google.firebase:firebase-common:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/f399c6d5c88ee159da37c1f81e0aa76c/transformed/firebase-common-22.0.1/AndroidManifest.xml:25:13-72
+203            android:directBootAware="true"
+203-->[com.google.firebase:firebase-common:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/f399c6d5c88ee159da37c1f81e0aa76c/transformed/firebase-common-22.0.1/AndroidManifest.xml:26:13-43
+204            android:exported="false"
+204-->[com.google.firebase:firebase-common:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/f399c6d5c88ee159da37c1f81e0aa76c/transformed/firebase-common-22.0.1/AndroidManifest.xml:27:13-37
+205            android:initOrder="100" />
+205-->[com.google.firebase:firebase-common:22.0.1] /Users/tylergu/.gradle/caches/8.13/transforms/f399c6d5c88ee159da37c1f81e0aa76c/transformed/firebase-common-22.0.1/AndroidManifest.xml:28:13-36
+206
+207        <receiver
+207-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/67defab36378ada4125068ed28a0d6bd/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:29:9-33:20
+208            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+208-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/67defab36378ada4125068ed28a0d6bd/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:30:13-85
+209            android:enabled="true"
+209-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/67defab36378ada4125068ed28a0d6bd/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:31:13-35
+210            android:exported="false" >
+210-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/67defab36378ada4125068ed28a0d6bd/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:32:13-37
+211        </receiver>
+212
+213        <service
+213-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/67defab36378ada4125068ed28a0d6bd/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:35:9-38:40
+214            android:name="com.google.android.gms.measurement.AppMeasurementService"
+214-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/67defab36378ada4125068ed28a0d6bd/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:36:13-84
+215            android:enabled="true"
+215-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/67defab36378ada4125068ed28a0d6bd/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:37:13-35
+216            android:exported="false" />
+216-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/67defab36378ada4125068ed28a0d6bd/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:38:13-37
+217        <service
+217-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/67defab36378ada4125068ed28a0d6bd/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:39:9-43:72
+218            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+218-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/67defab36378ada4125068ed28a0d6bd/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:40:13-87
+219            android:enabled="true"
+219-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/67defab36378ada4125068ed28a0d6bd/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:41:13-35
+220            android:exported="false"
+220-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/67defab36378ada4125068ed28a0d6bd/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:42:13-37
+221            android:permission="android.permission.BIND_JOB_SERVICE" />
+221-->[com.google.android.gms:play-services-measurement:23.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/67defab36378ada4125068ed28a0d6bd/transformed/play-services-measurement-23.0.0/AndroidManifest.xml:43:13-69
+222
+223        <uses-library
+223-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] /Users/tylergu/.gradle/caches/8.13/transforms/7b7c3c8585fbf2345f1bd5fda42a217e/transformed/ads-adservices-1.1.0-beta11/AndroidManifest.xml:23:9-25:40
+224            android:name="android.ext.adservices"
+224-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] /Users/tylergu/.gradle/caches/8.13/transforms/7b7c3c8585fbf2345f1bd5fda42a217e/transformed/ads-adservices-1.1.0-beta11/AndroidManifest.xml:24:13-50
+225            android:required="false" />
+225-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] /Users/tylergu/.gradle/caches/8.13/transforms/7b7c3c8585fbf2345f1bd5fda42a217e/transformed/ads-adservices-1.1.0-beta11/AndroidManifest.xml:25:13-37
+226        <uses-library
+226-->[androidx.window:window:1.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/1ec5f9df747ebe4246162e87851703d0/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+227            android:name="androidx.window.extensions"
+227-->[androidx.window:window:1.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/1ec5f9df747ebe4246162e87851703d0/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+228            android:required="false" />
+228-->[androidx.window:window:1.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/1ec5f9df747ebe4246162e87851703d0/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+229        <uses-library
+229-->[androidx.window:window:1.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/1ec5f9df747ebe4246162e87851703d0/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+230            android:name="androidx.window.sidecar"
+230-->[androidx.window:window:1.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/1ec5f9df747ebe4246162e87851703d0/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+231            android:required="false" />
+231-->[androidx.window:window:1.0.0] /Users/tylergu/.gradle/caches/8.13/transforms/1ec5f9df747ebe4246162e87851703d0/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+232
+233        <provider
+233-->[androidx.emoji2:emoji2:1.2.0] /Users/tylergu/.gradle/caches/8.13/transforms/ee4f7427dedd02760644e66c994f2e9f/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+234            android:name="androidx.startup.InitializationProvider"
+234-->[androidx.emoji2:emoji2:1.2.0] /Users/tylergu/.gradle/caches/8.13/transforms/ee4f7427dedd02760644e66c994f2e9f/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+235            android:authorities="com.example.smartAir.androidx-startup"
+235-->[androidx.emoji2:emoji2:1.2.0] /Users/tylergu/.gradle/caches/8.13/transforms/ee4f7427dedd02760644e66c994f2e9f/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+236            android:exported="false" >
+236-->[androidx.emoji2:emoji2:1.2.0] /Users/tylergu/.gradle/caches/8.13/transforms/ee4f7427dedd02760644e66c994f2e9f/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+237            <meta-data
+237-->[androidx.emoji2:emoji2:1.2.0] /Users/tylergu/.gradle/caches/8.13/transforms/ee4f7427dedd02760644e66c994f2e9f/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+238                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+238-->[androidx.emoji2:emoji2:1.2.0] /Users/tylergu/.gradle/caches/8.13/transforms/ee4f7427dedd02760644e66c994f2e9f/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+239                android:value="androidx.startup" />
+239-->[androidx.emoji2:emoji2:1.2.0] /Users/tylergu/.gradle/caches/8.13/transforms/ee4f7427dedd02760644e66c994f2e9f/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+240            <meta-data
+240-->[androidx.lifecycle:lifecycle-process:2.9.0] /Users/tylergu/.gradle/caches/8.13/transforms/04c90f80fba5fac5cdc39d70408c3493/transformed/lifecycle-process-2.9.0/AndroidManifest.xml:29:13-31:52
+241                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+241-->[androidx.lifecycle:lifecycle-process:2.9.0] /Users/tylergu/.gradle/caches/8.13/transforms/04c90f80fba5fac5cdc39d70408c3493/transformed/lifecycle-process-2.9.0/AndroidManifest.xml:30:17-78
+242                android:value="androidx.startup" />
+242-->[androidx.lifecycle:lifecycle-process:2.9.0] /Users/tylergu/.gradle/caches/8.13/transforms/04c90f80fba5fac5cdc39d70408c3493/transformed/lifecycle-process-2.9.0/AndroidManifest.xml:31:17-49
+243            <meta-data
+243-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/d98da9a13c6f96b59903a5161fc715fa/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+244                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+244-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/d98da9a13c6f96b59903a5161fc715fa/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+245                android:value="androidx.startup" />
+245-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/d98da9a13c6f96b59903a5161fc715fa/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+246        </provider>
 247
-248        <service
-248-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/549ebc048035c888a5bd1dda243d2ef0/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:28:9-34:19
-249            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-249-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/549ebc048035c888a5bd1dda243d2ef0/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:29:13-103
-250            android:exported="false" >
-250-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/549ebc048035c888a5bd1dda243d2ef0/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:30:13-37
-251            <meta-data
-251-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/549ebc048035c888a5bd1dda243d2ef0/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:31:13-33:39
-252                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-252-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/549ebc048035c888a5bd1dda243d2ef0/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:32:17-94
-253                android:value="cct" />
-253-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/549ebc048035c888a5bd1dda243d2ef0/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:33:17-36
-254        </service>
-255        <service
-255-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/5352991532e8cc2255765d50592b5d18/transformed/transport-runtime-3.1.9/AndroidManifest.xml:26:9-30:19
-256            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-256-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/5352991532e8cc2255765d50592b5d18/transformed/transport-runtime-3.1.9/AndroidManifest.xml:27:13-117
-257            android:exported="false"
-257-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/5352991532e8cc2255765d50592b5d18/transformed/transport-runtime-3.1.9/AndroidManifest.xml:28:13-37
-258            android:permission="android.permission.BIND_JOB_SERVICE" >
-258-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/5352991532e8cc2255765d50592b5d18/transformed/transport-runtime-3.1.9/AndroidManifest.xml:29:13-69
-259        </service>
-260
-261        <receiver
-261-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/5352991532e8cc2255765d50592b5d18/transformed/transport-runtime-3.1.9/AndroidManifest.xml:32:9-34:40
-262            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-262-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/5352991532e8cc2255765d50592b5d18/transformed/transport-runtime-3.1.9/AndroidManifest.xml:33:13-132
-263            android:exported="false" />
-263-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/5352991532e8cc2255765d50592b5d18/transformed/transport-runtime-3.1.9/AndroidManifest.xml:34:13-37
-264        <receiver
-264-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/3e7b9bf77c0b4b9002fe320f907219eb/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
-265            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-265-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/3e7b9bf77c0b4b9002fe320f907219eb/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
-266            android:directBootAware="false"
-266-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/3e7b9bf77c0b4b9002fe320f907219eb/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
-267            android:enabled="true"
-267-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/3e7b9bf77c0b4b9002fe320f907219eb/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
-268            android:exported="true"
-268-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/3e7b9bf77c0b4b9002fe320f907219eb/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
-269            android:permission="android.permission.DUMP" >
-269-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/3e7b9bf77c0b4b9002fe320f907219eb/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
-270            <intent-filter>
-270-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/3e7b9bf77c0b4b9002fe320f907219eb/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
-271                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-271-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/3e7b9bf77c0b4b9002fe320f907219eb/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
-271-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/3e7b9bf77c0b4b9002fe320f907219eb/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
-272            </intent-filter>
-273            <intent-filter>
-273-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/3e7b9bf77c0b4b9002fe320f907219eb/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
-274                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-274-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/3e7b9bf77c0b4b9002fe320f907219eb/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
-274-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/3e7b9bf77c0b4b9002fe320f907219eb/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
-275            </intent-filter>
-276            <intent-filter>
-276-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/3e7b9bf77c0b4b9002fe320f907219eb/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
-277                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-277-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/3e7b9bf77c0b4b9002fe320f907219eb/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
-277-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/3e7b9bf77c0b4b9002fe320f907219eb/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
-278            </intent-filter>
+248        <activity
+248-->[com.google.android.gms:play-services-base:18.5.0] /Users/tylergu/.gradle/caches/8.13/transforms/b753ef628ccc80d6f5503a214b073574/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+249            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+249-->[com.google.android.gms:play-services-base:18.5.0] /Users/tylergu/.gradle/caches/8.13/transforms/b753ef628ccc80d6f5503a214b073574/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+250            android:exported="false"
+250-->[com.google.android.gms:play-services-base:18.5.0] /Users/tylergu/.gradle/caches/8.13/transforms/b753ef628ccc80d6f5503a214b073574/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+251            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+251-->[com.google.android.gms:play-services-base:18.5.0] /Users/tylergu/.gradle/caches/8.13/transforms/b753ef628ccc80d6f5503a214b073574/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+252
+253        <meta-data
+253-->[com.google.android.gms:play-services-basement:18.8.0] /Users/tylergu/.gradle/caches/8.13/transforms/b1665aeadeb209edfe1f08d1314a4b2c/transformed/play-services-basement-18.8.0/AndroidManifest.xml:21:9-23:69
+254            android:name="com.google.android.gms.version"
+254-->[com.google.android.gms:play-services-basement:18.8.0] /Users/tylergu/.gradle/caches/8.13/transforms/b1665aeadeb209edfe1f08d1314a4b2c/transformed/play-services-basement-18.8.0/AndroidManifest.xml:22:13-58
+255            android:value="@integer/google_play_services_version" />
+255-->[com.google.android.gms:play-services-basement:18.8.0] /Users/tylergu/.gradle/caches/8.13/transforms/b1665aeadeb209edfe1f08d1314a4b2c/transformed/play-services-basement-18.8.0/AndroidManifest.xml:23:13-66
+256
+257        <service
+257-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/0bd312e92394b01c29acc43cb392e077/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:28:9-34:19
+258            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+258-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/0bd312e92394b01c29acc43cb392e077/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:29:13-103
+259            android:exported="false" >
+259-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/0bd312e92394b01c29acc43cb392e077/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:30:13-37
+260            <meta-data
+260-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/0bd312e92394b01c29acc43cb392e077/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:31:13-33:39
+261                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+261-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/0bd312e92394b01c29acc43cb392e077/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:32:17-94
+262                android:value="cct" />
+262-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/0bd312e92394b01c29acc43cb392e077/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:33:17-36
+263        </service>
+264        <service
+264-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/66979786f4be2caae4b8fc8d0bfc200c/transformed/transport-runtime-3.1.9/AndroidManifest.xml:26:9-30:19
+265            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+265-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/66979786f4be2caae4b8fc8d0bfc200c/transformed/transport-runtime-3.1.9/AndroidManifest.xml:27:13-117
+266            android:exported="false"
+266-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/66979786f4be2caae4b8fc8d0bfc200c/transformed/transport-runtime-3.1.9/AndroidManifest.xml:28:13-37
+267            android:permission="android.permission.BIND_JOB_SERVICE" >
+267-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/66979786f4be2caae4b8fc8d0bfc200c/transformed/transport-runtime-3.1.9/AndroidManifest.xml:29:13-69
+268        </service>
+269
+270        <receiver
+270-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/66979786f4be2caae4b8fc8d0bfc200c/transformed/transport-runtime-3.1.9/AndroidManifest.xml:32:9-34:40
+271            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+271-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/66979786f4be2caae4b8fc8d0bfc200c/transformed/transport-runtime-3.1.9/AndroidManifest.xml:33:13-132
+272            android:exported="false" />
+272-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/tylergu/.gradle/caches/8.13/transforms/66979786f4be2caae4b8fc8d0bfc200c/transformed/transport-runtime-3.1.9/AndroidManifest.xml:34:13-37
+273        <receiver
+273-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/d98da9a13c6f96b59903a5161fc715fa/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+274            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+274-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/d98da9a13c6f96b59903a5161fc715fa/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+275            android:directBootAware="false"
+275-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/d98da9a13c6f96b59903a5161fc715fa/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+276            android:enabled="true"
+276-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/d98da9a13c6f96b59903a5161fc715fa/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+277            android:exported="true"
+277-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/d98da9a13c6f96b59903a5161fc715fa/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+278            android:permission="android.permission.DUMP" >
+278-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/d98da9a13c6f96b59903a5161fc715fa/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
 279            <intent-filter>
-279-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/3e7b9bf77c0b4b9002fe320f907219eb/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
-280                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-280-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/3e7b9bf77c0b4b9002fe320f907219eb/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
-280-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/3e7b9bf77c0b4b9002fe320f907219eb/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+279-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/d98da9a13c6f96b59903a5161fc715fa/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+280                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+280-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/d98da9a13c6f96b59903a5161fc715fa/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+280-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/d98da9a13c6f96b59903a5161fc715fa/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
 281            </intent-filter>
-282        </receiver> <!-- The activities will be merged into the manifest of the hosting app. -->
-283        <activity
-283-->[com.google.android.play:core-common:2.0.3] /Users/tylergu/.gradle/caches/8.13/transforms/676f1f8f4d7d003f6735f5c138cc51d4/transformed/core-common-2.0.3/AndroidManifest.xml:14:9-18:65
-284            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
-284-->[com.google.android.play:core-common:2.0.3] /Users/tylergu/.gradle/caches/8.13/transforms/676f1f8f4d7d003f6735f5c138cc51d4/transformed/core-common-2.0.3/AndroidManifest.xml:15:13-93
-285            android:exported="false"
-285-->[com.google.android.play:core-common:2.0.3] /Users/tylergu/.gradle/caches/8.13/transforms/676f1f8f4d7d003f6735f5c138cc51d4/transformed/core-common-2.0.3/AndroidManifest.xml:16:13-37
-286            android:stateNotNeeded="true"
-286-->[com.google.android.play:core-common:2.0.3] /Users/tylergu/.gradle/caches/8.13/transforms/676f1f8f4d7d003f6735f5c138cc51d4/transformed/core-common-2.0.3/AndroidManifest.xml:17:13-42
-287            android:theme="@style/Theme.PlayCore.Transparent" />
-287-->[com.google.android.play:core-common:2.0.3] /Users/tylergu/.gradle/caches/8.13/transforms/676f1f8f4d7d003f6735f5c138cc51d4/transformed/core-common-2.0.3/AndroidManifest.xml:18:13-62
-288    </application>
-289
-290</manifest>
+282            <intent-filter>
+282-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/d98da9a13c6f96b59903a5161fc715fa/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+283                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+283-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/d98da9a13c6f96b59903a5161fc715fa/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+283-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/d98da9a13c6f96b59903a5161fc715fa/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+284            </intent-filter>
+285            <intent-filter>
+285-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/d98da9a13c6f96b59903a5161fc715fa/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+286                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+286-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/d98da9a13c6f96b59903a5161fc715fa/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+286-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/d98da9a13c6f96b59903a5161fc715fa/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+287            </intent-filter>
+288            <intent-filter>
+288-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/d98da9a13c6f96b59903a5161fc715fa/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+289                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+289-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/d98da9a13c6f96b59903a5161fc715fa/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+289-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/tylergu/.gradle/caches/8.13/transforms/d98da9a13c6f96b59903a5161fc715fa/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+290            </intent-filter>
+291        </receiver> <!-- The activities will be merged into the manifest of the hosting app. -->
+292        <activity
+292-->[com.google.android.play:core-common:2.0.3] /Users/tylergu/.gradle/caches/8.13/transforms/8dedc5a5b2695f51d7dc7fc53a38e0b7/transformed/core-common-2.0.3/AndroidManifest.xml:14:9-18:65
+293            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+293-->[com.google.android.play:core-common:2.0.3] /Users/tylergu/.gradle/caches/8.13/transforms/8dedc5a5b2695f51d7dc7fc53a38e0b7/transformed/core-common-2.0.3/AndroidManifest.xml:15:13-93
+294            android:exported="false"
+294-->[com.google.android.play:core-common:2.0.3] /Users/tylergu/.gradle/caches/8.13/transforms/8dedc5a5b2695f51d7dc7fc53a38e0b7/transformed/core-common-2.0.3/AndroidManifest.xml:16:13-37
+295            android:stateNotNeeded="true"
+295-->[com.google.android.play:core-common:2.0.3] /Users/tylergu/.gradle/caches/8.13/transforms/8dedc5a5b2695f51d7dc7fc53a38e0b7/transformed/core-common-2.0.3/AndroidManifest.xml:17:13-42
+296            android:theme="@style/Theme.PlayCore.Transparent" />
+296-->[com.google.android.play:core-common:2.0.3] /Users/tylergu/.gradle/caches/8.13/transforms/8dedc5a5b2695f51d7dc7fc53a38e0b7/transformed/core-common-2.0.3/AndroidManifest.xml:18:13-62
+297    </application>
+298
+299</manifest>

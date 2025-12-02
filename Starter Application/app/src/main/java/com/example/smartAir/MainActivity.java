@@ -7,13 +7,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.smartAir.inventory.InventoryFacade;
+import com.example.smartAir.medicine.MedicineLogFactory;
 import com.example.smartAir.pefAndRecovery.ZoneEntryFacade;
+import com.example.smartAir.symptom.DailyCheckInFacade;
 import com.example.smartAir.triaging.TriageScreenCreator;
 import com.google.android.material.chip.Chip;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String TEMP_USER = "testUsername";
 
     FirebaseDatabase db;
 
@@ -21,8 +25,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        InventoryFacade.changeUserName(TEMP_USER, ()-> {
+            Fragment f= InventoryFacade.generateCanisterMainPage();
 
-        loadFragment(new LoginFragment());
+            loadFragment(f);
+
+        });
     }
 
     private void loadFragment(Fragment fragment) {
