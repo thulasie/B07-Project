@@ -11,17 +11,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.Navigation;
 
 import com.example.smartAir.R;
-import com.example.smartAir.domain.UserRole;
-import com.example.smartAir.ui.child.ChildHomeFragment;
-import com.example.smartAir.ui.parent.ParentHomeFragment;
-import com.example.smartAir.ui.provider.ProviderHomeFragment;
 
 import java.io.Serializable;
-import java.util.Objects;
 
 public class OnboardingPanelFragment extends Fragment {
 
