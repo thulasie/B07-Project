@@ -7,7 +7,7 @@ import com.example.smartAir.domain.UserRole;
 public class OnboardingCreator {
 
     private final UserRole role;
-    private OnboardingExitAction action;
+    private final OnboardingExitAction action;
 
 
     public OnboardingCreator(UserRole role, OnboardingExitAction action) {
@@ -16,6 +16,26 @@ public class OnboardingCreator {
     }
 
     public Fragment createOnboardingFragment() {
+        OnboardingContainerFragment frag = new OnboardingContainerFragment(role);
+        OnboardingContent c;
+
+        switch(role) {
+            case PROVIDER:
+                c = new ChildOnboarding();
+                break;
+            case PARENT:
+                c = new ParentOnboarding();
+                break;
+            default:
+                c = new ChildOnboarding();
+        }
+
+        OnboardingCollectionAdapter adapter = new OnboardingCollectionAdapter(frag);
+
+        adapter.setOnboardingExitAction(action);
+        adapter.setOnboardingContent(c);
+        frag.setOnboardingCollectionAdapter(adapter);
+
         return new OnboardingContainerFragment(role);
     }
 }

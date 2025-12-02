@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder> {
-    private List<Item> itemList;
+    private final List<Item> itemList;
 
     public ItemAdapter(List<Item> itemList) {
         this.itemList = itemList;

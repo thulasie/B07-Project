@@ -6,8 +6,8 @@ class CompletionMonitor {
     }
 
     private int count = 0;
-    private int required;
-    private Callback callback;
+    private final int required;
+    private final Callback callback;
 
     CompletionMonitor(int required, Callback callback) {
         this.required = required;

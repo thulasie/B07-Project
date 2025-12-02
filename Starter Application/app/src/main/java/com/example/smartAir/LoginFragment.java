@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.smartAir.domain.UserRole;
 import com.example.smartAir.ui.router.RoleRouterFragment;
 
 public class LoginFragment extends Fragment implements LoginPresenter.View {
@@ -85,12 +86,16 @@ public class LoginFragment extends Fragment implements LoginPresenter.View {
 
     @Override
     public void navigateToRoleDashboard(String role) {
-        navigateToFragment(new RoleRouterFragment());
+        RoleRouterFragment router = new RoleRouterFragment();
+        Bundle args = new Bundle();
+        args.putSerializable("role", UserRole.valueOf(role));
+        router.setArguments(args);
+        navigateToFragment(router);
     }
 
     @Override
     public void navigateToChildDashboard() {
-        navigateToFragment(new RoleRouterFragment());
+        navigateToRoleDashboard("CHILD");
     }
 
     private void navigateToFragment(Fragment f) {

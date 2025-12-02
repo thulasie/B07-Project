@@ -13,3 +13,4 @@ public interface SymptomRepository {
             String endDate     // "yyyy-MM-dd"
     );
 }
+

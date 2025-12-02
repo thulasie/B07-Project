@@ -43,4 +43,4 @@ class PefController implements PefEntryController {
             logger.logPEF(pEF);
         }
     }
-};
+}

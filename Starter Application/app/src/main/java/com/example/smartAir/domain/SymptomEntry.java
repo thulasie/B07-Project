@@ -1,13 +1,14 @@
 package com.example.smartAir.domain;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class SymptomEntry {
 
     private String id;          // UUID for this entry
     private String childId;     // which child this entry belongs to
-    private String date;        // "yyyy-MM-dd" format
+    private Date date;        // "yyyy-MM-dd" format
 
     // 0 = none, 1 = mild, 2 = severe
     private int nightWaking;
@@ -50,8 +51,8 @@ public class SymptomEntry {
     public String getChildId() { return childId; }
     public void setChildId(String childId) { this.childId = childId; }
 
-    public String getDate() { return date; }
-    public void setDate(String date) { this.date = date; }
+    public Date getDate() { return date; }
+    public void setDate(Date date) { this.date = date; }
 
     public int getNightWaking() { return nightWaking; }
     public void setNightWaking(int nightWaking) { this.nightWaking = nightWaking; }

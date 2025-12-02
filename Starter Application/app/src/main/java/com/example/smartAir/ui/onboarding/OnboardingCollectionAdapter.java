@@ -11,7 +11,7 @@ import com.example.smartAir.R;
 public class OnboardingCollectionAdapter extends FragmentStateAdapter {
     OnboardingContent onboardingContent;
 
-    private OnboardingExitAction action = ()-> {System.out.println("Please set an aciton");};
+    private OnboardingExitAction action = ()-> {System.out.println("Please set an action");};
 
     public OnboardingCollectionAdapter(Fragment fragment) {
         super(fragment);
@@ -62,5 +62,9 @@ public class OnboardingCollectionAdapter extends FragmentStateAdapter {
         else {
             return onboardingContent.getPageCount()+1;
         }
+    }
+
+    void setOnboardingContent(OnboardingContent c) {
+        this.onboardingContent = c;
     }
 }

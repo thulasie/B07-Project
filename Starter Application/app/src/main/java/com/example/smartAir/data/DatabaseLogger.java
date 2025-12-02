@@ -21,7 +21,7 @@ public class DatabaseLogger {
         void finalCallback();
     }
 
-    private static FirebaseDatabase instance = FirebaseDatabase.getInstance();
+    private static final FirebaseDatabase instance = FirebaseDatabase.getInstance();
     private static DatabaseLogger singleton;
 
 

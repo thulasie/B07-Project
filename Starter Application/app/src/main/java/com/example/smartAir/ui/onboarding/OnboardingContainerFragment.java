@@ -14,27 +14,23 @@ import com.google.android.material.tabs.TabLayoutMediator;
 
 public class OnboardingContainerFragment extends Fragment {
 
-    private UserRole role = UserRole.CHILD;
-    private OnboardingContent content;
+    private OnboardingCollectionAdapter adapter;
 
     public OnboardingContainerFragment() {
         super(R.layout.onboarding_container);
-        role = null;
     }
     public OnboardingContainerFragment(UserRole role) {
         super(R.layout.onboarding_container);
-        this.role = role;
     }
 
-    void setOnboardingContent (OnboardingContent a) {
-        content = a;
+    void setOnboardingCollectionAdapter (OnboardingCollectionAdapter a) {
+        adapter = a;
     }
 
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-        ViewPager2 onboarding = (ViewPager2) view.findViewById(R.id.onboarding_pager);
-        OnboardingCollectionAdapter adapter = new OnboardingCollectionAdapter(this, content);
-        onboarding.setAdapter(adapter);
+        ViewPager2 onboarding = view.findViewById(R.id.onboarding_pager);
+        onboarding.setAdapter(this.adapter);
 
         // Connect to pagination dots
         TabLayout pager_dots = view.findViewById(R.id.onboarding_pager_dots);

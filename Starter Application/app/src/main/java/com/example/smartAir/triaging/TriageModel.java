@@ -19,8 +19,8 @@ public class TriageModel {
         UNDECIDED, HOME_STEPS, EMERGENCY_CALLED, RESOLVED
     }
 
-    private Set<SevereSymptoms> severeSymptomsSet;
-    private ArrayList<String> guidance = new ArrayList<>();
+    private final Set<SevereSymptoms> severeSymptomsSet;
+    private final ArrayList<String> guidance = new ArrayList<>();
     private int rescueCount = 0;
     @Nullable
     private Float currentPEF; // because it is optional we use the class instead

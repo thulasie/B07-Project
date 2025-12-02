@@ -66,8 +66,8 @@ public class ZoneEntryFacade {
 
     public static BreathInformationProvider getBreathProvider() {
         return new BreathInformationProvider() {
-            private Zone zone = ZoneChangeMonitor.getSingletonInstance().getCurrentZone();
-            private Float personalBest = PersonalBestLog.getSingletonInstance().getPersonalBest();
+            private final Zone zone = ZoneChangeMonitor.getSingletonInstance().getCurrentZone();
+            private final Float personalBest = PersonalBestLog.getSingletonInstance().getPersonalBest();
 
             @Override
             public Float getPB() {

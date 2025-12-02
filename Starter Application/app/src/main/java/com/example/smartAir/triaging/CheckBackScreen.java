@@ -45,7 +45,7 @@ public class CheckBackScreen extends Fragment {
             });
 
             symptom_box.addView(a);
-        };
+        }
 
         MaterialCheckBox feelingWorseSwitch = view.findViewById(R.id.triage_check_back_feeling_worse_switch);
 

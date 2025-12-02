@@ -3,135 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/signInFragment">
-
-    <!-- Sign In (Login) -->
+    app:startDestination="@id/containerFragment">
     <fragment
-        android:id="@+id/signInFragment"
-        android:name="com.example.smartAir.LoginFragment"
-        android:label="Sign In"
-        tools:layout="@layout/log_in_fragment">
+        android:id="@+id/containerFragment"
+        android:name="com.example.smartAir.ContainerFragment"
+        android:label="fragment_container"
+        tools:layout="@layout/fragment_container" >
         <action
-            android:id="@+id/action_signIn_to_roleRouter"
-            app:destination="@id/roleRouterFragment" />
+            android:id="@+id/action_containerFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
     </fragment>
-
-    <!-- Role Router -->
     <fragment
-        android:id="@+id/roleRouterFragment"
-        android:name="com.example.smartAir.ui.router.RoleRouterFragment"
-        android:label="Role Router"
-        tools:layout="@layout/fragment_role_router">
+        android:id="@+id/signUpFragment"
+        android:name="com.example.smartAir.SignUpFragment"
+        android:label="SignUpFragment" >
         <action
-            android:id="@+id/action_roleRouter_to_signIn"
-            app:destination="@id/signInFragment" />
-        <action
-            android:id="@+id/action_roleRouter_to_childHome"
-            app:destination="@id/childHomeFragment" />
-        <action
-            android:id="@+id/action_roleRouter_to_parentHome"
-            app:destination="@id/parentHomeFragment" />
-        <action
-            android:id="@+id/action_roleRouter_to_providerHome"
-            app:destination="@id/providerHomeFragment" />
-
-        <action
-            android:id="@+id/action_roleRouter_to_onboardingContainerFragment"
+            android:id="@+id/action_signUpFragment_to_onboardingContainerFragment"
             app:destination="@id/onboardingContainerFragment" />
     </fragment>
-
     <fragment
         android:id="@+id/onboardingContainerFragment"
         android:name="com.example.smartAir.ui.onboarding.OnboardingContainerFragment"
-        android:label="Onboarding screen">
-        <action
-            android:id="@+id/action_onboarding_to_childHome"
-            app:destination="@id/childHomeFragment" />
-        <action
-            android:id="@+id/action_onboarding_to_parentHome"
-            app:destination="@id/parentHomeFragment" />
-        <action
-            android:id="@+id/action_onboarding_to_providerHome"
-            app:destination="@id/providerHomeFragment" />
-
-
-    </fragment>
-
-    <!-- Home fragments for three roles -->
-    <fragment
-        android:id="@+id/childHomeFragment"
-        android:name="com.example.smartAir.ui.child.ChildHomeFragment"
-        android:label="Child Home"
-        tools:layout="@layout/fragment_child_home" />
-        <action
-            android:id="@+id/action_childHome_to_dailyCheckIn"
-            app:destination="@id/dailyCheckInFragment" />
-
-    <fragment
-        android:id="@+id/parentHomeFragment"
-        android:name="com.example.smartAir.ui.parent.ParentHomeFragment"
-        android:label="Parent Home"
-        tools:layout="@layout/fragment_parent_home" />
-        <action
-            android:id="@+id/action_parentHome_to_dailyCheckIn"
-            app:destination="@id/dailyCheckInFragment" />
-
-    <fragment
-        android:id="@+id/providerHomeFragment"
-        android:name="com.example.smartAir.ui.provider.ProviderHomeFragment"
-        android:label="Provider Home"
-        tools:layout="@layout/fragment_provider_home" />
-
-    <!-- 原 demo 里的 Home 和其它页面 -->
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.example.smartAir.HomeFragment"
-        android:label="Home"
-        tools:layout="@layout/activity_home_fragment">
-        <action
-            android:id="@+id/action_home_to_recycler"
-            app:destination="@id/recyclerViewFragment" />
-        <action
-            android:id="@+id/action_home_to_scroller"
-            app:destination="@id/scrollerFragment" />
-        <action
-            android:id="@+id/action_home_to_manage"
-            app:destination="@id/manageItemsFragment" />
-        <action
-            android:id="@+id/action_home_to_spinner"
-            app:destination="@id/spinnerFragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/recyclerViewFragment"
-        android:name="com.example.smartAir.RecyclerViewFragment"
-        android:label="RecyclerView"
-        tools:layout="@layout/fragment_recycler_view" />
-
-    <fragment
-        android:id="@+id/scrollerFragment"
-        android:name="com.example.smartAir.ScrollerFragment"
-        android:label="Scroller"
-        tools:layout="@layout/fragment_scroller" />
-
-    <fragment
-        android:id="@+id/manageItemsFragment"
-        android:name="com.example.smartAir.ManageItemsFragment"
-        android:label="Manage Items"
-        tools:layout="@layout/fragment_manage_items" />
-
-    <fragment
-        android:id="@+id/spinnerFragment"
-        android:name="com.example.smartAir.SpinnerFragment"
-        android:label="Spinner"
-        tools:layout="@layout/fragment_spinner" />
-
-        <!-- Daily Check-in (R5) -->
-    <fragment
-        android:id="@+id/dailyCheckInFragment"
-        android:name="com.example.smartAir.ui.DailyCheckInFragment"
-        android:label="Daily Check-in"
-        tools:layout="@layout/fragment_daily_check_in" />
-
-
+        android:label="OnboardingContainerFragment" />
 </navigation>
