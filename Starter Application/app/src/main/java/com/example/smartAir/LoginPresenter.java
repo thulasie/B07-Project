@@ -11,6 +11,8 @@ public class LoginPresenter {
         void navigateToParentHome();
         void navigateToChildHome();
         void navigateToProviderHome();
+        void navigateToRoleDashboard(String role);
+        void navigateToChildDashboard();
     }
 
     private final View view;
