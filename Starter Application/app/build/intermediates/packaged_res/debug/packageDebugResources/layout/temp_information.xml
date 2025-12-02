@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/spinnerChild"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Spinner
+        android:id="@+id/spinnerProvider"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerChild" />
+
+    <TextView
+        android:id="@+id/textViewRescueLogsTitle"
+        android:layout_width="161dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="60dp"
+        android:text="Rescue Log"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerProvider" />
+
+    <TextView
+        android:id="@+id/textViewTriageIncidentTitle"
+        android:layout_width="161dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:text="Triage incident"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPeakflowContent" />
+
+    <TextView
+        android:id="@+id/textViewControllersummaryTitle"
+        android:layout_width="161dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:text="Controller adherence Summary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRescueLogsContent" />
+
+    <TextView
+        android:id="@+id/textViewPeakflowTitle"
+        android:layout_width="161dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:text="Peak-flow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTriggerContent" />
+
+    <TextView
+        android:id="@+id/textViewSymptomsContent"
+        android:layout_width="409dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="4dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSymptomsTitle" />
+
+    <TextView
+        android:id="@+id/textViewTriageIncidentContent"
+        android:layout_width="409dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="4dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTriageIncidentTitle" />
+
+    <TextView
+        android:id="@+id/textViewControllersummaryContent"
+        android:layout_width="409dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="4dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewControllersummaryTitle" />
+
+    <TextView
+        android:id="@+id/textViewTriggerTitle"
+        android:layout_width="161dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:text="Trigger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSymptomsContent" />
+
+    <TextView
+        android:id="@+id/textViewSymptomsTitle"
+        android:layout_width="161dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:text="Symptoms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewControllersummaryContent" />
+
+    <TextView
+        android:id="@+id/textViewPeakflowContent"
+        android:layout_width="409dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="4dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPeakflowTitle" />
+
+    <TextView
+        android:id="@+id/textViewRescueLogsContent"
+        android:layout_width="409dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="4dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewRescueLogsTitle" />
+
+    <TextView
+        android:id="@+id/textViewTriggerContent"
+        android:layout_width="409dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="4dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTriggerTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

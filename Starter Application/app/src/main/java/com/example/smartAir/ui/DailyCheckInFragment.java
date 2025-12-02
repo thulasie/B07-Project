@@ -104,8 +104,7 @@ public class DailyCheckInFragment extends Fragment {
         String notes = etNotes.getText().toString();
 
         String id = UUID.randomUUID().toString();
-        String today = new SimpleDateFormat("yyyy-MM-dd", Locale.US)
-                .format(new Date());
+        Date today = new Date(); // TODO replace with midnight declaration
 
         SymptomEntry entry = new SymptomEntry(
                 id,

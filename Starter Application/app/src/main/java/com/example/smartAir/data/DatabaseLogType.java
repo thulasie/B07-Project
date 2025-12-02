@@ -4,5 +4,5 @@ import com.example.smartAir.pefAndRecovery.Pef;
 import com.example.smartAir.triaging.TriageLogEntryData;
 
 public enum DatabaseLogType {
-    TRIAGE, MEDICINE, OTHER, PEF, ZONE_CHANGE
+    TRIAGE, MEDICINE, OTHER, PEF, SYMPTOM_ENTRY, ZONE_CHANGE
 }

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Row 1: today's zone + last rescue -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today’s zone" />
+
+                <TextView
+                    android:id="@+id/textTodayZone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:text="--" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/darker_gray"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last rescue" />
+
+                <TextView
+                    android:id="@+id/textLastRescue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="—" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Row 2: weekly rescues + trend chart -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rescues this week" />
+
+                <TextView
+                    android:id="@+id/textWeeklyRescue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/darker_gray"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trend (7 / 30 days)" />
+
+                <com.example.smartAir.ui.charts.TrendChartView
+                    android:id="@+id/trendChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" />
+
+                <TextView
+                    android:id="@+id/textTrendSummary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:text="0" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonToggleTrend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show 30 days"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/buttonExportPdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Export provider report"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/buttonGenerateReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Export provider report"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>

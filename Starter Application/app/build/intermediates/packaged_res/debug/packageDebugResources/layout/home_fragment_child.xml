@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/home_fragment_child_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily check in"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:id="@+id/child_home_start_check_in"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today's zone"
+                    android:textSize="20dp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ZONE"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/child_home_stats_zone"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current streak"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STREAK"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/child_home_stats_streak"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Options"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View badges"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/child_home_view_badges"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Enter PEF"
+                android:layout_weight="1"
+                android:id="@+id/child_home_enter_pef"/>
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Medicine log"
+                android:layout_weight="1"
+                android:id="@+id/child_home_enter_log_medicine"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Having trouble breathing?"
+                android:layout_weight="1"
+                android:id="@+id/child_home_triage_start"/>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Technique helper video"
+                android:layout_weight="1"
+                android:id="@+id/child_home_start_technique_helper"/>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign out"
+            android:layout_gravity="center"
+            android:id="@+id/child_home_sign_out_button"/>
+
+    </LinearLayout>
+
+</ScrollView>

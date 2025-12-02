@@ -23,7 +23,7 @@ public class SymptomEntry {
 
     public SymptomEntry(String id,
                         String childId,
-                        String date,
+                        Date date,
                         int nightWaking,
                         int activityLimit,
                         int coughWheeze,

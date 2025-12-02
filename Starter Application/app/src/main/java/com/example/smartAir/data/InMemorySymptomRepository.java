@@ -3,6 +3,7 @@ package com.example.smartAir.data;
 import com.example.smartAir.domain.SymptomEntry;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class InMemorySymptomRepository implements SymptomRepository {
@@ -26,19 +27,20 @@ public class InMemorySymptomRepository implements SymptomRepository {
     }
 
     @Override
-    public List<SymptomEntry> getEntriesForChild(
+    public void getEntriesForChild(
             String childId,
-            String startDate,
-            String endDate
+            Date startDate,
+            Date endDate,
+            ArrayList<DatabaseLogEntry> buf,
+            Callback callback
     ) {
-        List<SymptomEntry> result = new ArrayList<>();
         for (SymptomEntry e : allEntries) {
             if (!e.getChildId().equals(childId)) continue;
-            String d = e.getDate();
+            Date d = e.getDate();
             if (d.compareTo(startDate) >= 0 && d.compareTo(endDate) <= 0) {
-                result.add(e);
+                buf.add(e);
             }
+            callback.run();
         }
-        return result;
     }
 }
