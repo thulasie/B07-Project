@@ -1,5 +1,6 @@
-package com.example.smartAir.data;
+package com.example.smartAir.symptom;
 
+import com.example.smartAir.databaseLog.DatabaseLogEntry;
 import com.example.smartAir.domain.SymptomEntry;
 
 import java.util.ArrayList;
@@ -38,7 +39,7 @@ public class InMemorySymptomRepository implements SymptomRepository {
             if (!e.getChildId().equals(childId)) continue;
             Date d = e.getDate();
             if (d.compareTo(startDate) >= 0 && d.compareTo(endDate) <= 0) {
-                buf.add(e);
+                //buf.add(SymptomEntryData.constructSymptomEntryData(e));
             }
             callback.run();
         }

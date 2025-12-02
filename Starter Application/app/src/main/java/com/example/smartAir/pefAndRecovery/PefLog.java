@@ -1,8 +1,8 @@
 package com.example.smartAir.pefAndRecovery;
 
-import com.example.smartAir.data.DatabaseLogEntry;
-import com.example.smartAir.data.DatabaseLogType;
-import com.example.smartAir.data.DatabaseLogger;
+import com.example.smartAir.databaseLog.DatabaseLogEntry;
+import com.example.smartAir.databaseLog.DatabaseLogType;
+import com.example.smartAir.databaseLog.DatabaseLogger;
 
 import java.util.ArrayList;
 import java.util.Date;

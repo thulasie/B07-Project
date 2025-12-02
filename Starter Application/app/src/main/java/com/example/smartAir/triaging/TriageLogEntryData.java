@@ -1,6 +1,6 @@
 package com.example.smartAir.triaging;
 
-import com.example.smartAir.data.DatabaseLogEntryData;
+import com.example.smartAir.databaseLog.DatabaseLogEntryData;
 
 public class TriageLogEntryData extends DatabaseLogEntryData {
     public Float pef;

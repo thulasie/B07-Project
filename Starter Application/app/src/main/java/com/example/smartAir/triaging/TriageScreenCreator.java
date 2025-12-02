@@ -1,6 +1,6 @@
 package com.example.smartAir.triaging;
 
-import com.example.smartAir.data.DatabaseLogger;
+import com.example.smartAir.databaseLog.DatabaseLogger;
 import com.example.smartAir.pefAndRecovery.BreathInformationProvider;
 
 // Facade class for triage screen

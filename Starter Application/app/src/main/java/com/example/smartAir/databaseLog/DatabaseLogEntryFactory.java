@@ -1,8 +1,10 @@
-package com.example.smartAir.data;
+package com.example.smartAir.databaseLog;
 
 import com.example.smartAir.medicine.MedicineLog;
+import com.example.smartAir.motivation.Badge;
 import com.example.smartAir.pefAndRecovery.Pef;
 import com.example.smartAir.pefAndRecovery.ZoneChangeData;
+import com.example.smartAir.symptom.SymptomEntryData;
 import com.example.smartAir.triaging.TriageLogEntryData;
 
 import java.util.HashMap;
@@ -22,6 +24,8 @@ public abstract class DatabaseLogEntryFactory {
                 return new SymptomEntryDataFactory();
             case MEDICINE_LOG:
                 return new MedicineLogFactory();
+            case BADGE:
+                return new BadgeFactory();
             default:
                 return new DefaultFactory();
         }
@@ -73,5 +77,11 @@ class MedicineLogFactory extends DatabaseLogEntryFactory {
 class SymptomEntryDataFactory extends DatabaseLogEntryFactory {
     @Override
     protected DatabaseLogEntryData create() {return new SymptomEntryData();}
+
+}
+
+class BadgeFactory extends DatabaseLogEntryFactory { // I would love to work here HAHAHA im going insane and im only drinking tea in the hopes im staying awake
+    @Override
+    protected DatabaseLogEntryData create() {return new Badge();}
 
 }

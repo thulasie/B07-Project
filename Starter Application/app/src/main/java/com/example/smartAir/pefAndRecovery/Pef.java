@@ -1,12 +1,10 @@
 package com.example.smartAir.pefAndRecovery;
 
-import com.example.smartAir.data.DatabaseLogEntryData;
+import com.example.smartAir.databaseLog.DatabaseLogEntryData;
 import com.google.firebase.database.Exclude;
 import com.google.firebase.database.IgnoreExtraProperties;
 
 import java.util.HashMap;
-
-import javax.annotation.Nullable;
 
 @IgnoreExtraProperties
 public abstract class Pef extends DatabaseLogEntryData {

@@ -1,4 +1,4 @@
-package com.example.smartAir.data;
+package com.example.smartAir.databaseLog;
 
 import androidx.annotation.NonNull;
 

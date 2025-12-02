@@ -14,7 +14,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.smartAir.R;
-import com.example.smartAir.data.InMemorySymptomRepository;
 import com.example.smartAir.domain.EntryAuthor;
 import com.example.smartAir.domain.SymptomEntry;
 import com.example.smartAir.domain.TriggerType;
@@ -25,6 +24,10 @@ import java.util.List;
 import java.util.UUID;
 
 public class DailyCheckInFragment extends Fragment {
+    public interface Callback {
+        void run();
+    }
+
 
     private RadioGroup rgNight, rgActivity, rgCough;
     private CheckBox cbExercise, cbColdAir, cbDustPets, cbSmoke, cbIllness, cbOdors;
@@ -33,10 +36,14 @@ public class DailyCheckInFragment extends Fragment {
 
     private EntryAuthor author = EntryAuthor.CHILD; // 默认 CHILD
     private String childId = "unknown";
+    private SymptomRepository repo;
+    private Callback callback = () -> System.out.println("Please set a callback!");
 
-    public void setUserID (String childId) {
+    void setUsername (String username) {
         this.childId = childId;
     }
+    void setRepo (SymptomRepository repo) {this.repo = repo;}
+    void setCallback(Callback cb) {this.callback = cb;}
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -80,7 +87,7 @@ public class DailyCheckInFragment extends Fragment {
 
         btnSave.setOnClickListener(view -> {
             saveEntry();
-            requireActivity().onBackPressed();
+            callback.run();
         });
 
         return v;
@@ -116,7 +123,7 @@ public class DailyCheckInFragment extends Fragment {
                 notes
         );
 
-        InMemorySymptomRepository.getInstance().addEntry(entry);
+        repo.addEntry(entry);
     }
 
     private int mapNight(int id) {

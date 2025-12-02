@@ -1,7 +1,7 @@
 package com.example.smartAir.pefAndRecovery;
 
-import com.example.smartAir.data.DatabaseLogEntry;
-import com.example.smartAir.data.DatabaseLogger;
+import com.example.smartAir.databaseLog.DatabaseLogEntry;
+import com.example.smartAir.databaseLog.DatabaseLogger;
 import com.example.smartAir.domain.Zone;
 
 import java.util.Date;

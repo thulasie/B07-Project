@@ -2,7 +2,6 @@ package com.example.smartAir;
 
 import androidx.annotation.NonNull;
 
-import com.example.smartAir.data.UserProfile;
 import com.example.smartAir.domain.UserRole;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -37,11 +36,7 @@ public class LoginModel {
                     }
                     String uid = auth.getCurrentUser().getUid();
                     // fetch role from Firestore
-
-                    UserProfile.initializeEmailProfile(() -> {
-                        callback.onSuccess(uid, UserProfile.getProfileSingleton().getRole());
-                    });/*
-
+                    /*
                     firestore.collection("users").document(uid).get()
                             .addOnCompleteListener(docTask -> {
                                 if (!docTask.isSuccessful() || !docTask.getResult().exists()) {

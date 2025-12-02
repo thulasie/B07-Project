@@ -1,6 +1,6 @@
 package com.example.smartAir.pefAndRecovery;
 
-import com.example.smartAir.data.DatabaseLogEntryData;
+import com.example.smartAir.databaseLog.DatabaseLogEntryData;
 import com.example.smartAir.domain.Zone;
 
 public class ZoneChangeData extends DatabaseLogEntryData {

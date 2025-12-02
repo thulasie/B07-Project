@@ -31,25 +31,5 @@ public class ParentHomeFragment extends Fragment {
                               @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        //public NavController
-        NavController nav = NavHostFragment.findNavController(this);
-
-        // Sign out button
-        Button btnSignOut = view.findViewById(R.id.btnSignOutParent);
-        btnSignOut.setOnClickListener(v -> {
-            FirebaseAuth.getInstance().signOut();
-            NavOptions opts = new NavOptions.Builder()
-                    .setPopUpTo(R.id.nav_graph, true) // clear back stack
-                    .build();
-            nav.navigate(R.id.signInFragment, null, opts);
-        });
-
-        // Daily Check-in（R5）
-        Button buttonDaily = view.findViewById(R.id.buttonDailyCheckIn);
-        buttonDaily.setOnClickListener(v -> {
-            Bundle args = new Bundle();
-            args.putString("author", "PARENT");   // tell DailyCheckIn it's Parent entry
-            nav.navigate(R.id.action_parentHome_to_dailyCheckIn, args);
-        });
     }
 }

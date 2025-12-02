@@ -5,7 +5,7 @@ import androidx.annotation.NonNull;
 import com.example.smartAir.medicine.ControllerDoseEvent;
 import com.example.smartAir.medicine.InventoryStatus;
 import com.example.smartAir.R6model.RescueEvent;
-import com.example.smartAir.symptom.SymptomLog;
+import com.example.smartAir.symptom.z_s_l;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -59,16 +59,16 @@ public class R6Repository implements R6RepositoryInterface {
     }
 
     @Override
-    public Task<List<SymptomLog>> getSymptomLogs(long fromMillis, long toMillis) {
+    public Task<List<z_s_l>> getSymptomLogs(long fromMillis, long toMillis) {
         return db.collection("children").document(childId)
                 .collection("symptoms")
                 .whereGreaterThanOrEqualTo("timestampMillis", fromMillis)
                 .whereLessThanOrEqualTo("timestampMillis", toMillis)
                 .get()
                 .continueWith(task -> {
-                    List<SymptomLog> list = new ArrayList<>();
+                    List<z_s_l> list = new ArrayList<>();
                     for (DocumentSnapshot doc : task.getResult().getDocuments()) {
-                        SymptomLog ev = doc.toObject(SymptomLog.class);
+                        z_s_l ev = doc.toObject(z_s_l.class);
                         if (ev != null) list.add(ev);
                     }
                     return list;

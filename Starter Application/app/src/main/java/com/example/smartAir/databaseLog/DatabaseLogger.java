@@ -1,4 +1,4 @@
-package com.example.smartAir.data;
+package com.example.smartAir.databaseLog;
 
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;

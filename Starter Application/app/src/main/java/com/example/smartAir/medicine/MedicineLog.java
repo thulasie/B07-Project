@@ -2,7 +2,7 @@ package com.example.smartAir.medicine;
 /*import androidx.room.Entity;
 import androidx.room.PrimaryKey;*/
 
-import com.example.smartAir.data.DatabaseLogEntryData;
+import com.example.smartAir.databaseLog.DatabaseLogEntryData;
 
 /*@Entity(tableName = "medicine_logs")*/
 public class MedicineLog extends DatabaseLogEntryData {

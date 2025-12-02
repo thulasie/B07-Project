@@ -19,7 +19,7 @@ import com.example.smartAir.medicine.AdherenceCalculator;
 //import com.example.smartAir.alerting.R6AlertManager;
 import com.example.smartAir.medicine.ControllerDoseEvent;
 import com.example.smartAir.R6model.RescueEvent;
-import com.example.smartAir.symptom.SymptomLog;
+import com.example.smartAir.symptom.z_s_l;
 import com.example.smartAir.alerting.AlertManager;
 import com.example.smartAir.report.ProviderReportPdfUtil;
 import com.example.smartAir.ui.charts.TrendChartView;
@@ -155,7 +155,7 @@ public class ParentDashboardFragment extends Fragment {
                         Tasks.await(repo.getRescueEvents(from, to));
                 List<ControllerDoseEvent> doses =
                         Tasks.await(repo.getControllerDoses(from, to));
-                List<SymptomLog> symptoms =
+                List<z_s_l> symptoms =
                         Tasks.await(repo.getSymptomLogs(from, to));
 
                 int expectedDosesPerDay = 2;

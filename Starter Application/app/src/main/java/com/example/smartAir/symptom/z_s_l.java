@@ -1,13 +1,13 @@
 package com.example.smartAir.symptom;
 
-public class SymptomLog {
+public class z_s_l {
 
     private long timestampMillis;
     private int burdenScore; // 0–3 etc.
 
-    public SymptomLog() { }
+    public z_s_l() { }
 
-    public SymptomLog(long timestampMillis, int burdenScore) {
+    public z_s_l(long timestampMillis, int burdenScore) {
         this.timestampMillis = timestampMillis;
         this.burdenScore = burdenScore;
     }

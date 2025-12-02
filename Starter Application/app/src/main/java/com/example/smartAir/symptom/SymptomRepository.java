@@ -1,10 +1,10 @@
-package com.example.smartAir.data;
+package com.example.smartAir.symptom;
 
+import com.example.smartAir.databaseLog.DatabaseLogEntry;
 import com.example.smartAir.domain.SymptomEntry;
 
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 public interface SymptomRepository {
 

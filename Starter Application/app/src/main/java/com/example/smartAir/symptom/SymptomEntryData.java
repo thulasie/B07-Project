@@ -1,12 +1,12 @@
-package com.example.smartAir.data;
+package com.example.smartAir.symptom;
 
+import com.example.smartAir.databaseLog.DatabaseLogEntryData;
 import com.example.smartAir.domain.EntryAuthor;
 import com.example.smartAir.domain.SymptomEntry;
 import com.example.smartAir.domain.TriggerType;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class SymptomEntryData extends DatabaseLogEntryData {
 

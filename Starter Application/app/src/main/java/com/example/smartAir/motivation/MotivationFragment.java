@@ -38,8 +38,10 @@ public class MotivationFragment extends Fragment {
     }
 
     private void loadBadges() {
-        List<Badge> badges = new ArrayList<>();
+        ArrayList<Badge> badges = new ArrayList<>();
         // = AppDatabase.getInstance(getContext()).badgeDao().getAll(); // TODO replace badge loader
-        adapter.setItems(badges);
+        BadgeLoader.loadBadges(badges, ()-> {
+            adapter.setItems(badges);
+        });
     }
 }
