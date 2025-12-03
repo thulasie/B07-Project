@@ -3405,6 +3405,7 @@ int id easeInOut 0x7f0900f4
 int id easeOut 0x7f0900f5
 int id east 0x7f0900f6
 int id edge 0x7f0900f7
+int id editChildName 0x7f09030d
 int id editDateOfBirth 0x7f0900f8
 int id editModifyOptionalNote 0x7f0900f9
 int id editName 0x7f0900fa
@@ -4162,6 +4163,7 @@ int layout notification_template_part_chronometer 0x7f0c008c
 int layout notification_template_part_time 0x7f0c008d
 int layout onboarding_container 0x7f0c008e
 int layout onboarding_panel 0x7f0c008f
+int layout provider_settings 0x7f0c00a6
 int layout select_dialog_item_material 0x7f0c0090
 int layout select_dialog_multichoice_material 0x7f0c0091
 int layout select_dialog_singlechoice_material 0x7f0c0092

@@ -18,6 +18,8 @@ public class SignUpModel {
     }
 
     public static void registerUser(String userID, String email, UserRole role, OnSuccessListener a) {
+
+
         Map<String, Object> map = new HashMap<>();
         map.put("email", email);
         map.put("role", role);

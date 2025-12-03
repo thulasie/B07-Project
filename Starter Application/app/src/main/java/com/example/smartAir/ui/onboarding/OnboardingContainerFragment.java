@@ -14,7 +14,8 @@ import com.google.android.material.tabs.TabLayoutMediator;
 
 public class OnboardingContainerFragment extends Fragment {
 
-    private OnboardingCollectionAdapter adapter;
+    OnboardingContent c;
+
 
     public OnboardingContainerFragment() {
         super(R.layout.onboarding_container);
@@ -23,14 +24,14 @@ public class OnboardingContainerFragment extends Fragment {
         super(R.layout.onboarding_container);
     }
 
-    void setOnboardingCollectionAdapter (OnboardingCollectionAdapter a) {
-        adapter = a;
+    void setOnboardingContent (OnboardingContent a) {
+        c = a;
     }
 
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         ViewPager2 onboarding = view.findViewById(R.id.onboarding_pager);
-        onboarding.setAdapter(this.adapter);
+        onboarding.setAdapter(new OnboardingCollectionAdapter(this, c));
 
         // Connect to pagination dots
         TabLayout pager_dots = view.findViewById(R.id.onboarding_pager_dots);

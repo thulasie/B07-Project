@@ -22,6 +22,8 @@ abstract class OnboardingContent {
     }
 
     public UserRole getRole() {return role;}
+
+
 }
 
 class TestOnboarding extends OnboardingContent {

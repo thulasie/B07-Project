@@ -28,6 +28,7 @@ public class MedicineLogFragment extends Fragment {
 
     private MedicineLogAdapter adapter;
     private Callback goBack = () -> System.out.println("MedicineLogFragment: Please set goBack before using.");
+    private int ratingID;
 
     public void setGoBack(Callback goBack) {
         this.goBack = goBack;
@@ -65,7 +66,7 @@ public class MedicineLogFragment extends Fragment {
 
             log.timestamp = new Date().getTime();
 
-            int ratingCheck = typeGroup.getCheckedRadioButtonId();
+            int ratingCheck = ratingGroup.getCheckedRadioButtonId();
 
             log.rating = getFromRadioGroup(ratingCheck);
 

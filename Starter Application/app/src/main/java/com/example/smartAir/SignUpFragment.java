@@ -45,7 +45,7 @@ public class SignUpFragment extends Fragment implements SignUpPresenter.View {
         // spinner
         ArrayAdapter<String> adapter = new ArrayAdapter<>(requireContext(),
                 android.R.layout.simple_spinner_item,
-                new String[]{"Parent", "Provider", "Child"});
+                new String[]{"Parent", "Provider"/*, "Child"*/});
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         roleSpinner.setAdapter(adapter);
 

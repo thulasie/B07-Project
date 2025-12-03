@@ -43,34 +43,6 @@ public class LoginModel {
         });
     }
 
-    // Login by child profile id (collectionGroup)
-    public void loginChildProfile(String childDocId, LoginCallback callback) {
-        // search children across all parents
-        firestore.collectionGroup("children")
-                .whereEqualTo(FieldPath.documentId(), childDocId)
-                .get()
-                .addOnCompleteListener(task -> {
-                    if (!task.isSuccessful()) {
-                        callback.onError(task.getException() != null ? task.getException().getMessage() : "Query failed");
-                        return;
-                    }
-                    QuerySnapshot snap = task.getResult();
-                    if (snap == null || snap.isEmpty()) {
-                        callback.onError("Child profile not found.");
-                        return;
-                    }
-                    // assume first hit
-                    DocumentSnapshot childDoc = snap.getDocuments().get(0);
-                    DocumentReference parentDocRef = childDoc.getReference().getParent().getParent(); // users/{parentUid}
-                    if (parentDocRef == null) {
-                        callback.onError("Parent not found.");
-                        return;
-                    }
-                    String parentUid = parentDocRef.getId();
-                    callback.onSuccess(parentUid, UserRole.CHILD);
-                });
-    }
-
     public void sendRecoveryEmail(String email, RecoveryCallback callback) {
         auth.sendPasswordResetEmail(email)
                 .addOnCompleteListener(task -> {

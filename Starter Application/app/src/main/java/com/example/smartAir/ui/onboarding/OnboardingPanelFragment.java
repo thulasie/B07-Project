@@ -11,8 +11,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.smartAir.R;
+import com.example.smartAir.userinfo.FragmentLoader;
+import com.example.smartAir.userinfo.ParentChildView;
+import com.example.smartAir.userinfo.UserBasicInfo;
 
 import java.io.Serializable;
 
@@ -20,6 +25,8 @@ public class OnboardingPanelFragment extends Fragment {
 
     private OnboardingExitAction action;
     private boolean isExitScreen = false;
+    private FragmentLoader loader;
+    private static OnboardingContent c;
 
     void setOnboardingExitAction(OnboardingExitAction a) {
         action = a;
@@ -38,6 +45,18 @@ public class OnboardingPanelFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        this.loader = new FragmentLoader() {
+            final FragmentManager manager = OnboardingPanelFragment.this.getParentFragmentManager();
+            @Override
+            public void load(Fragment f) {
+                FragmentTransaction t = manager.beginTransaction();
+                t.replace(R.id.fragment_container, f);
+                t.addToBackStack(null);
+                t.commit();
+            }
+        };
+
+
         Bundle args = getArguments();
         assert args != null;
         Button exitButton = view.findViewById(R.id.onboarding_exit_button);
@@ -59,9 +78,11 @@ public class OnboardingPanelFragment extends Fragment {
             Serializable obj = args.getSerializable("userRole");
 
             exitButton.setOnClickListener(v -> {
-                action.run();
+                loader.load(UserBasicInfo.getHomeFragment());
             });
         }
     }
+
+
 
 }

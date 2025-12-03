@@ -45,6 +45,7 @@ dependencies {
     implementation("com.google.firebase:firebase-messaging:25.0.1")
     implementation(libs.fragment)
     testImplementation(libs.junit)
+    testImplementation("org.mockito:mockito-core:5.15.2")
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation("com.google.firebase:firebase-auth")

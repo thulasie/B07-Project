@@ -87,6 +87,7 @@ id controller_canister_button
 id controller_canister_details
 id dailyCheckInFragment
 id debug_messages
+id editChildName
 id editDateOfBirth
 id editModifyOptionalNote
 id editName
@@ -315,6 +316,7 @@ layout log_spinner_fragment
 layout medicine_log_fragment
 layout onboarding_container
 layout onboarding_panel
+layout provider_settings
 layout sign_up_fragment
 layout temp_add_child
 layout temp_child_home

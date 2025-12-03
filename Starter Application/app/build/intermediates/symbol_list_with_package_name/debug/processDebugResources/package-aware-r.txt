@@ -3406,6 +3406,7 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editChildName
 id editDateOfBirth
 id editModifyOptionalNote
 id editName
@@ -4163,6 +4164,7 @@ layout notification_template_part_chronometer
 layout notification_template_part_time
 layout onboarding_container
 layout onboarding_panel
+layout provider_settings
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

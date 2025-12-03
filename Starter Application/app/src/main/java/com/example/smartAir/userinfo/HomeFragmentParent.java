@@ -58,10 +58,18 @@ public class HomeFragmentParent extends Fragment implements AlertMonitor.Alerter
 
         parentAddChild.setOnClickListener((v) -> navigateToAddChildFragment());
 
+        parentSignOutButton.setOnClickListener((v) -> signOut());
+
         spinner.setAdapter(adapter);
 
         AlertMonitor.registerAlerter(this);
         AlertMonitor.setChildren(UserBasicInfo.getChildren());
+
+        parentManageProvider.setOnClickListener((v) ->
+                editProviderSettings(UserBasicInfo
+                        .getChildren()
+                        .get(spinner.getSelectedItemPosition()))
+        );
     }
 
     public void showAlert(String user, String msg) {
@@ -76,6 +84,18 @@ public class HomeFragmentParent extends Fragment implements AlertMonitor.Alerter
     private void goToChildProfile(String username) {
         ParentChildView frag = new ParentChildView();
         frag.setChildUsername(username);
+        loader.load(frag);
+    }
+
+    private void signOut() {
+        UserBasicInfo.logOut();
+        loader.load(UserBasicInfo.getHomeFragment());
+    }
+
+    private void editProviderSettings(String selected) {
+        ProviderSettingsFragment frag = new ProviderSettingsFragment();
+        frag.setName(selected);
+        frag.setProvider(() -> loader.load(UserBasicInfo.getHomeFragment()));
         loader.load(frag);
     }
 }

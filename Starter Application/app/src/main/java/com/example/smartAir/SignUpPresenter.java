@@ -7,8 +7,12 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class SignUpPresenter {
+    private static final String EMAIL_REGEX = "^[A-Za-z0-9+_.-]+@(.+)$";
+
     public interface View {
         void showLoading(boolean loading);
         void showMessage(String msg);
@@ -28,10 +32,6 @@ public class SignUpPresenter {
         if (TextUtils.isEmpty(email) || TextUtils.isEmpty(password)) {
             view.showError("Email and password are required.");
             return;
-        }
-
-        if (!email.contains("@")){
-            email = email + "@smartair.com";
         }
 
         final String user = email;

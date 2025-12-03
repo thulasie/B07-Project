@@ -40,10 +40,6 @@
         "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/forgot_password_fragment.xml"
     },
     {
-        "merged": "com.example.smartAir.app-debug-59:/layout_add_children_fragment.xml.flat",
-        "source": "com.example.smartAir.app-main-61:/layout/add_children_fragment.xml"
-    },
-    {
         "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_activity_item_adapater.xml.flat",
         "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/activity_item_adapater.xml"
     },
@@ -222,6 +218,10 @@
     {
         "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_temp_parent_home.xml.flat",
         "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/temp_parent_home.xml"
+    },
+    {
+        "merged": "com.example.smartAir.app-debug-59:/layout_provider_settings.xml.flat",
+        "source": "com.example.smartAir.app-main-61:/layout/provider_settings.xml"
     },
     {
         "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_item_badge.xml.flat",

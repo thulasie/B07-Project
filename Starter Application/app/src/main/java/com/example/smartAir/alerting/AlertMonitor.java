@@ -58,9 +58,14 @@ public class AlertMonitor {
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         int i = 0;
                         for (DataSnapshot d: snapshot.getChildren()) {
-                            if (d.child("type").getValue().toString().equals("RESCUE_USE")) {
-                                System.out.println("Rescue use...");
-                                i++;
+                            if (d.child("type").getValue() != null && d.child("type").getValue().toString().equals("RESCUE_USE")) {
+                                if (d.child("data").child("dose").getValue() != null) {
+                                    try {
+                                        i += (Long) d.child("data").child("dose").getValue();
+                                    } catch (Exception e) {
+                                        e.printStackTrace();
+                                    }
+                                }
                             }
                             if (i > 2) {
                                 alert.showAlert(username, "≥3 rescue uses in 3 hours.");

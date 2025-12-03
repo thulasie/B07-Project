@@ -1,5 +1,6 @@
 package com.example.smartAir.userinfo;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -13,6 +14,11 @@ import com.example.smartAir.domain.UserRole;
 import com.example.smartAir.inventory.InventoryFacade;
 import com.example.smartAir.pefAndRecovery.ZoneEntryFacade;
 import com.example.smartAir.triaging.TriageScreenCreator;
+import com.example.smartAir.ui.onboarding.OnboardingCreator;
+import com.example.smartAir.ui.onboarding.OnboardingPlaceholder;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -26,18 +32,24 @@ public class UserBasicInfo {
         void run();
     }
 
-    protected static FragmentLoader switcher;
     protected static String username;
     protected static UserRole role;
+    protected static boolean onboarded;
     protected static ArrayList<String> children = new ArrayList<>();
 
     public static Fragment getHomeFragment() {
+        if (!onboarded) {
+            OnboardingPlaceholder frag = new OnboardingPlaceholder();
+            onboarded = true;
+            return frag;
+        }
+
         if (role == UserRole.CHILD) {
-            return new HomeFragmentChild();
+                return new HomeFragmentChild();
         } else if (role == UserRole.PARENT) {
-            return new HomeFragmentParent();
+                return new HomeFragmentParent();
         } else if (role == UserRole.PROVIDER) {
-            return new HomeFragmentProvider();
+                return new HomeFragmentProvider();
         }
         return new LoginFragment();
     }
@@ -54,12 +66,27 @@ public class UserBasicInfo {
         UserBasicInfo.username = username.replace(".", "").replace("#", "").replace("$", "");
         UserBasicInfo.role = role;
         System.out.println("UserBasicInfo: " + username + ": " + role);
-        if (role == UserRole.PARENT) {
-            // initialize list of children...
-            reinitializeChildren(c);
-        } else {
-            c.run();
-        }
+
+        FirebaseDatabase.getInstance().getReference("onboarding")
+                .child(UserBasicInfo.username).get()
+                .addOnCompleteListener(task -> {
+                        if (task.isSuccessful()
+                                && task.getResult().getValue() != null
+                                && task.getResult().getValue().toString().equals("complete")) {
+                            onboarded = true;
+                        } else {
+                            FirebaseDatabase.getInstance().getReference("onboarding").child(UserBasicInfo.username).setValue("complete");
+                            onboarded = false;
+                        }
+                        System.out.println(onboarded);
+
+                    if (role == UserRole.PARENT) {
+                        // initialize list of children...
+                        reinitializeChildren(c);
+                    } else {
+                        c.run();
+                    }
+                });
     }
 
     public static void reinitializeChildren(Callback c) {
@@ -84,7 +111,10 @@ public class UserBasicInfo {
     }
 
     public static void logOut() {
-
+        username = "";
+        children.clear();
+        FirebaseAuth.getInstance().signOut();
+        role = null;
     }
 
 }

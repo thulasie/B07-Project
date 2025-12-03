@@ -103,6 +103,7 @@ public class HomeFragmentChild extends Fragment {
     }
 
     private void signOut() {
-
+        UserBasicInfo.logOut();
+        loader.load(UserBasicInfo.getHomeFragment());
     }
 }
