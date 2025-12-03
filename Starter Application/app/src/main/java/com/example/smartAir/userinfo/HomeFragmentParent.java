@@ -44,6 +44,7 @@ public class HomeFragmentParent extends Fragment implements AlertMonitor.Alerter
 
         Button parentViewProfile = view.findViewById(R.id.parent_view_profile);
         Button parentViewDashboard = view.findViewById(R.id.parent_view_dashboard);
+        Button parentViewLogs = view.findViewById(R.id.parent_view_logs);
         Button parentAddChild = view.findViewById(R.id.parent_add_child);
         Button parentManageProvider = view.findViewById(R.id.parent_manage_provider);
         Button parentSignOutButton = view.findViewById(R.id.parent_signout);
@@ -67,6 +68,12 @@ public class HomeFragmentParent extends Fragment implements AlertMonitor.Alerter
 
         parentManageProvider.setOnClickListener((v) ->
                 editProviderSettings(UserBasicInfo
+                        .getChildren()
+                        .get(spinner.getSelectedItemPosition()))
+        );
+
+        parentViewLogs.setOnClickListener((v) ->
+                goToLogs(UserBasicInfo
                         .getChildren()
                         .get(spinner.getSelectedItemPosition()))
         );
@@ -96,6 +103,12 @@ public class HomeFragmentParent extends Fragment implements AlertMonitor.Alerter
         ProviderSettingsFragment frag = new ProviderSettingsFragment();
         frag.setName(selected);
         frag.setProvider(() -> loader.load(UserBasicInfo.getHomeFragment()));
+        loader.load(frag);
+    }
+
+    private void goToLogs(String selected) {
+        LogsView frag = new LogsView();
+        frag.setUsername(selected);
         loader.load(frag);
     }
 }

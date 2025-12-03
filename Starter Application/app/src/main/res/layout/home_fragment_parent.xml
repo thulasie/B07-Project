@@ -36,6 +36,18 @@
         android:layout_height="wrap_content"
         android:id="@+id/parent_view_dashboard"
         android:text="See selected child's dashboard"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/parent_view_logs"
+        android:text="View logs of the selected child"/>
+
+
     <Space
         android:layout_width="wrap_content"
         android:layout_height="20dp"/>

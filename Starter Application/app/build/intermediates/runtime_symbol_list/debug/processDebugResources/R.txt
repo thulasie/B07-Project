@@ -3511,6 +3511,8 @@ int id loginEmailInput 0x7f09015d
 int id loginPasswordInput 0x7f09015e
 int id loginProgressBar 0x7f09015f
 int id loginTitle 0x7f090160
+int id logs_container 0x7f09030e
+int id logs_exit_button 0x7f09030f
 int id logs_spinner 0x7f090161
 int id logs_title 0x7f090162
 int id ltr 0x7f090163
@@ -3646,6 +3648,7 @@ int id parent_manage_provider 0x7f0901e3
 int id parent_matrix 0x7f0901e4
 int id parent_signout 0x7f0901e5
 int id parent_view_dashboard 0x7f0901e6
+int id parent_view_logs 0x7f090310
 int id parent_view_profile 0x7f0901e7
 int id password_toggle 0x7f0901e8
 int id path 0x7f0901e9
@@ -4103,6 +4106,7 @@ int layout item_medicine_log 0x7f0c0050
 int layout item_technique_step 0x7f0c0051
 int layout log_in_fragment 0x7f0c0052
 int layout log_spinner_fragment 0x7f0c0053
+int layout logs_fragment_container 0x7f0c00a7
 int layout m3_alert_dialog 0x7f0c0054
 int layout m3_alert_dialog_actions 0x7f0c0055
 int layout m3_alert_dialog_title 0x7f0c0056

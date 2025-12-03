@@ -212,16 +212,16 @@
         "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/temp_add_child.xml"
     },
     {
+        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_provider_settings.xml.flat",
+        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/provider_settings.xml"
+    },
+    {
         "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/drawable_squeak.jpg.flat",
         "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/drawable/squeak.jpg"
     },
     {
         "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_temp_parent_home.xml.flat",
         "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/temp_parent_home.xml"
-    },
-    {
-        "merged": "com.example.smartAir.app-debug-59:/layout_provider_settings.xml.flat",
-        "source": "com.example.smartAir.app-main-61:/layout/provider_settings.xml"
     },
     {
         "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_item_badge.xml.flat",
@@ -292,6 +292,10 @@
         "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_motivation.xml"
     },
     {
+        "merged": "com.example.smartAir.app-debug-59:/layout_logs_fragment_container.xml.flat",
+        "source": "com.example.smartAir.app-main-61:/layout/logs_fragment_container.xml"
+    },
+    {
         "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
@@ -302,6 +306,10 @@
     {
         "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_add_children_fragment.xml.flat",
         "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/add_children_fragment.xml"
+    },
+    {
+        "merged": "com.example.smartAir.app-debug-59:/layout_home_fragment_parent.xml.flat",
+        "source": "com.example.smartAir.app-main-61:/layout/home_fragment_parent.xml"
     },
     {
         "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-mdpi_ic_launcher.webp.flat",

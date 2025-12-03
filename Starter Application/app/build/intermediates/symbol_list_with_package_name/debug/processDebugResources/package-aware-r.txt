@@ -3512,6 +3512,8 @@ id loginEmailInput
 id loginPasswordInput
 id loginProgressBar
 id loginTitle
+id logs_container
+id logs_exit_button
 id logs_spinner
 id logs_title
 id ltr
@@ -3647,6 +3649,7 @@ id parent_manage_provider
 id parent_matrix
 id parent_signout
 id parent_view_dashboard
+id parent_view_logs
 id parent_view_profile
 id password_toggle
 id path
@@ -4104,6 +4107,7 @@ layout item_medicine_log
 layout item_technique_step
 layout log_in_fragment
 layout log_spinner_fragment
+layout logs_fragment_container
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
