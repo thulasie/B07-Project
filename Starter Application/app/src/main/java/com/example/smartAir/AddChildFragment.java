@@ -87,7 +87,7 @@ public class AddChildFragment extends Fragment {
 
     private void addToProvider(){
         //parentEmail should be userEmail.toString() but hardcoded it for testing purposes
-        parent.child("parentEmail").child("provider").addValueEventListener(new ValueEventListener() {
+        parent.child("parentEmail").child("provider").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 String name = editName.getText().toString().trim().toLowerCase();

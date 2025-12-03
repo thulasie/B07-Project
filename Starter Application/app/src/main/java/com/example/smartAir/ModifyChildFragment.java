@@ -103,7 +103,7 @@ public class ModifyChildFragment extends Fragment {
         provider.child(Email).child(Name).child("peakflow").setValue(peakFlow.isChecked());
         provider.child(Email).child(Name).child("triangleincident").setValue(triangleIncident.isChecked());
         provider.child(Email).child(Name).child("summarychart").setValue(summaryChart.isChecked());
-        child.child(Name).child("optionalnote").setValue(optionalNote.getText());
+        child.child(Name).child("optionalnote").setValue(optionalNote.getText().toString());
         Toast.makeText(getContext(), "updated successfully!", Toast.LENGTH_SHORT).show();
     }
 
@@ -153,7 +153,7 @@ public class ModifyChildFragment extends Fragment {
             identifyer = Email;
         }
         //I'm using parentEmail for now but should be userEmail.toString()
-        parent.child("parentEmail").child(role).child(identifyer).addValueEventListener(new ValueEventListener() {
+        parent.child("parentEmail").child(role).child(identifyer).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 System.out.println(role + ": " + snapshot.exists());
@@ -196,7 +196,7 @@ public class ModifyChildFragment extends Fragment {
     }
     //finds if info is shared or not
     private void getValue(String key, BooleanCallBack callBack){
-        provider.child(Email).child(Name).child(key).addValueEventListener(new ValueEventListener() {
+        provider.child(Email).child(Name).child(key).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists()) {

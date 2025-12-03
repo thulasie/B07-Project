@@ -150,7 +150,7 @@
         android:id="@+id/textTriangleIncident"
         android:layout_width="280dp"
         android:layout_height="50dp"
-        android:text="Triangle incidents"
+        android:text="Triage incidents"
         app:layout_constraintTop_toBottomOf="@+id/textPeakFlow"
         app:layout_constraintStart_toStartOf="@+id/textPeakFlow"
         app:layout_constraintEnd_toEndOf="@+id/textPeakFlow" />
