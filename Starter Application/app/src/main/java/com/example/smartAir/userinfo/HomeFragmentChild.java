@@ -3,10 +3,13 @@ package com.example.smartAir.userinfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 
@@ -19,9 +22,9 @@ import com.example.smartAir.pefAndRecovery.ZoneEntryFacade;
 import com.example.smartAir.triaging.TriageScreenCreator;
 
 public class HomeFragmentChild extends Fragment {
-    private static FragmentLoader loader;
+    private FragmentLoader loader;
 
-    GoBackProvider provider;
+    GoBackProvider provider = () -> loader.load(UserBasicInfo.getHomeFragment());
 
     public HomeFragmentChild() {
         super(R.layout.home_fragment_child);
@@ -30,6 +33,17 @@ public class HomeFragmentChild extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        this.loader = new FragmentLoader() {
+            final FragmentManager manager = HomeFragmentChild.this.getParentFragmentManager();
+            @Override
+            public void load(Fragment f) {
+                FragmentTransaction t = manager.beginTransaction();
+                t.replace(R.id.fragment_container, f);
+                t.addToBackStack(null);
+                t.commit();
+            }
+        };
 
         Button buttonDaily = view.findViewById(R.id.child_home_start_check_in);
         Button badgeButton = view.findViewById(R.id.child_home_view_badges);
@@ -46,12 +60,18 @@ public class HomeFragmentChild extends Fragment {
         triageButton.setOnClickListener(v -> this.navigateToTriage());
         techniqueButton.setOnClickListener(v -> this.navigateToTechniqueHelper());
         signOutButton.setOnClickListener(v -> this.signOut());
+
+        ZoneEntryFacade.changeUser(UserBasicInfo.getUsername(), () -> {
+            TextView v = view.findViewById(R.id.child_home_stats_zone);
+            v.setText(ZoneEntryFacade.getBreathProvider().getZone().toString());
+        });
     }
 
     private void navigateToDailyLogin() {
-        DailyCheckInFacade.create(UserBasicInfo.getUsername(),
+        Fragment frag = DailyCheckInFacade.create(UserBasicInfo.getUsername(),
                 () -> loader.load(UserBasicInfo.getHomeFragment()),
                 EntryAuthor.CHILD);
+        loader.load(frag);
     }
 
     private void navigateToBadges() {
@@ -59,8 +79,11 @@ public class HomeFragmentChild extends Fragment {
     }
 
     private void navigateToPEFEntry() {
-        ZoneEntryFacade.setExitAction((a) -> provider::goBack);
-        loader.load(ZoneEntryFacade.createPefEntry());
+        ZoneEntryFacade.changeUser(UserBasicInfo.getUsername(), () -> {
+            ZoneEntryFacade.setExitAction((a) -> provider::goBack);
+            Fragment f = ZoneEntryFacade.createPefEntry();
+            loader.load(f);
+        });
     }
 
     private void navigateToMedicineLog() {

@@ -1,10 +1,12 @@
 package com.example.smartAir.userinfo;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.smartAir.LoginFragment;
 import com.example.smartAir.LoginModel;
 import com.example.smartAir.LoginPresenter;
+import com.example.smartAir.R;
 import com.example.smartAir.alerting.AlertMonitor;
 import com.example.smartAir.dailies.DailyCheckInFacade;
 import com.example.smartAir.domain.UserRole;
@@ -14,15 +16,19 @@ import com.example.smartAir.triaging.TriageScreenCreator;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class UserBasicInfo {
-    interface Callback {
+
+    public interface Callback {
         void run();
     }
 
     protected static FragmentLoader switcher;
     protected static String username;
     protected static UserRole role;
+    protected static ArrayList<String> children = new ArrayList<>();
 
     public static Fragment getHomeFragment() {
         if (role == UserRole.CHILD) {
@@ -39,9 +45,24 @@ public class UserBasicInfo {
         return username;
     }
 
+    public static ArrayList<String> getChildren(){
+        return children;
+    }
+
     public static void initialize(String username, UserRole role) {
-        UserBasicInfo.username = username;
+        UserBasicInfo.username = username.replace(".", "").replace("#", "").replace("$", "");
         UserBasicInfo.role = role;
+        System.out.println("UserBasicInfo: " + username + ": " + role);
+        if (role == UserRole.PARENT) {
+
+            // initialize list of children...
+            children.add("Child1");
+            children.add("Child2");
+        }
+    }
+
+    public static void reinitializeChildren(Callback c) {
+        c.run();
     }
 
     public static void logOut() {

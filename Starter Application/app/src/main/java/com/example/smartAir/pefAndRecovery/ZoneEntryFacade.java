@@ -45,6 +45,7 @@ public class ZoneEntryFacade {
         frag.setPEFController(controller);
         controller.setLogger(PefLog.getSingletonInstance());
         frag.setScreenAfter(singleton.gen.callback(singleton.userID));
+        System.out.println(frag);
 
         return frag;
     }
