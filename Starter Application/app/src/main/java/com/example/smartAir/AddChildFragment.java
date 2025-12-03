@@ -74,7 +74,7 @@ public class AddChildFragment extends Fragment {
         Item item = new Item(name, password, dateOfBirth, optionalNote);
 
         //parentEmail should be userEmail.toString() but hardcoded it for testing purposes
-        parent.child("parentEmail").child("child").child(name).setValue("");
+        parent.child(userEmail.toString()).child("child").child(name).setValue("");
         addToProvider();
         child.child(name).setValue(item).addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
@@ -87,7 +87,7 @@ public class AddChildFragment extends Fragment {
 
     private void addToProvider(){
         //parentEmail should be userEmail.toString() but hardcoded it for testing purposes
-        parent.child("parentEmail").child("provider").addValueEventListener(new ValueEventListener() {
+        parent.child(userEmail.toString()).child("provider").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 String name = editName.getText().toString().trim().toLowerCase();

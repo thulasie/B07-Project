@@ -72,8 +72,10 @@ id cbExercise
 id cbIllness
 id cbOdors
 id cbSmoke
+id childDOBInput
 id childHomeFragment
 id childInfoButton
+id childNameInput
 id child_home_enter_log_medicine
 id child_home_enter_pef
 id child_home_sign_out_button
@@ -198,7 +200,6 @@ id scrollerFragment
 id signInFragment
 id signUpButton
 id signupRedirectText
-id signupTitle
 id spinnerCategory
 id spinnerChild
 id spinnerFragment
