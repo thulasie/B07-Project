@@ -3332,8 +3332,10 @@ id chain2
 id chains
 id checkbox
 id checked
+id childDOBInput
 id childHomeFragment
 id childInfoButton
+id childNameInput
 id child_home_enter_log_medicine
 id child_home_enter_pef
 id child_home_sign_out_button
@@ -3744,7 +3746,6 @@ id showTitle
 id signInFragment
 id signUpButton
 id signupRedirectText
-id signupTitle
 id sin
 id skipCollapsed
 id skipped

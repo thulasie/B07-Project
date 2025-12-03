@@ -1,326 +1,322 @@
 [
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_item_medicine_log.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/item_medicine_log.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_temp_provider_home.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/temp_provider_home.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_onboarding_container.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/onboarding_container.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_temp_add_child.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/temp_add_child.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/drawable_not_my_cat_low_res.jpg.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/drawable/not_my_cat_low_res.jpg"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_temp_child_home.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/temp_child_home.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_insert_children_fragment.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/insert_children_fragment.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_triage_fragment.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/triage_fragment.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_triage_check_back_screen.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/triage_check_back_screen.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_child_home.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_child_home.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_inventory_container.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/inventory_container.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_delete_item.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_delete_item.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_canister_home_page.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/canister_home_page.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_triage_generic_screen.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/triage_generic_screen.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/drawable_onboarding_selected_tab.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/drawable/onboarding_selected_tab.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/drawable_not_my_cat_low_res.jpg.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/drawable/not_my_cat_low_res.jpg"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_forgot_password_fragment.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/forgot_password_fragment.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_role_router.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_role_router.xml"
     },
     {
-        "merged": "com.example.smartAir.app-debug-59:/layout_add_children_fragment.xml.flat",
-        "source": "com.example.smartAir.app-main-61:/layout/add_children_fragment.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_canister_entry.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/canister_entry.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_activity_item_adapater.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/activity_item_adapater.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_add_children_fragment.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/add_children_fragment.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_delete_item.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_delete_item.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_item_medicine_log.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/item_medicine_log.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_debug_screen.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/debug_screen.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_provider_home.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_provider_home.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_onboarding_container.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/onboarding_container.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_item_technique_step.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/item_technique_step.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_triage_decision_button.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/triage_decision_button.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_triage_fragment_symptoms.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/triage_fragment_symptoms.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_triage_fragment.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/triage_fragment.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_daily_check_in.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_daily_check_in.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_container.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_container.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_temp_child_home.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/temp_child_home.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_item_badge.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/item_badge.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_item_log.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/item_log.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_temp_modify_child.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/temp_modify_child.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_personal_best_entry.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_personal_best_entry.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_home_fragment_parent.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/home_fragment_parent.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_manage_items.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_manage_items.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_pef_entry.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_pef_entry.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_debug_screen.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/debug_screen.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_debug_message.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/debug_message.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_daily_check_in.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_daily_check_in.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_medicine_log_fragment.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/medicine_log_fragment.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/drawable/ic_launcher_foreground.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_triage_fragment_decision_card.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/triage_fragment_decision_card.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/xml/data_extraction_rules.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_add_item.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_add_item.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_log_spinner_fragment.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/log_spinner_fragment.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_item_layout.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/item_layout.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_sign_up_fragment.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/sign_up_fragment.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/drawable_ic_notification.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/drawable/ic_notification.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_pef_entry.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_pef_entry.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_temp_provider_home.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/temp_provider_home.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/drawable_onboarding_selected_tab.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/drawable/onboarding_selected_tab.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_triage_decision_button.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/triage_decision_button.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_temp_parent_home.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/temp_parent_home.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_personal_best_entry.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_personal_best_entry.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_triage_fragment_symptoms.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/triage_fragment_symptoms.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/raw_tutorial.mp4.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/raw/tutorial.mp4"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_item_log.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/item_log.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_add_item.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_add_item.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_forgot_password_fragment.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/forgot_password_fragment.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_triage_resolution_screen.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/triage_resolution_screen.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_recycler_view_static.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_recycler_view_static.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/drawable_onboarding_unselected_tab.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/drawable/onboarding_unselected_tab.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/drawable/ic_launcher_background.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_triage_fragment_recent_history.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/triage_fragment_recent_history.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_parent_home.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_parent_home.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/drawable_ic_notification.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/drawable/ic_notification.xml"
+        "merged": "com.example.smartAir.app-debug-59:/layout_sign_up_fragment.xml.flat",
+        "source": "com.example.smartAir.app-main-61:/layout/sign_up_fragment.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_triage_symptom_chip.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/triage_symptom_chip.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/drawable_squeak.jpg.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/drawable/squeak.jpg"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_home_fragment_child.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/home_fragment_child.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_activity_mtmactivity.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/activity_mtmactivity.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_container.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_container.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/drawable_onboarding_unselected_tab.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/drawable/onboarding_unselected_tab.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/raw_tutorial.mp4.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/raw/tutorial.mp4"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_activity_mtmactivity.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/activity_mtmactivity.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_triage_resolution_screen.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/triage_resolution_screen.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_triage_fragment_decision_card.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/triage_fragment_decision_card.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_technique_helper.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_technique_helper.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_triage_check_back_screen.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/triage_check_back_screen.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_home_fragment_child.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/home_fragment_child.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_item_layout.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/item_layout.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_recycler_view.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_recycler_view.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_recycler_view.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_recycler_view.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_temp_add_child.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/temp_add_child.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/drawable_squeak.jpg.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/drawable/squeak.jpg"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_activity_main.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_temp_parent_home.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/temp_parent_home.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_canister_home_page.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/canister_home_page.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_item_badge.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/item_badge.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_home_fragment_child_parent_view.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/home_fragment_child_parent_view.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_triage_symptom_chip.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/triage_symptom_chip.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_temp_information.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/temp_information.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_temp_modify_child.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/temp_modify_child.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_technique_helper.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_technique_helper.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_item_technique_step.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/item_technique_step.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_role_router.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_role_router.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_onboarding_panel.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/onboarding_panel.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/drawable_onboarding_tab_indicator.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/drawable/onboarding_tab_indicator.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/xml_backup_rules.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/xml/backup_rules.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_manage_items.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_manage_items.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_parent_dashboard.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_parent_dashboard.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_onboarding_panel.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/onboarding_panel.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_activity_main.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/activity_main.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_sign_up_fragment.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/sign_up_fragment.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_child_home.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_child_home.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_medicine_log_fragment.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/medicine_log_fragment.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_item_inventory.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/item_inventory.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_triage_fragment_recent_history.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/triage_fragment_recent_history.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_home_fragment_child_parent_view.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/home_fragment_child_parent_view.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_parent_dashboard.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_parent_dashboard.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/drawable_onboarding_tab_indicator.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/drawable/onboarding_tab_indicator.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_inventory_container.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/inventory_container.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_provider_home.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_provider_home.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_log_spinner_fragment.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/log_spinner_fragment.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_log_in_fragment.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/log_in_fragment.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/xml_backup_rules.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/xml/backup_rules.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_parent_home.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_parent_home.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_activity_item_adapater.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/activity_item_adapater.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_motivation.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_motivation.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_temp_information.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/temp_information.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_add_children_fragment.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/add_children_fragment.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_motivation.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_motivation.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_log_in_fragment.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/log_in_fragment.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_triage_generic_screen.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/triage_generic_screen.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_item_inventory.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/item_inventory.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_canister_entry.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/canister_entry.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_home_fragment_parent.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/home_fragment_parent.xml"
     },
     {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/mipmap-mdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_fragment_recycler_view_static.xml.flat",
-        "source": "/Users/tylergu/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/fragment_recycler_view_static.xml"
+        "merged": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-debug-59:/layout_debug_message.xml.flat",
+        "source": "/Users/masoncho/.gradle/daemon/8.13/com.example.smartAir.app-main-61:/layout/debug_message.xml"
     }
 ]
