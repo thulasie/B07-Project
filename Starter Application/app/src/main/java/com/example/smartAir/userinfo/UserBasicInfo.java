@@ -13,6 +13,7 @@ import com.example.smartAir.domain.UserRole;
 import com.example.smartAir.inventory.InventoryFacade;
 import com.example.smartAir.pefAndRecovery.ZoneEntryFacade;
 import com.example.smartAir.triaging.TriageScreenCreator;
+import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
@@ -49,20 +50,37 @@ public class UserBasicInfo {
         return children;
     }
 
-    public static void initialize(String username, UserRole role) {
+    public static void initialize(String username, UserRole role, Callback c) {
         UserBasicInfo.username = username.replace(".", "").replace("#", "").replace("$", "");
         UserBasicInfo.role = role;
         System.out.println("UserBasicInfo: " + username + ": " + role);
         if (role == UserRole.PARENT) {
-
             // initialize list of children...
-            children.add("Child1");
-            children.add("Child2");
+            reinitializeChildren(c);
+        } else {
+            c.run();
         }
     }
 
     public static void reinitializeChildren(Callback c) {
-        c.run();
+        children = new ArrayList<>();
+        children.add("Child1");
+        children.add("Child2");
+        FirebaseDatabase db = FirebaseDatabase.getInstance();
+        db.getReference().child("parentChildren")
+                        .child(UserBasicInfo.getUsername()).get().addOnCompleteListener((task) -> {
+                            if (task.isSuccessful()) {
+                                task.getResult().getChildren();
+                                for (DataSnapshot s: task.getResult().getChildren()) {
+                                    System.out.println("UserBasicInfo: " + s.getKey());
+                                    children.add(s.getKey());
+                                }
+                                c.run();
+                            } else {
+                                System.out.println("Noooooooo");
+                                c.run();
+                            }
+                });
     }
 
     public static void logOut() {

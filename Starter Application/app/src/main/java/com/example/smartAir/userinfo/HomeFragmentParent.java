@@ -59,6 +59,9 @@ public class HomeFragmentParent extends Fragment implements AlertMonitor.Alerter
         parentAddChild.setOnClickListener((v) -> navigateToAddChildFragment());
 
         spinner.setAdapter(adapter);
+
+        AlertMonitor.registerAlerter(this);
+        AlertMonitor.setChildren(UserBasicInfo.getChildren());
     }
 
     public void showAlert(String user, String msg) {

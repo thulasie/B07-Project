@@ -158,22 +158,32 @@ public class AddChildrenFragment extends Fragment {
             c.noSuccess("Do not add an @ to the username.");
             return;
         }
+        if (name.contains(".")) {
+            c.noSuccess("Do not add a dot to the username.");
+            return;
+        }
+
+        if (name.contains("[")) {
+            c.noSuccess("Do not add a [ to the username.");
+            return;
+        }
+
+        if (name.contains("]")) {
+            c.noSuccess("Do not add a ] to the username.");
+            return;
+        }
 
         if (dateOfBirth.isEmpty()) {
             c.noSuccess("Please enter a date of birth.");
             return;
         }
 
-        name = name + "@smartaircom";
-
-        String finalName = name;
-
         FirebaseAuth.getInstance()
-                .createUserWithEmailAndPassword(name.strip(), password.strip())
+                .createUserWithEmailAndPassword(name.strip() + "@smartair.com", password.strip())
                 .addOnCompleteListener((task) -> {
                     if (task.isSuccessful()) {
                         if (task.getResult().getUser() != null) {
-                            registerUser(finalName, task.getResult().getUser().getUid(), notes, dateOfBirth, c);
+                            registerUser(name, task.getResult().getUser().getUid(), notes, dateOfBirth, c);
                         }
                     } else {
                         if (task.getException() != null) {
@@ -186,27 +196,26 @@ public class AddChildrenFragment extends Fragment {
     private static void registerUser(String username, String uid, String notes, String dateOfBirth, Callback c) {
         HashMap<String, Object> values = new HashMap<>();
         values.put("dob", dateOfBirth);
-        values.put("name", username);
+        values.put("name", username + "@smartaircom");
 
         FirebaseDatabase.getInstance().getReference("users").child("child")
-                .child(username).updateChildren(values);
+                .child(username.replace(".", "") + "@smartaircom").updateChildren(values);
 
         // Add parent relation...
         HashMap<String, Object> parentKey = new HashMap<>();
-        values.put(username, true);
+        parentKey.put(username + "@smartaircom", true);
 
         FirebaseDatabase.getInstance().getReference("parentChildren")
-                .child(UserBasicInfo.getUsername())
+                .child(UserBasicInfo.getUsername().replace(".", ""))
                 .updateChildren(parentKey);
 
         HashMap<String, Object> roleInfo = new HashMap<>();
-        values.put("email", username);
-        values.put("role", "CHILD");
+        roleInfo.put("email", username + "@smartair.com");
+        roleInfo.put("role", "CHILD");
+        roleInfo.put("notes", notes);
 
         FirebaseDatabase.getInstance().getReference("roles")
                 .child(uid).updateChildren(roleInfo);
-
-
         c.onSuccess();
     }
 }

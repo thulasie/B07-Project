@@ -36,8 +36,10 @@ public class LoginPresenter {
                 view.showMessage("Welcome! Just wait a moment while we get set up...");
                 System.out.println(role);
 
-                UserBasicInfo.initialize(uid, role);
-                view.navigateToDashboard();
+                UserBasicInfo.initialize(uid, role, ()-> {
+
+                    view.navigateToDashboard();
+                });
             }
 
             @Override
