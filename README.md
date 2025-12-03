@@ -6,7 +6,9 @@ This repository contains source code for an Android app named SMART AIR
 Smart Air's purpose is to help parents, healthcare providers, and childrens with asthma(patient) to communicate better
 
 To install the app on your device:
+
 git clone https://github.com/thulasie/B07-Project
+
 on the path of your choice
 
 Some usages of Smart Air can are:
